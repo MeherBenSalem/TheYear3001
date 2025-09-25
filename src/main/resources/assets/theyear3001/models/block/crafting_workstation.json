@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "theyear3001:block/scifi_panel_2",
+    "up": "theyear3001:block/samurai_block",
+    "north": "theyear3001:block/scifi_panel_2",
+    "east": "theyear3001:block/scifi_panel_2",
+    "south": "theyear3001:block/scifi_panel_2",
+    "west": "theyear3001:block/scifi_panel_2",
+    "particle": "theyear3001:block/scifi_panel_2"
+  },
+  "render_type": "solid"
+}

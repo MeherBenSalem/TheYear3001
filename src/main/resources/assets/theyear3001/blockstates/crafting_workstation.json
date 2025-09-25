@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "theyear3001:block/crafting_workstation"
+    },
+    "facing=east": {
+      "model": "theyear3001:block/crafting_workstation",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "theyear3001:block/crafting_workstation",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "theyear3001:block/crafting_workstation",
+      "y": 270
+    }
+  }
+}

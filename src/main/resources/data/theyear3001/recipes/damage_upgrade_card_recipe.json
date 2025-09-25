@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:gold_ingot"
+    },
+    "b": {
+      "item": "theyear3001:electrical_conductors"
+    },
+    "c": {
+      "item": "minecraft:diamond_sword"
+    },
+    "d": {
+      "item": "theyear3001:empty_card"
+    }
+  },
+  "result": {
+    "item": "theyear3001:damage_upgrade_card",
+    "count": 1
+  }
+}

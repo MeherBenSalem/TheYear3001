@@ -1,0 +1,69 @@
+{
+  "type": "theyear3001:extended_crafting",
+  "ingredients": [
+    {
+      "item": "theyear3001:scrap"
+    },
+    {
+      "item": "theyear3001:scrap"
+    },
+    {
+      "item": "theyear3001:scrap"
+    },
+    {
+      "item": "theyear3001:scrap"
+    },
+    {
+      "item": "theyear3001:scrap"
+    },
+    {
+      "item": "theyear3001:scrap"
+    },
+    {
+      "item": "theyear3001:central_processing_unit"
+    },
+    {
+      "item": "theyear3001:electrical_conductors"
+    },
+    {
+      "item": "theyear3001:central_processing_unit"
+    },
+    {
+      "item": "theyear3001:scrap"
+    },
+    {
+      "item": "theyear3001:scrap"
+    },
+    {
+      "item": "theyear3001:central_processing_unit"
+    },
+    {
+      "item": "theyear3001:printed_circuit_board"
+    },
+    {
+      "item": "theyear3001:central_processing_unit"
+    },
+    {
+      "item": "theyear3001:scrap"
+    },
+    {
+      "item": "theyear3001:scrap"
+    },
+    {
+      "item": "theyear3001:scrap"
+    },
+    {
+      "item": "minecraft:redstone_block"
+    },
+    {
+      "item": "theyear3001:scrap"
+    },
+    {
+      "item": "theyear3001:scrap"
+    }
+  ],
+  "output": {
+    "item": "theyear3001:boggie_mk_1_egg",
+    "count": 1
+  }
+}

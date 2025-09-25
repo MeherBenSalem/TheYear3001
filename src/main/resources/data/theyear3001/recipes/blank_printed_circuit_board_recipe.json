@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "theyear3001:scrap"
+    },
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "theyear3001:electrical_conductors"
+    },
+    {
+      "item": "theyear3001:electrical_conductors"
+    }
+  ],
+  "result": {
+    "item": "theyear3001:blank_printed_circuit_board",
+    "count": 1
+  }
+}

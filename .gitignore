@@ -1,0 +1,12 @@
+theyear3001.mcreator
+.gradle
+.mcreator
+.eclipse
+.settings
+bin
+elements
+run
+runs
+mcreator.gradle
+/build/
+**/build

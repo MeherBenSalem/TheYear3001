@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "ccc"
+  ],
+  "key": {
+    "a": {
+      "item": "theyear3001:central_processing_unit"
+    },
+    "b": {
+      "item": "minecraft:crafting_table"
+    },
+    "c": {
+      "item": "theyear3001:scrap"
+    },
+    "d": {
+      "item": "theyear3001:printed_circuit_board"
+    }
+  },
+  "result": {
+    "item": "theyear3001:crafting_workstation",
+    "count": 1
+  }
+}

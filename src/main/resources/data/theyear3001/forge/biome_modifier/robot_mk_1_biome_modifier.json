@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "spawners": {
+    "type": "theyear3001:robot_mk_1",
+    "weight": 100,
+    "minCount": 4,
+    "maxCount": 8
+  }
+}

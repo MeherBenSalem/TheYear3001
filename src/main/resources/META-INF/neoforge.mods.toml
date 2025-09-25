@@ -1,0 +1,53 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="theyear3001"
+version="1.0.0"
+displayName="The Year 3001"
+displayURL="https://www.nightbeam.cloud"
+logoFile="logo.png"
+credits="moonrayys <3"
+authors="NightBeamStudio"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.theyear3001]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.65,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.theyear3001]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+[[dependencies.theyear3001]]
+    modId="pehkui"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.theyear3001]]
+    modId="geckolib"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.theyear3001]]
+    modId="jei"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

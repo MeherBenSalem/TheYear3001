@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "theyear3001:item/upgrade_card_damage"
+  }
+}

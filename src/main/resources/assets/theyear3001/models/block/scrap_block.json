@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "theyear3001:block/scrap",
+    "particle": "theyear3001:block/scrap"
+  },
+  "render_type": "solid"
+}

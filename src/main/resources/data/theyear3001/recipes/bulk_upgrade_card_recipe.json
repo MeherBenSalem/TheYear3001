@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "b": {
+      "item": "minecraft:gold_ingot"
+    },
+    "c": {
+      "item": "theyear3001:empty_card"
+    }
+  },
+  "result": {
+    "item": "theyear3001:bulk_upgrade_card",
+    "count": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "theyear3001:scrap"
+    }
+  },
+  "result": {
+    "item": "theyear3001:scrap_block",
+    "count": 1
+  }
+}
