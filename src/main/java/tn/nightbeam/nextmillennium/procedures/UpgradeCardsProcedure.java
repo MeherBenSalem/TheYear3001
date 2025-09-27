@@ -31,7 +31,7 @@ public class UpgradeCardsProcedure {
 						.setBaseValue(((entity instanceof LivingEntity _livingEntity7 && _livingEntity7.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity7.getAttribute(Attributes.MAX_HEALTH).getValue() : 0)
 								+ Mth.nextInt(RandomSource.create(), 1, 5)));
 			if (sourceentity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(("Upgraded " + entity.getDisplayName().getString() + " Max Health : "
+				_player.displayClientMessage(Component.literal(("Upgraded " + entity.getDisplayName().getString() + " max health to "
 						+ (entity instanceof LivingEntity _livingEntity11 && _livingEntity11.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity11.getAttribute(Attributes.MAX_HEALTH).getValue() : 0))), false);
 			ScaleTypes.HEIGHT.getScaleData(entity).setTargetScale((float) ScaleOperations.ADD.applyAsDouble(ScaleTypes.HEIGHT.getScaleData(entity).getTargetScale(), 0.05));
 			ScaleTypes.WIDTH.getScaleData(entity).setTargetScale((float) ScaleOperations.ADD.applyAsDouble(ScaleTypes.WIDTH.getScaleData(entity).getTargetScale(), 0.05));
@@ -63,6 +63,18 @@ public class UpgradeCardsProcedure {
 						+ (entity instanceof LivingEntity _livingEntity33 && _livingEntity33.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity33.getAttribute(Attributes.MOVEMENT_SPEED).getValue() : 0))), false);
 			if (sourceentity instanceof Player _player) {
 				ItemStack _stktoremove = new ItemStack(Theyear3001ModItems.SPEED_UPGRADE_CARD.get());
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+			}
+		} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Theyear3001ModItems.DEFENSE_UPGRADE_CARD.get()) {
+			if (entity instanceof LivingEntity _livingEntity40 && _livingEntity40.getAttributes().hasAttribute(Attributes.ARMOR))
+				_livingEntity40.getAttribute(Attributes.ARMOR)
+						.setBaseValue(((entity instanceof LivingEntity _livingEntity38 && _livingEntity38.getAttributes().hasAttribute(Attributes.ARMOR) ? _livingEntity38.getAttribute(Attributes.ARMOR).getValue() : 0)
+								+ Mth.nextDouble(RandomSource.create(), 1, 3)));
+			if (sourceentity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal(("Upgraded " + entity.getDisplayName().getString() + " armor to "
+						+ (entity instanceof LivingEntity _livingEntity42 && _livingEntity42.getAttributes().hasAttribute(Attributes.ARMOR) ? _livingEntity42.getAttribute(Attributes.ARMOR).getValue() : 0))), false);
+			if (sourceentity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(Theyear3001ModItems.DEFENSE_UPGRADE_CARD.get());
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 			}
 		}

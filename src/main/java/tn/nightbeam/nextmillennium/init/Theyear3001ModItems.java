@@ -12,6 +12,7 @@ import tn.nightbeam.nextmillennium.item.OilItem;
 import tn.nightbeam.nextmillennium.item.MechMK1EggItem;
 import tn.nightbeam.nextmillennium.item.EmptyCardItem;
 import tn.nightbeam.nextmillennium.item.ElectricalConductorsItem;
+import tn.nightbeam.nextmillennium.item.DefenseUpgradeCardItem;
 import tn.nightbeam.nextmillennium.item.DamageUpgradeCardItem;
 import tn.nightbeam.nextmillennium.item.CentralProcessingUnitItem;
 import tn.nightbeam.nextmillennium.item.BulkUpgradeCardItem;
@@ -30,7 +31,6 @@ import net.minecraft.world.item.BlockItem;
 
 public class Theyear3001ModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, Theyear3001Mod.MODID);
-	public static final RegistryObject<Item> ROBOT_MK_1_SPAWN_EGG = REGISTRY.register("robot_mk_1_spawn_egg", () -> new ForgeSpawnEggItem(Theyear3001ModEntities.ROBOT_MK_1, -13421773, -6710887, new Item.Properties()));
 	public static final RegistryObject<Item> BOGGIE_MK_1_SPAWN_EGG = REGISTRY.register("boggie_mk_1_spawn_egg", () -> new ForgeSpawnEggItem(Theyear3001ModEntities.BOGGIE_MK_1, -16750900, -3407872, new Item.Properties()));
 	public static final RegistryObject<Item> DAMAGE_UPGRADE_CARD = REGISTRY.register("damage_upgrade_card", () -> new DamageUpgradeCardItem());
 	public static final RegistryObject<Item> OIL_BUCKET = REGISTRY.register("oil_bucket", () -> new OilItem());
@@ -51,6 +51,8 @@ public class Theyear3001ModItems {
 	public static final RegistryObject<Item> BLANK_PRINTED_CIRCUIT_BOARD = REGISTRY.register("blank_printed_circuit_board", () -> new BlankPrintedCircuitBoardItem());
 	public static final RegistryObject<Item> CENTRAL_PROCESSING_UNIT = REGISTRY.register("central_processing_unit", () -> new CentralProcessingUnitItem());
 	public static final RegistryObject<Item> ELECTRICAL_CONDUCTORS = REGISTRY.register("electrical_conductors", () -> new ElectricalConductorsItem());
+	public static final RegistryObject<Item> DEFENSE_UPGRADE_CARD = REGISTRY.register("defense_upgrade_card", () -> new DefenseUpgradeCardItem());
+	public static final RegistryObject<Item> SENTINEL_MK_1_SPAWN_EGG = REGISTRY.register("sentinel_mk_1_spawn_egg", () -> new ForgeSpawnEggItem(Theyear3001ModEntities.SENTINEL_MK_1, -13421773, -6710887, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

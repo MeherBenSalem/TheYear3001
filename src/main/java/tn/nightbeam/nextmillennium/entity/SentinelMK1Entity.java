@@ -48,21 +48,21 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
-public class RobotMK1Entity extends Monster implements GeoEntity {
-	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(RobotMK1Entity.class, EntityDataSerializers.BOOLEAN);
-	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(RobotMK1Entity.class, EntityDataSerializers.STRING);
-	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(RobotMK1Entity.class, EntityDataSerializers.STRING);
+public class SentinelMK1Entity extends Monster implements GeoEntity {
+	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(SentinelMK1Entity.class, EntityDataSerializers.BOOLEAN);
+	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(SentinelMK1Entity.class, EntityDataSerializers.STRING);
+	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(SentinelMK1Entity.class, EntityDataSerializers.STRING);
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private boolean swinging;
 	private boolean lastloop;
 	private long lastSwing;
 	public String animationprocedure = "empty";
 
-	public RobotMK1Entity(PlayMessages.SpawnEntity packet, Level world) {
-		this(Theyear3001ModEntities.ROBOT_MK_1.get(), world);
+	public SentinelMK1Entity(PlayMessages.SpawnEntity packet, Level world) {
+		this(Theyear3001ModEntities.SENTINEL_MK_1.get(), world);
 	}
 
-	public RobotMK1Entity(EntityType<RobotMK1Entity> type, Level world) {
+	public SentinelMK1Entity(EntityType<SentinelMK1Entity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
@@ -151,14 +151,14 @@ public class RobotMK1Entity extends Monster implements GeoEntity {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(Theyear3001ModEntities.ROBOT_MK_1.get(), SpawnPlacements.Type.NO_RESTRICTIONS, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mob::checkMobSpawnRules);
-		DungeonHooks.addDungeonMob(Theyear3001ModEntities.ROBOT_MK_1.get(), 180);
+		SpawnPlacements.register(Theyear3001ModEntities.SENTINEL_MK_1.get(), SpawnPlacements.Type.NO_RESTRICTIONS, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mob::checkMobSpawnRules);
+		DungeonHooks.addDungeonMob(Theyear3001ModEntities.SENTINEL_MK_1.get(), 180);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.25);
-		builder = builder.add(Attributes.MAX_HEALTH, 20);
+		builder = builder.add(Attributes.MAX_HEALTH, 30);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 5);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 32);
@@ -218,7 +218,7 @@ public class RobotMK1Entity extends Monster implements GeoEntity {
 	protected void tickDeath() {
 		++this.deathTime;
 		if (this.deathTime == 20) {
-			this.remove(RobotMK1Entity.RemovalReason.KILLED);
+			this.remove(SentinelMK1Entity.RemovalReason.KILLED);
 			this.dropExperience();
 		}
 	}

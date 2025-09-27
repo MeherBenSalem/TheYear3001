@@ -1,6 +1,6 @@
 package tn.nightbeam.nextmillennium.init;
 
-import tn.nightbeam.nextmillennium.entity.RobotMK1Entity;
+import tn.nightbeam.nextmillennium.entity.SentinelMK1Entity;
 import tn.nightbeam.nextmillennium.entity.MechMK1Entity;
 import tn.nightbeam.nextmillennium.entity.BoggieMK1Entity;
 import tn.nightbeam.nextmillennium.entity.B2050Entity;
@@ -16,13 +16,6 @@ public class EntityAnimationFactory {
 	@SubscribeEvent
 	public static void onEntityTick(LivingEvent.LivingTickEvent event) {
 		if (event != null && event.getEntity() != null) {
-			if (event.getEntity() instanceof RobotMK1Entity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
 			if (event.getEntity() instanceof BoggieMK1Entity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
@@ -52,6 +45,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof B2050Entity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof SentinelMK1Entity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

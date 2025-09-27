@@ -32,8 +32,8 @@ public class Theyear3001ModTabs {
 				tabData.accept(Theyear3001ModItems.B_1928_SPAWN_EGG.get());
 				tabData.accept(Theyear3001ModItems.B_1990_SPAWN_EGG.get());
 				tabData.accept(Theyear3001ModItems.BOGGIE_MK_1_SPAWN_EGG.get());
-				tabData.accept(Theyear3001ModItems.ROBOT_MK_1_SPAWN_EGG.get());
 				tabData.accept(Theyear3001ModItems.B_2050_SPAWN_EGG.get());
+				tabData.accept(Theyear3001ModItems.SENTINEL_MK_1_SPAWN_EGG.get());
 			}).build());
 	public static final RegistryObject<CreativeModeTab> THE_YEAR_3001_CARDS = REGISTRY.register("the_year_3001_cards",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.theyear3001.the_year_3001_cards")).icon(() -> new ItemStack(Theyear3001ModItems.BULK_UPGRADE_CARD.get())).displayItems((parameters, tabData) -> {
@@ -42,5 +42,6 @@ public class Theyear3001ModTabs {
 				tabData.accept(Theyear3001ModItems.SPEED_UPGRADE_CARD.get());
 				tabData.accept(Theyear3001ModItems.REPAIR_CARD.get());
 				tabData.accept(Theyear3001ModItems.EMPTY_CARD.get());
+				tabData.accept(Theyear3001ModItems.DEFENSE_UPGRADE_CARD.get());
 			}).withTabsBefore(THE_YEAR_3001_TAB.getId()).build());
 }

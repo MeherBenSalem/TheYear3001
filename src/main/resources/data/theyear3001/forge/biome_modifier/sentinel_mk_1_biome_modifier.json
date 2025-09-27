@@ -4,8 +4,8 @@
     "type": "forge:any"
   },
   "spawners": {
-    "type": "theyear3001:robot_mk_1",
-    "weight": 100,
+    "type": "theyear3001:sentinel_mk_1",
+    "weight": 150,
     "minCount": 4,
     "maxCount": 8
   }
