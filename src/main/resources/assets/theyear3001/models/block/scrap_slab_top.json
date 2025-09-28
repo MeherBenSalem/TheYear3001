@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "particle": "theyear3001:block/scrap",
+    "bottom": "theyear3001:block/scrap",
+    "top": "theyear3001:block/scrap",
+    "side": "theyear3001:block/scrap"
+  },
+  "render_type": "solid"
+}

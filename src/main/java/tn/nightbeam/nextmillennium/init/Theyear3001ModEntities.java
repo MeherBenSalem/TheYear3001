@@ -34,19 +34,19 @@ public class Theyear3001ModEntities {
 	public static final RegistryObject<EntityType<MechMK1Entity>> MECH_MK_1 = register("mech_mk_1",
 			EntityType.Builder.<MechMK1Entity>of(MechMK1Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MechMK1Entity::new)
 
-					.sized(0.6f, 3f));
+					.sized(2f, 3.7f));
 	public static final RegistryObject<EntityType<B1928Entity>> B_1928 = register("b_1928",
 			EntityType.Builder.<B1928Entity>of(B1928Entity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(B1928Entity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.8f, 1.4f));
 	public static final RegistryObject<EntityType<B1990Entity>> B_1990 = register("b_1990",
 			EntityType.Builder.<B1990Entity>of(B1990Entity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(B1990Entity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(1.5f, 1.9f));
 	public static final RegistryObject<EntityType<B2050Entity>> B_2050 = register("b_2050",
 			EntityType.Builder.<B2050Entity>of(B2050Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(B2050Entity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(4f, 4f));
 	public static final RegistryObject<EntityType<SentinelMK1Entity>> SENTINEL_MK_1 = register("sentinel_mk_1",
 			EntityType.Builder.<SentinelMK1Entity>of(SentinelMK1Entity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(SentinelMK1Entity::new)
 

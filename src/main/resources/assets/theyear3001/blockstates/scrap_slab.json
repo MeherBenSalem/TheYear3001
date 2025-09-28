@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "theyear3001:block/scrap_slab"
+    },
+    "type=top": {
+      "model": "theyear3001:block/scrap_slab_top"
+    },
+    "type=double": {
+      "model": "theyear3001:block/scrap_slab_full"
+    }
+  }
+}

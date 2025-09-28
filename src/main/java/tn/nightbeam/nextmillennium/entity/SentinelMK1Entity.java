@@ -117,6 +117,11 @@ public class SentinelMK1Entity extends Monster implements GeoEntity {
 	}
 
 	@Override
+	public SoundEvent getAmbientSound() {
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("theyear3001:alient_robot_ambient"));
+	}
+
+	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
 	}

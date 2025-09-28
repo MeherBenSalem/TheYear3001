@@ -1,18 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
+  "category": "misc",
   "pattern": [
     "aaa",
-    "aaa",
-    "aaa"
+    " b ",
+    " b "
   ],
   "key": {
     "a": {
       "item": "theyear3001:scrap"
+    },
+    "b": {
+      "item": "theyear3001:scrap_stick"
     }
   },
   "result": {
-    "item": "theyear3001:scrap_block",
+    "item": "theyear3001:scrap_pickaxe",
     "count": 1
   }
 }

@@ -21,6 +21,8 @@ public class Theyear3001ModTabs {
 				tabData.accept(Theyear3001ModItems.OIL_BUCKET.get());
 				tabData.accept(Theyear3001ModItems.SCRAP.get());
 				tabData.accept(Theyear3001ModBlocks.SCRAP_BLOCK.get().asItem());
+				tabData.accept(Theyear3001ModBlocks.SCRAP_SLAB.get().asItem());
+				tabData.accept(Theyear3001ModBlocks.SCRAP_STAIRS_BLOCK.get().asItem());
 				tabData.accept(Theyear3001ModBlocks.CRAFTING_WORKSTATION.get().asItem());
 				tabData.accept(Theyear3001ModItems.MECH_MK_1_EGG.get());
 				tabData.accept(Theyear3001ModItems.BOGGIE_MK_1_EGG.get());
@@ -28,20 +30,24 @@ public class Theyear3001ModTabs {
 				tabData.accept(Theyear3001ModItems.BLANK_PRINTED_CIRCUIT_BOARD.get());
 				tabData.accept(Theyear3001ModItems.CENTRAL_PROCESSING_UNIT.get());
 				tabData.accept(Theyear3001ModItems.ELECTRICAL_CONDUCTORS.get());
-				tabData.accept(Theyear3001ModItems.MECH_MK_1_SPAWN_EGG.get());
+				tabData.accept(Theyear3001ModItems.SCRAP_STICK.get());
+				tabData.accept(Theyear3001ModItems.SCRAP_AXE.get());
+				tabData.accept(Theyear3001ModItems.SCRAP_SWORD.get());
+				tabData.accept(Theyear3001ModItems.SCRAP_SHOVEL.get());
+				tabData.accept(Theyear3001ModItems.SCRAP_HOE.get());
+				tabData.accept(Theyear3001ModItems.SCRAP_PICKAXE.get());
 				tabData.accept(Theyear3001ModItems.B_1928_SPAWN_EGG.get());
 				tabData.accept(Theyear3001ModItems.B_1990_SPAWN_EGG.get());
-				tabData.accept(Theyear3001ModItems.BOGGIE_MK_1_SPAWN_EGG.get());
 				tabData.accept(Theyear3001ModItems.B_2050_SPAWN_EGG.get());
 				tabData.accept(Theyear3001ModItems.SENTINEL_MK_1_SPAWN_EGG.get());
 			}).build());
 	public static final RegistryObject<CreativeModeTab> THE_YEAR_3001_CARDS = REGISTRY.register("the_year_3001_cards",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.theyear3001.the_year_3001_cards")).icon(() -> new ItemStack(Theyear3001ModItems.BULK_UPGRADE_CARD.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(Theyear3001ModItems.EMPTY_CARD.get());
 				tabData.accept(Theyear3001ModItems.DAMAGE_UPGRADE_CARD.get());
 				tabData.accept(Theyear3001ModItems.BULK_UPGRADE_CARD.get());
 				tabData.accept(Theyear3001ModItems.SPEED_UPGRADE_CARD.get());
 				tabData.accept(Theyear3001ModItems.REPAIR_CARD.get());
-				tabData.accept(Theyear3001ModItems.EMPTY_CARD.get());
 				tabData.accept(Theyear3001ModItems.DEFENSE_UPGRADE_CARD.get());
 			}).withTabsBefore(THE_YEAR_3001_TAB.getId()).build());
 }

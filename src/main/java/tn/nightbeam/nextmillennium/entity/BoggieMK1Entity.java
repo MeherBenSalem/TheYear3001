@@ -134,13 +134,18 @@ public class BoggieMK1Entity extends TamableAnimal implements GeoEntity {
 	}
 
 	@Override
+	public SoundEvent getAmbientSound() {
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("theyear3001:robot_ambient"));
+	}
+
+	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("theyear3001:robot_die"));
 	}
 
 	@Override

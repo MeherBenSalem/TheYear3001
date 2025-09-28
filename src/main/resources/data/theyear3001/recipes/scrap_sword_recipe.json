@@ -1,18 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
+  "category": "equipment",
   "pattern": [
-    "aaa",
-    "aaa",
-    "aaa"
+    "a",
+    "a",
+    "b"
   ],
   "key": {
     "a": {
       "item": "theyear3001:scrap"
+    },
+    "b": {
+      "item": "theyear3001:scrap_stick"
     }
   },
   "result": {
-    "item": "theyear3001:scrap_block",
+    "item": "theyear3001:scrap_sword",
     "count": 1
   }
 }

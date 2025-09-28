@@ -5,7 +5,13 @@
 package tn.nightbeam.nextmillennium.init;
 
 import tn.nightbeam.nextmillennium.item.SpeedUpgradeCardItem;
+import tn.nightbeam.nextmillennium.item.ScrapSwordItem;
+import tn.nightbeam.nextmillennium.item.ScrapStickItem;
+import tn.nightbeam.nextmillennium.item.ScrapShovelItem;
+import tn.nightbeam.nextmillennium.item.ScrapPickaxeItem;
 import tn.nightbeam.nextmillennium.item.ScrapItem;
+import tn.nightbeam.nextmillennium.item.ScrapHoeItem;
+import tn.nightbeam.nextmillennium.item.ScrapAxeItem;
 import tn.nightbeam.nextmillennium.item.RepairCardItem;
 import tn.nightbeam.nextmillennium.item.PrintedCircuitBoardItem;
 import tn.nightbeam.nextmillennium.item.OilItem;
@@ -31,12 +37,10 @@ import net.minecraft.world.item.BlockItem;
 
 public class Theyear3001ModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, Theyear3001Mod.MODID);
-	public static final RegistryObject<Item> BOGGIE_MK_1_SPAWN_EGG = REGISTRY.register("boggie_mk_1_spawn_egg", () -> new ForgeSpawnEggItem(Theyear3001ModEntities.BOGGIE_MK_1, -16750900, -3407872, new Item.Properties()));
 	public static final RegistryObject<Item> DAMAGE_UPGRADE_CARD = REGISTRY.register("damage_upgrade_card", () -> new DamageUpgradeCardItem());
 	public static final RegistryObject<Item> OIL_BUCKET = REGISTRY.register("oil_bucket", () -> new OilItem());
 	public static final RegistryObject<Item> BULK_UPGRADE_CARD = REGISTRY.register("bulk_upgrade_card", () -> new BulkUpgradeCardItem());
 	public static final RegistryObject<Item> SPEED_UPGRADE_CARD = REGISTRY.register("speed_upgrade_card", () -> new SpeedUpgradeCardItem());
-	public static final RegistryObject<Item> MECH_MK_1_SPAWN_EGG = REGISTRY.register("mech_mk_1_spawn_egg", () -> new ForgeSpawnEggItem(Theyear3001ModEntities.MECH_MK_1, -6710887, -1, new Item.Properties()));
 	public static final RegistryObject<Item> B_1928_SPAWN_EGG = REGISTRY.register("b_1928_spawn_egg", () -> new ForgeSpawnEggItem(Theyear3001ModEntities.B_1928, -16776961, -1, new Item.Properties()));
 	public static final RegistryObject<Item> B_1990_SPAWN_EGG = REGISTRY.register("b_1990_spawn_egg", () -> new ForgeSpawnEggItem(Theyear3001ModEntities.B_1990, -13395712, -1, new Item.Properties()));
 	public static final RegistryObject<Item> B_2050_SPAWN_EGG = REGISTRY.register("b_2050_spawn_egg", () -> new ForgeSpawnEggItem(Theyear3001ModEntities.B_2050, -6750157, -1, new Item.Properties()));
@@ -53,6 +57,14 @@ public class Theyear3001ModItems {
 	public static final RegistryObject<Item> ELECTRICAL_CONDUCTORS = REGISTRY.register("electrical_conductors", () -> new ElectricalConductorsItem());
 	public static final RegistryObject<Item> DEFENSE_UPGRADE_CARD = REGISTRY.register("defense_upgrade_card", () -> new DefenseUpgradeCardItem());
 	public static final RegistryObject<Item> SENTINEL_MK_1_SPAWN_EGG = REGISTRY.register("sentinel_mk_1_spawn_egg", () -> new ForgeSpawnEggItem(Theyear3001ModEntities.SENTINEL_MK_1, -13421773, -6710887, new Item.Properties()));
+	public static final RegistryObject<Item> SCRAP_STICK = REGISTRY.register("scrap_stick", () -> new ScrapStickItem());
+	public static final RegistryObject<Item> SCRAP_AXE = REGISTRY.register("scrap_axe", () -> new ScrapAxeItem());
+	public static final RegistryObject<Item> SCRAP_SWORD = REGISTRY.register("scrap_sword", () -> new ScrapSwordItem());
+	public static final RegistryObject<Item> SCRAP_SHOVEL = REGISTRY.register("scrap_shovel", () -> new ScrapShovelItem());
+	public static final RegistryObject<Item> SCRAP_HOE = REGISTRY.register("scrap_hoe", () -> new ScrapHoeItem());
+	public static final RegistryObject<Item> SCRAP_PICKAXE = REGISTRY.register("scrap_pickaxe", () -> new ScrapPickaxeItem());
+	public static final RegistryObject<Item> SCRAP_SLAB = block(Theyear3001ModBlocks.SCRAP_SLAB);
+	public static final RegistryObject<Item> SCRAP_STAIRS_BLOCK = block(Theyear3001ModBlocks.SCRAP_STAIRS_BLOCK);
 
 	// Start of user code block custom items
 	// End of user code block custom items

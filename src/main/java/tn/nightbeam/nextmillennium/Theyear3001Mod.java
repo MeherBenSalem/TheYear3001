@@ -1,6 +1,7 @@
 package tn.nightbeam.nextmillennium;
 
 import tn.nightbeam.nextmillennium.init.Theyear3001ModTabs;
+import tn.nightbeam.nextmillennium.init.Theyear3001ModSounds;
 import tn.nightbeam.nextmillennium.init.Theyear3001ModMenus;
 import tn.nightbeam.nextmillennium.init.Theyear3001ModItems;
 import tn.nightbeam.nextmillennium.init.Theyear3001ModFluids;
@@ -45,7 +46,7 @@ public class Theyear3001Mod {
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
+		Theyear3001ModSounds.REGISTRY.register(bus);
 		Theyear3001ModBlocks.REGISTRY.register(bus);
 		Theyear3001ModBlockEntities.REGISTRY.register(bus);
 		Theyear3001ModItems.REGISTRY.register(bus);
