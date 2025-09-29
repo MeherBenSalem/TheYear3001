@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "theyear3001:scrap_debris",
+  "step": "underground_ores"
+}

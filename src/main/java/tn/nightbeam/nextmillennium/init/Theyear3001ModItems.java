@@ -16,6 +16,7 @@ import tn.nightbeam.nextmillennium.item.RepairCardItem;
 import tn.nightbeam.nextmillennium.item.PrintedCircuitBoardItem;
 import tn.nightbeam.nextmillennium.item.OilItem;
 import tn.nightbeam.nextmillennium.item.MechMK1EggItem;
+import tn.nightbeam.nextmillennium.item.FlyingCapsuleItem;
 import tn.nightbeam.nextmillennium.item.EmptyCardItem;
 import tn.nightbeam.nextmillennium.item.ElectricalConductorsItem;
 import tn.nightbeam.nextmillennium.item.DefenseUpgradeCardItem;
@@ -65,6 +66,9 @@ public class Theyear3001ModItems {
 	public static final RegistryObject<Item> SCRAP_PICKAXE = REGISTRY.register("scrap_pickaxe", () -> new ScrapPickaxeItem());
 	public static final RegistryObject<Item> SCRAP_SLAB = block(Theyear3001ModBlocks.SCRAP_SLAB);
 	public static final RegistryObject<Item> SCRAP_STAIRS_BLOCK = block(Theyear3001ModBlocks.SCRAP_STAIRS_BLOCK);
+	public static final RegistryObject<Item> FLYING_CAPSULE_MECH_SPAWN_EGG = REGISTRY.register("flying_capsule_mech_spawn_egg", () -> new ForgeSpawnEggItem(Theyear3001ModEntities.FLYING_CAPSULE_MECH, -1, -3407719, new Item.Properties()));
+	public static final RegistryObject<Item> FLYING_CAPSULE = REGISTRY.register("flying_capsule", () -> new FlyingCapsuleItem());
+	public static final RegistryObject<Item> SCRAP_DEBRIS = block(Theyear3001ModBlocks.SCRAP_DEBRIS);
 
 	// Start of user code block custom items
 	// End of user code block custom items

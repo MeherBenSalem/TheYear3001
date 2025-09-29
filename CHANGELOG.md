@@ -1,3 +1,18 @@
+## v0.4.0 Patch Notes
+
+### New Features
+- **Flying Capsule Controls**  
+  Added **3 new keybinds** to navigate the flying capsule in space:  
+  • Move **Forward**  
+  • Ascend (**Up**)  
+  • Descend (**Down**)
+
+- **Flying Capsule Entity & Recipe**  
+  Introduced a **new flying capsule entity** along with a **extended craftable recipe** to create it.
+
+- **Scrap Debris Ore**  
+  A brand-new **Scrap Debris ore** now generates naturally in the world, dropping **3 scrap** per block.
+
 ## v0.3.0 Patch Notes
 
 ### Removals

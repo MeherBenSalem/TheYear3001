@@ -40,6 +40,9 @@ public class Theyear3001ModTabs {
 				tabData.accept(Theyear3001ModItems.B_1990_SPAWN_EGG.get());
 				tabData.accept(Theyear3001ModItems.B_2050_SPAWN_EGG.get());
 				tabData.accept(Theyear3001ModItems.SENTINEL_MK_1_SPAWN_EGG.get());
+				tabData.accept(Theyear3001ModItems.FLYING_CAPSULE_MECH_SPAWN_EGG.get());
+				tabData.accept(Theyear3001ModItems.FLYING_CAPSULE.get());
+				tabData.accept(Theyear3001ModBlocks.SCRAP_DEBRIS.get().asItem());
 			}).build());
 	public static final RegistryObject<CreativeModeTab> THE_YEAR_3001_CARDS = REGISTRY.register("the_year_3001_cards",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.theyear3001.the_year_3001_cards")).icon(() -> new ItemStack(Theyear3001ModItems.BULK_UPGRADE_CARD.get())).displayItems((parameters, tabData) -> {

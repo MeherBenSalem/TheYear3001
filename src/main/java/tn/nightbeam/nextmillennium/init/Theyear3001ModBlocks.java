@@ -6,6 +6,7 @@ package tn.nightbeam.nextmillennium.init;
 
 import tn.nightbeam.nextmillennium.block.ScrapStairsBlockBlock;
 import tn.nightbeam.nextmillennium.block.ScrapSlabBlock;
+import tn.nightbeam.nextmillennium.block.ScrapDebrisBlock;
 import tn.nightbeam.nextmillennium.block.ScrapBlockBlock;
 import tn.nightbeam.nextmillennium.block.OilBlock;
 import tn.nightbeam.nextmillennium.block.CraftingWorkstationBlock;
@@ -24,6 +25,7 @@ public class Theyear3001ModBlocks {
 	public static final RegistryObject<Block> CRAFTING_WORKSTATION = REGISTRY.register("crafting_workstation", () -> new CraftingWorkstationBlock());
 	public static final RegistryObject<Block> SCRAP_SLAB = REGISTRY.register("scrap_slab", () -> new ScrapSlabBlock());
 	public static final RegistryObject<Block> SCRAP_STAIRS_BLOCK = REGISTRY.register("scrap_stairs_block", () -> new ScrapStairsBlockBlock());
+	public static final RegistryObject<Block> SCRAP_DEBRIS = REGISTRY.register("scrap_debris", () -> new ScrapDebrisBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

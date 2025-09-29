@@ -2,6 +2,7 @@ package tn.nightbeam.nextmillennium.init;
 
 import tn.nightbeam.nextmillennium.entity.SentinelMK1Entity;
 import tn.nightbeam.nextmillennium.entity.MechMK1Entity;
+import tn.nightbeam.nextmillennium.entity.FlyingCapsuleMechEntity;
 import tn.nightbeam.nextmillennium.entity.BoggieMK1Entity;
 import tn.nightbeam.nextmillennium.entity.B2050Entity;
 import tn.nightbeam.nextmillennium.entity.B1990Entity;
@@ -52,6 +53,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof SentinelMK1Entity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof FlyingCapsuleMechEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

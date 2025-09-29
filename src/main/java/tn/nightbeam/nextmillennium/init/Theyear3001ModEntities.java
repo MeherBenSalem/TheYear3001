@@ -6,6 +6,7 @@ package tn.nightbeam.nextmillennium.init;
 
 import tn.nightbeam.nextmillennium.entity.SentinelMK1Entity;
 import tn.nightbeam.nextmillennium.entity.MechMK1Entity;
+import tn.nightbeam.nextmillennium.entity.FlyingCapsuleMechEntity;
 import tn.nightbeam.nextmillennium.entity.BoggieMK1Entity;
 import tn.nightbeam.nextmillennium.entity.B2050Entity;
 import tn.nightbeam.nextmillennium.entity.B1990Entity;
@@ -51,6 +52,10 @@ public class Theyear3001ModEntities {
 			EntityType.Builder.<SentinelMK1Entity>of(SentinelMK1Entity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(SentinelMK1Entity::new)
 
 					.sized(0.6f, 2.5f));
+	public static final RegistryObject<EntityType<FlyingCapsuleMechEntity>> FLYING_CAPSULE_MECH = register("flying_capsule_mech",
+			EntityType.Builder.<FlyingCapsuleMechEntity>of(FlyingCapsuleMechEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FlyingCapsuleMechEntity::new)
+
+					.sized(2f, 2f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -67,6 +72,7 @@ public class Theyear3001ModEntities {
 			B1990Entity.init();
 			B2050Entity.init();
 			SentinelMK1Entity.init();
+			FlyingCapsuleMechEntity.init();
 		});
 	}
 
@@ -78,5 +84,6 @@ public class Theyear3001ModEntities {
 		event.put(B_1990.get(), B1990Entity.createAttributes().build());
 		event.put(B_2050.get(), B2050Entity.createAttributes().build());
 		event.put(SENTINEL_MK_1.get(), SentinelMK1Entity.createAttributes().build());
+		event.put(FLYING_CAPSULE_MECH.get(), FlyingCapsuleMechEntity.createAttributes().build());
 	}
 }

@@ -6,6 +6,7 @@ package tn.nightbeam.nextmillennium.init;
 
 import tn.nightbeam.nextmillennium.client.renderer.SentinelMK1Renderer;
 import tn.nightbeam.nextmillennium.client.renderer.MechMK1Renderer;
+import tn.nightbeam.nextmillennium.client.renderer.FlyingCapsuleMechRenderer;
 import tn.nightbeam.nextmillennium.client.renderer.BoggieMK1Renderer;
 import tn.nightbeam.nextmillennium.client.renderer.B2050Renderer;
 import tn.nightbeam.nextmillennium.client.renderer.B1990Renderer;
@@ -26,5 +27,6 @@ public class Theyear3001ModEntityRenderers {
 		event.registerEntityRenderer(Theyear3001ModEntities.B_1990.get(), B1990Renderer::new);
 		event.registerEntityRenderer(Theyear3001ModEntities.B_2050.get(), B2050Renderer::new);
 		event.registerEntityRenderer(Theyear3001ModEntities.SENTINEL_MK_1.get(), SentinelMK1Renderer::new);
+		event.registerEntityRenderer(Theyear3001ModEntities.FLYING_CAPSULE_MECH.get(), FlyingCapsuleMechRenderer::new);
 	}
 }
