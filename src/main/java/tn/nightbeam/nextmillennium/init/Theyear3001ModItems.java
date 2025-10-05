@@ -4,6 +4,13 @@
  */
 package tn.nightbeam.nextmillennium.init;
 
+import tn.nightbeam.nextmillennium.item.TitaniumSwordItem;
+import tn.nightbeam.nextmillennium.item.TitaniumShovelItem;
+import tn.nightbeam.nextmillennium.item.TitaniumRodItem;
+import tn.nightbeam.nextmillennium.item.TitaniumPickaxeItem;
+import tn.nightbeam.nextmillennium.item.TitaniumIngotItem;
+import tn.nightbeam.nextmillennium.item.TitaniumHoeItem;
+import tn.nightbeam.nextmillennium.item.TitaniumAxeItem;
 import tn.nightbeam.nextmillennium.item.SpeedUpgradeCardItem;
 import tn.nightbeam.nextmillennium.item.ScrapSwordItem;
 import tn.nightbeam.nextmillennium.item.ScrapStickItem;
@@ -12,8 +19,13 @@ import tn.nightbeam.nextmillennium.item.ScrapPickaxeItem;
 import tn.nightbeam.nextmillennium.item.ScrapItem;
 import tn.nightbeam.nextmillennium.item.ScrapHoeItem;
 import tn.nightbeam.nextmillennium.item.ScrapAxeItem;
+import tn.nightbeam.nextmillennium.item.ScrapArmorItem;
 import tn.nightbeam.nextmillennium.item.RepairCardItem;
+import tn.nightbeam.nextmillennium.item.RawTitaniumItem;
+import tn.nightbeam.nextmillennium.item.RawOrichalcumItem;
+import tn.nightbeam.nextmillennium.item.RawCobaltItem;
 import tn.nightbeam.nextmillennium.item.PrintedCircuitBoardItem;
+import tn.nightbeam.nextmillennium.item.OrichalcumIngotItem;
 import tn.nightbeam.nextmillennium.item.OilItem;
 import tn.nightbeam.nextmillennium.item.MechMK1EggItem;
 import tn.nightbeam.nextmillennium.item.FlyingCapsuleItem;
@@ -21,6 +33,7 @@ import tn.nightbeam.nextmillennium.item.EmptyCardItem;
 import tn.nightbeam.nextmillennium.item.ElectricalConductorsItem;
 import tn.nightbeam.nextmillennium.item.DefenseUpgradeCardItem;
 import tn.nightbeam.nextmillennium.item.DamageUpgradeCardItem;
+import tn.nightbeam.nextmillennium.item.CobaltIngotItem;
 import tn.nightbeam.nextmillennium.item.CentralProcessingUnitItem;
 import tn.nightbeam.nextmillennium.item.BulkUpgradeCardItem;
 import tn.nightbeam.nextmillennium.item.BoggieMK1EggItem;
@@ -69,6 +82,25 @@ public class Theyear3001ModItems {
 	public static final RegistryObject<Item> FLYING_CAPSULE_MECH_SPAWN_EGG = REGISTRY.register("flying_capsule_mech_spawn_egg", () -> new ForgeSpawnEggItem(Theyear3001ModEntities.FLYING_CAPSULE_MECH, -1, -3407719, new Item.Properties()));
 	public static final RegistryObject<Item> FLYING_CAPSULE = REGISTRY.register("flying_capsule", () -> new FlyingCapsuleItem());
 	public static final RegistryObject<Item> SCRAP_DEBRIS = block(Theyear3001ModBlocks.SCRAP_DEBRIS);
+	public static final RegistryObject<Item> TITANIUM_ORE = block(Theyear3001ModBlocks.TITANIUM_ORE);
+	public static final RegistryObject<Item> TITANIUM_INGOT = REGISTRY.register("titanium_ingot", () -> new TitaniumIngotItem());
+	public static final RegistryObject<Item> ORICHALCUM_INGOT = REGISTRY.register("orichalcum_ingot", () -> new OrichalcumIngotItem());
+	public static final RegistryObject<Item> COBALT_INGOT = REGISTRY.register("cobalt_ingot", () -> new CobaltIngotItem());
+	public static final RegistryObject<Item> RAW_TITANIUM = REGISTRY.register("raw_titanium", () -> new RawTitaniumItem());
+	public static final RegistryObject<Item> RAW_COBALT = REGISTRY.register("raw_cobalt", () -> new RawCobaltItem());
+	public static final RegistryObject<Item> RAW_ORICHALCUM = REGISTRY.register("raw_orichalcum", () -> new RawOrichalcumItem());
+	public static final RegistryObject<Item> COBALT_ORE = block(Theyear3001ModBlocks.COBALT_ORE);
+	public static final RegistryObject<Item> ORICHALCUM_ORE = block(Theyear3001ModBlocks.ORICHALCUM_ORE);
+	public static final RegistryObject<Item> TITANIUM_ROD = REGISTRY.register("titanium_rod", () -> new TitaniumRodItem());
+	public static final RegistryObject<Item> TITANIUM_AXE = REGISTRY.register("titanium_axe", () -> new TitaniumAxeItem());
+	public static final RegistryObject<Item> TITANIUM_SWORD = REGISTRY.register("titanium_sword", () -> new TitaniumSwordItem());
+	public static final RegistryObject<Item> TITANIUM_SHOVEL = REGISTRY.register("titanium_shovel", () -> new TitaniumShovelItem());
+	public static final RegistryObject<Item> TITANIUM_HOE = REGISTRY.register("titanium_hoe", () -> new TitaniumHoeItem());
+	public static final RegistryObject<Item> TITANIUM_PICKAXE = REGISTRY.register("titanium_pickaxe", () -> new TitaniumPickaxeItem());
+	public static final RegistryObject<Item> SCRAP_ARMOR_HELMET = REGISTRY.register("scrap_armor_helmet", () -> new ScrapArmorItem.Helmet());
+	public static final RegistryObject<Item> SCRAP_ARMOR_CHESTPLATE = REGISTRY.register("scrap_armor_chestplate", () -> new ScrapArmorItem.Chestplate());
+	public static final RegistryObject<Item> SCRAP_ARMOR_LEGGINGS = REGISTRY.register("scrap_armor_leggings", () -> new ScrapArmorItem.Leggings());
+	public static final RegistryObject<Item> SCRAP_ARMOR_BOOTS = REGISTRY.register("scrap_armor_boots", () -> new ScrapArmorItem.Boots());
 
 	// Start of user code block custom items
 	// End of user code block custom items

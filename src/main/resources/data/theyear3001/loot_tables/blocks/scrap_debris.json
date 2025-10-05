@@ -4,19 +4,15 @@
   "pools": [
     {
       "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "theyear3001:scrap",
-          "functions": [
-            {
-              "count": 3,
-              "function": "minecraft:set_count"
-            },
-            {
-              "function": "minecraft:explosion_decay"
-            }
-          ]
+          "name": "theyear3001:scrap_debris"
         }
       ]
     }

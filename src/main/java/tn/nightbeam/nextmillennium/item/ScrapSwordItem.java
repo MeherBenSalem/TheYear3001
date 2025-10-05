@@ -33,7 +33,7 @@ public class ScrapSwordItem extends SwordItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(Theyear3001ModItems.SCRAP_STICK.get()));
+				return Ingredient.of(new ItemStack(Theyear3001ModItems.SCRAP.get()));
 			}
 		}, 3, -3f, new Item.Properties());
 	}

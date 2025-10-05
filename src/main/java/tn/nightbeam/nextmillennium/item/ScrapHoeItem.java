@@ -33,7 +33,7 @@ public class ScrapHoeItem extends HoeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(Theyear3001ModItems.SCRAP_STICK.get()));
+				return Ingredient.of(new ItemStack(Theyear3001ModItems.SCRAP.get()));
 			}
 		}, 0, -3f, new Item.Properties());
 	}

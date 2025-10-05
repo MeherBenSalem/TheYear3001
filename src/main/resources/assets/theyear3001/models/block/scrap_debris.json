@@ -1,8 +1,13 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "all": "theyear3001:block/scrap_debris",
-    "particle": "theyear3001:block/scrap_debris"
+    "down": "theyear3001:block/scrap_debris_up",
+    "up": "theyear3001:block/scrap_debris_up",
+    "north": "theyear3001:block/scrap_debris_side",
+    "east": "theyear3001:block/scrap_debris_side",
+    "south": "theyear3001:block/scrap_debris_side",
+    "west": "theyear3001:block/scrap_debris_side",
+    "particle": "theyear3001:block/scrap_debris_up"
   },
   "render_type": "solid"
 }

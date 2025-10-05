@@ -1,3 +1,21 @@
+## v0.5.0 Patch Notes
+
+### Blocks & Ores
+- **Updated Scrap Debris texture** for a fresh new look.  
+- Scrap Debris **no longer drops Scrap directly** — it now must be **smelted** to obtain Scrap.  
+- **Added 4 new ores and metals**, each with their own full toolset.  
+- **Adjusted ore generation**:
+  - Scrap now spawns more frequently.  
+  - Generation pattern is now similar to **Ancient Debris**.  
+
+### Crafting & Recipes
+- Fixed the **repair recipe for Scrap tools** (now uses Scrap instead of Scrap Stick).  
+- Corrected **Scrap Stick recipes** to function properly.  
+
+### Gameplay & Features
+- Fixed the **sitting position** in the Flying Capsule.  
+- **Added Scrap Armor** with full protection set.  
+
 ## v0.4.0 Patch Notes
 
 ### New Features

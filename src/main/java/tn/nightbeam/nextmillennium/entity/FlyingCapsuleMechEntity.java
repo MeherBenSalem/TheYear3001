@@ -109,7 +109,7 @@ public class FlyingCapsuleMechEntity extends PathfinderMob implements GeoEntity 
 
 	@Override
 	public double getPassengersRidingOffset() {
-		return super.getPassengersRidingOffset() + -1.3;
+		return super.getPassengersRidingOffset() + -1.5;
 	}
 
 	@Override

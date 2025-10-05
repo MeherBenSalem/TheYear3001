@@ -1,8 +1,6 @@
 
 package tn.nightbeam.nextmillennium.block;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -12,7 +10,7 @@ import net.minecraft.core.BlockPos;
 
 public class ScrapDebrisBlock extends Block {
 	public ScrapDebrisBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(5f, 20f).lightLevel(s -> 8).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(7f, 30f).requiresCorrectToolForDrops());
 	}
 
 	@Override

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "ab",
+    " b"
+  ],
+  "key": {
+    "a": {
+      "item": "theyear3001:titanium_ingot"
+    },
+    "b": {
+      "item": "theyear3001:titanium_rod"
+    }
+  },
+  "result": {
+    "item": "theyear3001:titanium_axe",
+    "count": 1
+  }
+}
