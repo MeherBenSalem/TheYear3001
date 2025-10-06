@@ -1,3 +1,10 @@
+## v0.6.0 Patch Notes
+
+- **New Armors:** Introduced **Titanium, Cobalt, and Orichalcum** armor sets, complete with crafting recipes.  
+- **New Tools:** Added full **Cobalt and Orichalcum** tool sets with their respective recipes.  
+- **Visual Update:** Updated the icon for the **Flying Capsule** for better clarity.  
+- **Bug Fix:** Resolved an issue where repairing **Titanium tools** sometimes required scrap instead of **Titanium Ingots**.  
+
 ## v0.5.0 Patch Notes
 
 ### Blocks & Ores

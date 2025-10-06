@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "theyear3001:orichalcum_pickaxe",
+    "theyear3001:cobalt_pickaxe",
     "theyear3001:titanium_pickaxe",
     "theyear3001:scrap_pickaxe"
   ]

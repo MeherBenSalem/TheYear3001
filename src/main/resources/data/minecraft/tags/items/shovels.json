@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "theyear3001:orichalcum_shovel",
+    "theyear3001:cobalt_shovel",
     "theyear3001:titanium_shovel",
     "theyear3001:scrap_shovel"
   ]

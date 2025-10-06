@@ -33,7 +33,7 @@ public class TitaniumHoeItem extends HoeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(Theyear3001ModItems.SCRAP.get()));
+				return Ingredient.of(new ItemStack(Theyear3001ModItems.TITANIUM_INGOT.get()));
 			}
 		}, 0, -0.5f, new Item.Properties());
 	}

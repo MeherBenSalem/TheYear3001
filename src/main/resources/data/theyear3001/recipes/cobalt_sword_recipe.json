@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a",
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "theyear3001:cobalt_ingot"
+    },
+    "b": {
+      "item": "theyear3001:titanium_rod"
+    }
+  },
+  "result": {
+    "item": "theyear3001:cobalt_sword",
+    "count": 1
+  }
+}

@@ -62,6 +62,28 @@ public class Theyear3001ModTabs {
 				tabData.accept(Theyear3001ModItems.TITANIUM_SHOVEL.get());
 				tabData.accept(Theyear3001ModItems.TITANIUM_HOE.get());
 				tabData.accept(Theyear3001ModItems.TITANIUM_PICKAXE.get());
+				tabData.accept(Theyear3001ModItems.ORICHALCUM_ARMOR_HELMET.get());
+				tabData.accept(Theyear3001ModItems.ORICHALCUM_ARMOR_CHESTPLATE.get());
+				tabData.accept(Theyear3001ModItems.ORICHALCUM_ARMOR_LEGGINGS.get());
+				tabData.accept(Theyear3001ModItems.ORICHALCUM_ARMOR_BOOTS.get());
+				tabData.accept(Theyear3001ModItems.TITANIUM_ARMOR_HELMET.get());
+				tabData.accept(Theyear3001ModItems.TITANIUM_ARMOR_CHESTPLATE.get());
+				tabData.accept(Theyear3001ModItems.TITANIUM_ARMOR_LEGGINGS.get());
+				tabData.accept(Theyear3001ModItems.TITANIUM_ARMOR_BOOTS.get());
+				tabData.accept(Theyear3001ModItems.COBALT_ARMOR_HELMET.get());
+				tabData.accept(Theyear3001ModItems.COBALT_ARMOR_CHESTPLATE.get());
+				tabData.accept(Theyear3001ModItems.COBALT_ARMOR_LEGGINGS.get());
+				tabData.accept(Theyear3001ModItems.COBALT_ARMOR_BOOTS.get());
+				tabData.accept(Theyear3001ModItems.COBALT_AXE.get());
+				tabData.accept(Theyear3001ModItems.COBALT_SWORD.get());
+				tabData.accept(Theyear3001ModItems.COBALT_SHOVEL.get());
+				tabData.accept(Theyear3001ModItems.COBALT_HOE.get());
+				tabData.accept(Theyear3001ModItems.COBALT_PICKAXE.get());
+				tabData.accept(Theyear3001ModItems.ORICHALCUM_AXE.get());
+				tabData.accept(Theyear3001ModItems.ORICHALCUM_SWORD.get());
+				tabData.accept(Theyear3001ModItems.ORICHALCUM_SHOVEL.get());
+				tabData.accept(Theyear3001ModItems.ORICHALCUM_HOE.get());
+				tabData.accept(Theyear3001ModItems.ORICHALCUM_PICKAXE.get());
 			}).build());
 	public static final RegistryObject<CreativeModeTab> THE_YEAR_3001_CARDS = REGISTRY.register("the_year_3001_cards",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.theyear3001.the_year_3001_cards")).icon(() -> new ItemStack(Theyear3001ModItems.BULK_UPGRADE_CARD.get())).displayItems((parameters, tabData) -> {

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "theyear3001:orichalcum_ingot"
+    },
+    "b": {
+      "item": "theyear3001:titanium_rod"
+    }
+  },
+  "result": {
+    "item": "theyear3001:orichalcum_shovel",
+    "count": 1
+  }
+}

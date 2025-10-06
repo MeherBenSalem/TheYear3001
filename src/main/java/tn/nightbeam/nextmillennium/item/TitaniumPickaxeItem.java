@@ -33,7 +33,7 @@ public class TitaniumPickaxeItem extends PickaxeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(Theyear3001ModItems.SCRAP.get()));
+				return Ingredient.of(new ItemStack(Theyear3001ModItems.TITANIUM_INGOT.get()));
 			}
 		}, 1, -2.7f, new Item.Properties());
 	}
