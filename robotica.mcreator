@@ -1,0 +1,2653 @@
+{
+  "mod_elements": [
+    {
+      "name": "TheYear3001Tab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_year_3001_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "BoggieMK1",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boggie_mk_1",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/client/renderer/BoggieMK1Renderer.java",
+          "src/main/java/tn/nightbeam/robotica/entity/BoggieMK1Entity.java",
+          "src/main/java/tn/nightbeam/robotica/entity/model/BoggieMK1Model.java"
+        ]
+      },
+      "path": "~/Entities/BoggieMK1"
+    },
+    {
+      "name": "BoggieMK1RightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boggie_mk_1_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/procedures/BoggieMK1RightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Entities/BoggieMK1"
+    },
+    {
+      "name": "UpgradeCards",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upgrade_cards",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/procedures/UpgradeCardsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "DamageUpgradeCard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "damage_upgrade_card",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/damage_upgrade_card.json",
+          "src/main/java/tn/nightbeam/robotica/item/DamageUpgradeCardItem.java"
+        ]
+      },
+      "path": "~/Items/Cards"
+    },
+    {
+      "name": "Oil",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oil",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/item/OilItem.java",
+          "src/main/resources/assets/robotica/models/item/oil_bucket.json",
+          "src/main/resources/assets/robotica/blockstates/oil.json",
+          "src/main/java/tn/nightbeam/robotica/fluid/OilFluid.java",
+          "src/main/java/tn/nightbeam/robotica/block/OilBlock.java",
+          "src/main/resources/assets/robotica/models/block/oil.json",
+          "src/main/java/tn/nightbeam/robotica/fluid/types/OilFluidType.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "BulkUpgradeCard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bulk_upgrade_card",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/item/BulkUpgradeCardItem.java",
+          "src/main/resources/assets/robotica/models/item/bulk_upgrade_card.json"
+        ]
+      },
+      "path": "~/Items/Cards"
+    },
+    {
+      "name": "SpeedUpgradeCard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "speed_upgrade_card",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/item/SpeedUpgradeCardItem.java",
+          "src/main/resources/assets/robotica/models/item/speed_upgrade_card.json"
+        ]
+      },
+      "path": "~/Items/Cards"
+    },
+    {
+      "name": "MechMK1",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mech_mk_1",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/entity/model/MechMK1Model.java",
+          "src/main/java/tn/nightbeam/robotica/client/renderer/MechMK1Renderer.java",
+          "src/main/java/tn/nightbeam/robotica/entity/MechMK1Entity.java"
+        ]
+      },
+      "path": "~/Entities/Mechs"
+    },
+    {
+      "name": "MechMK1RightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mech_mk_1_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/procedures/MechMK1RightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Entities/Mechs"
+    },
+    {
+      "name": "B1928",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "b_1928",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/entity/B1928Entity.java",
+          "src/main/java/tn/nightbeam/robotica/client/renderer/B1928Renderer.java",
+          "src/main/java/tn/nightbeam/robotica/entity/model/B1928Model.java",
+          "src/main/resources/data/robotica/forge/biome_modifier/b_1928_biome_modifier.json",
+          "src/main/resources/assets/robotica/models/item/b_1928_spawn_egg.json"
+        ]
+      },
+      "path": "~/Entities/Bees"
+    },
+    {
+      "name": "B1990",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "b_1990",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/b_1990_spawn_egg.json",
+          "src/main/resources/data/robotica/forge/biome_modifier/b_1990_biome_modifier.json",
+          "src/main/java/tn/nightbeam/robotica/entity/B1990Entity.java",
+          "src/main/java/tn/nightbeam/robotica/entity/model/B1990Model.java",
+          "src/main/java/tn/nightbeam/robotica/client/renderer/B1990Renderer.java"
+        ]
+      },
+      "path": "~/Entities/Bees"
+    },
+    {
+      "name": "B2050",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "b_2050",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/entity/B2050Entity.java",
+          "src/main/java/tn/nightbeam/robotica/entity/model/B2050Model.java",
+          "src/main/java/tn/nightbeam/robotica/client/renderer/B2050Renderer.java",
+          "src/main/resources/assets/robotica/models/item/b_2050_spawn_egg.json"
+        ]
+      },
+      "path": "~/Entities/Bees"
+    },
+    {
+      "name": "RepairCard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "repair_card",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/item/RepairCardItem.java",
+          "src/main/resources/assets/robotica/models/item/repair_card.json"
+        ]
+      },
+      "path": "~/Items/Cards"
+    },
+    {
+      "name": "Scrap",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/scrap.json",
+          "src/main/java/tn/nightbeam/robotica/item/ScrapItem.java"
+        ]
+      },
+      "path": "~/Items/Ores And Mats"
+    },
+    {
+      "name": "ScrapBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap_block",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/block/ScrapBlockBlock.java",
+          "src/main/resources/data/robotica/loot_tables/blocks/scrap_block.json",
+          "src/main/resources/assets/robotica/blockstates/scrap_block.json",
+          "src/main/resources/assets/robotica/models/block/scrap_block.json",
+          "src/main/resources/assets/robotica/models/item/scrap_block.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "CraftingWorkstation",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crafting_workstation",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/loot_tables/blocks/crafting_workstation.json",
+          "src/main/resources/assets/robotica/blockstates/crafting_workstation.json",
+          "src/main/resources/assets/robotica/models/item/crafting_workstation.json",
+          "src/main/java/tn/nightbeam/robotica/block/entity/CraftingWorkstationBlockEntity.java",
+          "src/main/java/tn/nightbeam/robotica/block/CraftingWorkstationBlock.java",
+          "src/main/resources/assets/robotica/models/block/crafting_workstation.json"
+        ]
+      },
+      "path": "~/Blocks/Crafting Station"
+    },
+    {
+      "name": "CraftingWorkStationGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crafting_work_station_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/client/gui/CraftingWorkStationGUIScreen.java",
+          "src/main/java/tn/nightbeam/robotica/network/CraftingWorkStationGUIButtonMessage.java",
+          "src/main/java/tn/nightbeam/robotica/world/inventory/CraftingWorkStationGUIMenu.java"
+        ]
+      },
+      "path": "~/Blocks/Crafting Station"
+    },
+    {
+      "name": "ExtendedCrafting",
+      "type": "jeirecipetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extended_crafting",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/jei_recipes/ExtendedCraftingRecipeCategory.java",
+          "src/main/java/tn/nightbeam/robotica/jei_recipes/ExtendedCraftingRecipe.java"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "ScrapBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/scrap_block_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "ReverseScrapBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reverse_scrap_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/reverse_scrap_block_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "EmptyCard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_card",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/empty_card.json",
+          "src/main/java/tn/nightbeam/robotica/item/EmptyCardItem.java"
+        ]
+      },
+      "path": "~/Items/Cards"
+    },
+    {
+      "name": "EmptyUpgradeCardRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_upgrade_card_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/empty_upgrade_card_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MechMK1Egg",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mech_mk_1_egg",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/item/MechMK1EggItem.java",
+          "src/main/resources/assets/robotica/models/item/mech_mk_1_egg.json"
+        ]
+      },
+      "path": "~/Items/Mechs"
+    },
+    {
+      "name": "MechMK1EggRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mech_mk_1_egg_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/procedures/MechMK1EggRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Mechs"
+    },
+    {
+      "name": "BoggieMK1Egg",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boggie_mk_1_egg",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/boggie_mk_1_egg.json",
+          "src/main/java/tn/nightbeam/robotica/item/BoggieMK1EggItem.java"
+        ]
+      },
+      "path": "~/Items/Mechs"
+    },
+    {
+      "name": "BoggieMK1EggRightClickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boggie_mk_1_egg_right_clicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/procedures/BoggieMK1EggRightClickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Mechs"
+    },
+    {
+      "name": "PrintedCircuitBoard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "printed_circuit_board",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/printed_circuit_board.json",
+          "src/main/java/tn/nightbeam/robotica/item/PrintedCircuitBoardItem.java"
+        ]
+      },
+      "path": "~/Items/Misc"
+    },
+    {
+      "name": "BlankPrintedCircuitBoard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blank_printed_circuit_board",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/blank_printed_circuit_board.json",
+          "src/main/java/tn/nightbeam/robotica/item/BlankPrintedCircuitBoardItem.java"
+        ]
+      },
+      "path": "~/Items/Misc"
+    },
+    {
+      "name": "CentralProcessingUnit",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "central_processing_unit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/central_processing_unit.json",
+          "src/main/java/tn/nightbeam/robotica/item/CentralProcessingUnitItem.java"
+        ]
+      },
+      "path": "~/Items/Misc"
+    },
+    {
+      "name": "TheYear3001Cards",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_year_3001_cards",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "BlankPrintedCircuitBoardRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blank_printed_circuit_board_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/blank_printed_circuit_board_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "ElectricalConductors",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electrical_conductors",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/electrical_conductors.json",
+          "src/main/java/tn/nightbeam/robotica/item/ElectricalConductorsItem.java"
+        ]
+      },
+      "path": "~/Items/Misc"
+    },
+    {
+      "name": "ElectricalConductorsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electrical_conductors_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/electrical_conductors_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CentralProcessingUnitRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "central_processing_unit_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/central_processing_unit_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "PrintedCircuitBoardRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "printed_circuit_board_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/printed_circuit_board_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SpeedUpgradeCardRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "speed_upgrade_card_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/speed_upgrade_card_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DamageUpgradeCardRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "damage_upgrade_card_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/damage_upgrade_card_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "BulkUpgradeCardRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bulk_upgrade_card_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/bulk_upgrade_card_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "BoggieRecipe",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boggie_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/boggie_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CraftExtended",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_extended",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/procedures/CraftExtendedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/Crafting Station"
+    },
+    {
+      "name": "MechMK1Recipe",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mech_mk_1_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/mech_mk_1_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CraftingWorkstationRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crafting_workstation_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/crafting_workstation_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DefenseUpgradeCard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "defense_upgrade_card",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/defense_upgrade_card.json",
+          "src/main/java/tn/nightbeam/robotica/item/DefenseUpgradeCardItem.java"
+        ]
+      },
+      "path": "~/Items/Cards"
+    },
+    {
+      "name": "DefenseUpgradeCardRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "defense_upgrade_card_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/defense_upgrade_card_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SentinelMK1",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sentinel_mk_1",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/client/renderer/SentinelMK1Renderer.java",
+          "src/main/java/tn/nightbeam/robotica/entity/model/SentinelMK1Model.java",
+          "src/main/java/tn/nightbeam/robotica/entity/SentinelMK1Entity.java",
+          "src/main/resources/assets/robotica/models/item/sentinel_mk_1_spawn_egg.json",
+          "src/main/resources/data/robotica/forge/biome_modifier/sentinel_mk_1_biome_modifier.json"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "ScrapSwordRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/scrap_sword_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "ScrapStick",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap_stick",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/scrap_stick.json",
+          "src/main/java/tn/nightbeam/robotica/item/ScrapStickItem.java"
+        ]
+      },
+      "path": "~/Items/Misc"
+    },
+    {
+      "name": "ScrapAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/item/ScrapAxeItem.java",
+          "src/main/resources/assets/robotica/models/item/scrap_axe.json"
+        ]
+      },
+      "path": "~/Items/ToolsAndWeapons"
+    },
+    {
+      "name": "ScrapSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/scrap_sword.json",
+          "src/main/java/tn/nightbeam/robotica/item/ScrapSwordItem.java"
+        ]
+      },
+      "path": "~/Items/ToolsAndWeapons"
+    },
+    {
+      "name": "ScrapStickRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap_stick_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/scrap_stick_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "ScrapShovel",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/scrap_shovel.json",
+          "src/main/java/tn/nightbeam/robotica/item/ScrapShovelItem.java"
+        ]
+      },
+      "path": "~/Items/ToolsAndWeapons"
+    },
+    {
+      "name": "ScrapHoe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/item/ScrapHoeItem.java",
+          "src/main/resources/assets/robotica/models/item/scrap_hoe.json"
+        ]
+      },
+      "path": "~/Items/ToolsAndWeapons"
+    },
+    {
+      "name": "ScrapPickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/scrap_pickaxe.json",
+          "src/main/java/tn/nightbeam/robotica/item/ScrapPickaxeItem.java"
+        ]
+      },
+      "path": "~/Items/ToolsAndWeapons"
+    },
+    {
+      "name": "ScrapShovelRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/scrap_shovel_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "ScrapAxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/scrap_axe_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "ScrapPickaxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/scrap_pickaxe_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "ScrapHoeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/scrap_hoe_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "ScrapSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap_slab",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/block/ScrapSlabBlock.java",
+          "src/main/resources/assets/robotica/models/item/scrap_slab.json",
+          "src/main/resources/assets/robotica/models/block/scrap_slab_full.json",
+          "src/main/resources/assets/robotica/blockstates/scrap_slab.json",
+          "src/main/resources/assets/robotica/models/block/scrap_slab.json",
+          "src/main/resources/assets/robotica/models/block/scrap_slab_top.json",
+          "src/main/resources/data/robotica/loot_tables/blocks/scrap_slab.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ScrapStairsBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap_stairs_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/blockstates/scrap_stairs_block.json",
+          "src/main/resources/data/robotica/loot_tables/blocks/scrap_stairs_block.json",
+          "src/main/resources/assets/robotica/models/block/scrap_stairs_block.json",
+          "src/main/resources/assets/robotica/models/block/scrap_stairs_block_outer.json",
+          "src/main/java/tn/nightbeam/robotica/block/ScrapStairsBlockBlock.java",
+          "src/main/resources/assets/robotica/models/block/scrap_stairs_block_inner.json",
+          "src/main/resources/assets/robotica/models/item/scrap_stairs_block.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ScrapSlabRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/scrap_slab_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "ScrapStairsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/scrap_stairs_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "FlyingCapsuleMech",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flying_capsule_mech",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/entity/FlyingCapsuleMechEntity.java",
+          "src/main/resources/assets/robotica/models/item/flying_capsule_mech_spawn_egg.json",
+          "src/main/java/tn/nightbeam/robotica/entity/model/FlyingCapsuleMechModel.java",
+          "src/main/java/tn/nightbeam/robotica/client/renderer/FlyingCapsuleMechRenderer.java"
+        ]
+      },
+      "path": "~/Entities/Mechs/FlyingCapsule"
+    },
+    {
+      "name": "FlyCapsuleGoUp",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fly_capsule_go_up",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/network/FlyCapsuleGoUpMessage.java"
+        ]
+      },
+      "path": "~/Entities/Mechs/FlyingCapsule"
+    },
+    {
+      "name": "FlyCapsuleGoDown",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fly_capsule_go_down",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/network/FlyCapsuleGoDownMessage.java"
+        ]
+      },
+      "path": "~/Entities/Mechs/FlyingCapsule"
+    },
+    {
+      "name": "FlyCapsuleGoForward",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fly_capsule_go_forward",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/network/FlyCapsuleGoForwardMessage.java"
+        ]
+      },
+      "path": "~/Entities/Mechs/FlyingCapsule"
+    },
+    {
+      "name": "FlyCapsuleGoUpOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fly_capsule_go_up_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/procedures/FlyCapsuleGoUpOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Entities/Mechs/FlyingCapsule"
+    },
+    {
+      "name": "FlyCapsuleGoUpOnKeyReleased",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fly_capsule_go_up_on_key_released",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/procedures/FlyCapsuleGoUpOnKeyReleasedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Entities/Mechs/FlyingCapsule"
+    },
+    {
+      "name": "FlyCapsuleGoDownOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fly_capsule_go_down_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/procedures/FlyCapsuleGoDownOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Entities/Mechs/FlyingCapsule"
+    },
+    {
+      "name": "FlyingCapsuleMechOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flying_capsule_mech_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/procedures/FlyingCapsuleMechOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Entities/Mechs/FlyingCapsule"
+    },
+    {
+      "name": "FlyCapsuleGoForwardOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fly_capsule_go_forward_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/procedures/FlyCapsuleGoForwardOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Entities/Mechs/FlyingCapsule"
+    },
+    {
+      "name": "FlyCapsuleGoForwardOnKeyReleased",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fly_capsule_go_forward_on_key_released",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/procedures/FlyCapsuleGoForwardOnKeyReleasedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Entities/Mechs/FlyingCapsule"
+    },
+    {
+      "name": "FlyingCapsule",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flying_capsule",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/item/FlyingCapsuleItem.java",
+          "src/main/resources/assets/robotica/models/item/flying_capsule.json"
+        ]
+      },
+      "path": "~/Items/Mechs"
+    },
+    {
+      "name": "FlyingCapsuleEggRightClick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flying_capsule_egg_right_click",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/procedures/FlyingCapsuleEggRightClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Mechs"
+    },
+    {
+      "name": "ScrapDebris",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap_debris",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/block/ScrapDebrisBlock.java",
+          "src/main/resources/assets/robotica/models/item/scrap_debris.json",
+          "src/main/resources/assets/robotica/models/block/scrap_debris.json",
+          "src/main/resources/data/robotica/worldgen/placed_feature/scrap_debris.json",
+          "src/main/resources/data/robotica/loot_tables/blocks/scrap_debris.json",
+          "src/main/resources/data/robotica/worldgen/configured_feature/scrap_debris.json",
+          "src/main/resources/assets/robotica/blockstates/scrap_debris.json",
+          "src/main/resources/data/robotica/forge/biome_modifier/scrap_debris_biome_modifier.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "FlyingCapsuleRecipe",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flying_capsule_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/flying_capsule_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SmeltDebris",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelt_debris",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/smelt_debris.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "TitaniumOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_ore",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/block/TitaniumOreBlock.java",
+          "src/main/resources/data/robotica/worldgen/configured_feature/titanium_ore.json",
+          "src/main/resources/assets/robotica/models/block/titanium_ore.json",
+          "src/main/resources/assets/robotica/models/item/titanium_ore.json",
+          "src/main/resources/assets/robotica/blockstates/titanium_ore.json",
+          "src/main/resources/data/robotica/forge/biome_modifier/titanium_ore_biome_modifier.json",
+          "src/main/resources/data/robotica/worldgen/placed_feature/titanium_ore.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "TitaniumIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/item/TitaniumIngotItem.java",
+          "src/main/resources/assets/robotica/models/item/titanium_ingot.json"
+        ]
+      },
+      "path": "~/Items/Ores And Mats"
+    },
+    {
+      "name": "OrichalcumIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orichalcum_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/item/OrichalcumIngotItem.java",
+          "src/main/resources/assets/robotica/models/item/orichalcum_ingot.json"
+        ]
+      },
+      "path": "~/Items/Ores And Mats"
+    },
+    {
+      "name": "CobaltIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/item/CobaltIngotItem.java",
+          "src/main/resources/assets/robotica/models/item/cobalt_ingot.json"
+        ]
+      },
+      "path": "~/Items/Ores And Mats"
+    },
+    {
+      "name": "RawTitanium",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_titanium",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/raw_titanium.json",
+          "src/main/java/tn/nightbeam/robotica/item/RawTitaniumItem.java"
+        ]
+      },
+      "path": "~/Items/Ores And Mats"
+    },
+    {
+      "name": "RawCobalt",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_cobalt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/raw_cobalt.json",
+          "src/main/java/tn/nightbeam/robotica/item/RawCobaltItem.java"
+        ]
+      },
+      "path": "~/Items/Ores And Mats"
+    },
+    {
+      "name": "RawOrichalcum",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_orichalcum",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/item/RawOrichalcumItem.java",
+          "src/main/resources/assets/robotica/models/item/raw_orichalcum.json"
+        ]
+      },
+      "path": "~/Items/Ores And Mats"
+    },
+    {
+      "name": "TitaniumOreLT",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_ore_lt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/loot_tables/blocks/titanium_ore.json"
+        ]
+      },
+      "path": "~/Loot Tables"
+    },
+    {
+      "name": "CobaltOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/cobalt_ore.json",
+          "src/main/resources/data/robotica/worldgen/configured_feature/cobalt_ore.json",
+          "src/main/resources/data/robotica/worldgen/placed_feature/cobalt_ore.json",
+          "src/main/resources/data/robotica/forge/biome_modifier/cobalt_ore_biome_modifier.json",
+          "src/main/java/tn/nightbeam/robotica/block/CobaltOreBlock.java",
+          "src/main/resources/assets/robotica/blockstates/cobalt_ore.json",
+          "src/main/resources/assets/robotica/models/block/cobalt_ore.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "OrichalcumOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orichalcum_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/blockstates/orichalcum_ore.json",
+          "src/main/resources/data/robotica/forge/biome_modifier/orichalcum_ore_biome_modifier.json",
+          "src/main/resources/data/robotica/worldgen/configured_feature/orichalcum_ore.json",
+          "src/main/resources/assets/robotica/models/item/orichalcum_ore.json",
+          "src/main/resources/data/robotica/worldgen/placed_feature/orichalcum_ore.json",
+          "src/main/resources/assets/robotica/models/block/orichalcum_ore.json",
+          "src/main/java/tn/nightbeam/robotica/block/OrichalcumOreBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "CobaltOreLT",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_ore_lt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/loot_tables/blocks/cobalt_ore.json"
+        ]
+      },
+      "path": "~/Loot Tables"
+    },
+    {
+      "name": "OrichalcumOreLT",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orichalcum_ore_lt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/loot_tables/blocks/orichalcum_ore.json"
+        ]
+      },
+      "path": "~/Loot Tables"
+    },
+    {
+      "name": "SmeltOrichalcum",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelt_orichalcum",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/smelt_orichalcum.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SmeltTitanium",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelt_titanium",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/smelt_titanium.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SmeltCobalt",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelt_cobalt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/smelt_cobalt.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "TitaniumRod",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_rod",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/titanium_rod.json",
+          "src/main/java/tn/nightbeam/robotica/item/TitaniumRodItem.java"
+        ]
+      },
+      "path": "~/Items/Misc"
+    },
+    {
+      "name": "TitaniumAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/titanium_axe.json",
+          "src/main/java/tn/nightbeam/robotica/item/TitaniumAxeItem.java"
+        ]
+      },
+      "path": "~/Items/ToolsAndWeapons"
+    },
+    {
+      "name": "TitaniumSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/titanium_sword.json",
+          "src/main/java/tn/nightbeam/robotica/item/TitaniumSwordItem.java"
+        ]
+      },
+      "path": "~/Items/ToolsAndWeapons"
+    },
+    {
+      "name": "TitaniumShovel",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/titanium_shovel.json",
+          "src/main/java/tn/nightbeam/robotica/item/TitaniumShovelItem.java"
+        ]
+      },
+      "path": "~/Items/ToolsAndWeapons"
+    },
+    {
+      "name": "TitaniumHoe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/item/TitaniumHoeItem.java",
+          "src/main/resources/assets/robotica/models/item/titanium_hoe.json"
+        ]
+      },
+      "path": "~/Items/ToolsAndWeapons"
+    },
+    {
+      "name": "TitaniumPickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/titanium_pickaxe.json",
+          "src/main/java/tn/nightbeam/robotica/item/TitaniumPickaxeItem.java"
+        ]
+      },
+      "path": "~/Items/ToolsAndWeapons"
+    },
+    {
+      "name": "TitaniumRodRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_rod_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/titanium_rod_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "TitaniumSwordRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/titanium_sword_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "TitaniumShovelRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/titanium_shovel_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "TitaniumAxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/titanium_axe_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "TitaniumPickaxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/titanium_pickaxe_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "TitaniumHoeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/titanium_hoe_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "ScrapArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/scrap_armor_boots.json",
+          "src/main/java/tn/nightbeam/robotica/item/ScrapArmorItem.java",
+          "src/main/resources/assets/robotica/models/item/scrap_armor_helmet.json",
+          "src/main/resources/assets/robotica/models/item/scrap_armor_chestplate.json",
+          "src/main/resources/assets/robotica/models/item/scrap_armor_leggings.json"
+        ]
+      },
+      "path": "~/Items/Armor"
+    },
+    {
+      "name": "OrichalcumArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orichalcum_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/orichalcum_armor_boots.json",
+          "src/main/resources/assets/robotica/models/item/orichalcum_armor_leggings.json",
+          "src/main/java/tn/nightbeam/robotica/item/OrichalcumArmorItem.java",
+          "src/main/resources/assets/robotica/models/item/orichalcum_armor_chestplate.json",
+          "src/main/resources/assets/robotica/models/item/orichalcum_armor_helmet.json"
+        ]
+      },
+      "path": "~/Items/Armor"
+    },
+    {
+      "name": "TitaniumArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/titanium_armor_boots.json",
+          "src/main/java/tn/nightbeam/robotica/item/TitaniumArmorItem.java",
+          "src/main/resources/assets/robotica/models/item/titanium_armor_leggings.json",
+          "src/main/resources/assets/robotica/models/item/titanium_armor_helmet.json",
+          "src/main/resources/assets/robotica/models/item/titanium_armor_chestplate.json"
+        ]
+      },
+      "path": "~/Items/Armor"
+    },
+    {
+      "name": "CobaltArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/cobalt_armor_boots.json",
+          "src/main/resources/assets/robotica/models/item/cobalt_armor_helmet.json",
+          "src/main/resources/assets/robotica/models/item/cobalt_armor_chestplate.json",
+          "src/main/java/tn/nightbeam/robotica/item/CobaltArmorItem.java",
+          "src/main/resources/assets/robotica/models/item/cobalt_armor_leggings.json"
+        ]
+      },
+      "path": "~/Items/Armor"
+    },
+    {
+      "name": "ScrapArmorHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/scrap_armor_helmet_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "ScrapArmorChestplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap_armor_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/scrap_armor_chestplate_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "ScrapArmorLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/scrap_armor_leggings_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "ScrapArmorBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/scrap_armor_boots_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "TitaniumArmorBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/titanium_armor_boots_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "TitaniumArmorLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/titanium_armor_leggings_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "TitaniumArmorChestplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_armor_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/titanium_armor_chestplate_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "TitaniumArmorHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/titanium_armor_helmet_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CobaltArmorHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/cobalt_armor_helmet_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CobaltArmorChestplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_armor_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/cobalt_armor_chestplate_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CobaltArmorLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/cobalt_armor_leggings_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CobaltArmorBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/cobalt_armor_boots_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "OrichalcumArmorHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orichalcum_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/orichalcum_armor_helmet_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "OrichalcumArmorChestplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orichalcum_armor_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/orichalcum_armor_chestplate_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "OrichalcumArmorLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orichalcum_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/orichalcum_armor_leggings_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "OrichalcumArmorBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orichalcum_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/orichalcum_armor_boots_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CobaltAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/item/CobaltAxeItem.java",
+          "src/main/resources/assets/robotica/models/item/cobalt_axe.json"
+        ]
+      },
+      "path": "~/Items/ToolsAndWeapons"
+    },
+    {
+      "name": "CobaltSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/item/CobaltSwordItem.java",
+          "src/main/resources/assets/robotica/models/item/cobalt_sword.json"
+        ]
+      },
+      "path": "~/Items/ToolsAndWeapons"
+    },
+    {
+      "name": "CobaltShovel",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/cobalt_shovel.json",
+          "src/main/java/tn/nightbeam/robotica/item/CobaltShovelItem.java"
+        ]
+      },
+      "path": "~/Items/ToolsAndWeapons"
+    },
+    {
+      "name": "CobaltHoe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_hoe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/cobalt_hoe.json",
+          "src/main/java/tn/nightbeam/robotica/item/CobaltHoeItem.java"
+        ]
+      },
+      "path": "~/Items/ToolsAndWeapons"
+    },
+    {
+      "name": "CobaltPickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/item/CobaltPickaxeItem.java",
+          "src/main/resources/assets/robotica/models/item/cobalt_pickaxe.json"
+        ]
+      },
+      "path": "~/Items/ToolsAndWeapons"
+    },
+    {
+      "name": "CobaltSwordRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/cobalt_sword_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CobaltShovelRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/cobalt_shovel_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CobaltAxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/cobalt_axe_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CobaltPickaxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/cobalt_pickaxe_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CobaltHoeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/cobalt_hoe_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "OrichalcumAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orichalcum_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/orichalcum_axe.json",
+          "src/main/java/tn/nightbeam/robotica/item/OrichalcumAxeItem.java"
+        ]
+      },
+      "path": "~/Items/ToolsAndWeapons"
+    },
+    {
+      "name": "OrichalcumSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orichalcum_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/orichalcum_sword.json",
+          "src/main/java/tn/nightbeam/robotica/item/OrichalcumSwordItem.java"
+        ]
+      },
+      "path": "~/Items/ToolsAndWeapons"
+    },
+    {
+      "name": "OrichalcumShovel",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orichalcum_shovel",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/item/OrichalcumShovelItem.java",
+          "src/main/resources/assets/robotica/models/item/orichalcum_shovel.json"
+        ]
+      },
+      "path": "~/Items/ToolsAndWeapons"
+    },
+    {
+      "name": "OrichalcumHoe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orichalcum_hoe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/orichalcum_hoe.json",
+          "src/main/java/tn/nightbeam/robotica/item/OrichalcumHoeItem.java"
+        ]
+      },
+      "path": "~/Items/ToolsAndWeapons"
+    },
+    {
+      "name": "OrichalcumPickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orichalcum_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/robotica/models/item/orichalcum_pickaxe.json",
+          "src/main/java/tn/nightbeam/robotica/item/OrichalcumPickaxeItem.java"
+        ]
+      },
+      "path": "~/Items/ToolsAndWeapons"
+    },
+    {
+      "name": "OrichalcumSwordRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orichalcum_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/orichalcum_sword_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "OrichalcumShovelRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orichalcum_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/orichalcum_shovel_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "OrichalcumAxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orichalcum_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/orichalcum_axe_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "OrichalcumPickaxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orichalcum_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/orichalcum_pickaxe_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "OrichalcumHoeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orichalcum_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/orichalcum_hoe_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "RocketLauncherPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rocket_launcher_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/procedures/RocketLauncherPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "RocketLauncher",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rocket_launcher",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/item/model/RocketLauncherItemModel.java",
+          "src/main/java/tn/nightbeam/robotica/item/renderer/RocketLauncherItemRenderer.java",
+          "src/main/java/tn/nightbeam/robotica/item/RocketLauncherItem.java",
+          "src/main/resources/assets/robotica/models/item/rocket_launcher.json"
+        ]
+      },
+      "path": "~/Items/ToolsAndWeapons"
+    },
+    {
+      "name": "RocketLauncherRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rocket_launcher_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/recipes/rocket_launcher_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "robot_die",
+      "files": [
+        "robot_die"
+      ],
+      "category": "neutral",
+      "subtitle": "robot die"
+    },
+    {
+      "name": "robot_ambient",
+      "files": [
+        "roboth"
+      ],
+      "category": "neutral",
+      "subtitle": "robot ambient"
+    },
+    {
+      "name": "alient_robot_ambient",
+      "files": [
+        "alien-robot-246019"
+      ],
+      "category": "neutral",
+      "subtitle": "alient robot ambient"
+    },
+    {
+      "name": "robot_birds",
+      "files": [
+        "robot-birds"
+      ],
+      "category": "neutral",
+      "subtitle": "robot sounds"
+    }
+  ],
+  "tag_elements": {
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:Oil"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:OrichalcumOre",
+      "~CUSTOM:CobaltOre",
+      "~CUSTOM:TitaniumOre",
+      "~CUSTOM:ScrapDebris"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:OrichalcumPickaxe",
+      "~CUSTOM:CobaltPickaxe",
+      "~CUSTOM:TitaniumPickaxe",
+      "~CUSTOM:ScrapPickaxe"
+    ],
+    "ITEMS:minecraft:hoes": [
+      "~CUSTOM:OrichalcumHoe",
+      "~CUSTOM:CobaltHoe",
+      "~CUSTOM:TitaniumHoe",
+      "~CUSTOM:ScrapHoe"
+    ],
+    "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:ScrapSlab"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:OrichalcumOre",
+      "~CUSTOM:CobaltOre",
+      "~CUSTOM:TitaniumOre",
+      "~CUSTOM:ScrapDebris"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:OrichalcumAxe",
+      "~CUSTOM:CobaltAxe",
+      "~CUSTOM:TitaniumAxe",
+      "~CUSTOM:ScrapAxe"
+    ],
+    "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:ScrapStairsBlock"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:OrichalcumSword",
+      "~CUSTOM:CobaltSword",
+      "~CUSTOM:TitaniumSword",
+      "~CUSTOM:ScrapSword"
+    ],
+    "ITEMS:minecraft:shovels": [
+      "~CUSTOM:OrichalcumShovel",
+      "~CUSTOM:CobaltShovel",
+      "~CUSTOM:TitaniumShovel",
+      "~CUSTOM:ScrapShovel"
+    ]
+  },
+  "tab_element_order": {
+    "CUSTOM:TheYear3001Tab": [
+      "MechMK1",
+      "B1928",
+      "B1990",
+      "BoggieMK1",
+      "B2050",
+      "SentinelMK1",
+      "FlyingCapsuleMech",
+      "Oil",
+      "Scrap",
+      "ScrapBlock",
+      "ScrapSlab",
+      "ScrapStairsBlock",
+      "CraftingWorkstation",
+      "PrintedCircuitBoard",
+      "BlankPrintedCircuitBoard",
+      "CentralProcessingUnit",
+      "ElectricalConductors",
+      "MechMK1Egg",
+      "BoggieMK1Egg",
+      "FlyingCapsule",
+      "ScrapDebris",
+      "TitaniumOre",
+      "TitaniumIngot",
+      "OrichalcumIngot",
+      "CobaltIngot",
+      "RawTitanium",
+      "RawCobalt",
+      "RawOrichalcum",
+      "CobaltOre",
+      "OrichalcumOre",
+      "ScrapArmor",
+      "ScrapStick",
+      "ScrapAxe",
+      "ScrapSword",
+      "ScrapShovel",
+      "ScrapHoe",
+      "ScrapPickaxe",
+      "TitaniumRod",
+      "TitaniumAxe",
+      "TitaniumSword",
+      "TitaniumShovel",
+      "TitaniumHoe",
+      "TitaniumPickaxe",
+      "OrichalcumArmor",
+      "TitaniumArmor",
+      "CobaltArmor",
+      "CobaltAxe",
+      "CobaltSword",
+      "CobaltShovel",
+      "CobaltHoe",
+      "CobaltPickaxe",
+      "OrichalcumAxe",
+      "OrichalcumSword",
+      "OrichalcumShovel",
+      "OrichalcumHoe",
+      "OrichalcumPickaxe",
+      "RocketLauncher"
+    ],
+    "CUSTOM:TheYear3001Cards": [
+      "EmptyCard",
+      "DamageUpgradeCard",
+      "BulkUpgradeCard",
+      "SpeedUpgradeCard",
+      "RepairCard",
+      "DefenseUpgradeCard"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "item.robotica.boggie_mk_1_egg": "Boggie MK1",
+      "item.robotica.electrical_conductors": "Electrical Conductors",
+      "item.theyear3001.scrap_armor_helmet": "Scrap Armor Helmet",
+      "subtitles.alient_robot_ambient": "alient robot ambient",
+      "item.robotica.titanium_armor_chestplate": "Titanium Armor Chestplate",
+      "block.theyear3001.oil": "Oil",
+      "entity.theyear3001.mech_mk_1": "R1-D1",
+      "item.theyear3001.cobalt_armor_helmet": "Cobalt Armor Helmet",
+      "subtitles.robot_die": "robot die",
+      "item.theyear3001.orichalcum_armor_leggings": "Orichalcum Armor Leggings",
+      "item.theyear3001.blank_printed_circuit_board": "Blank Printed Circuit Board",
+      "item.theyear3001.titanium_ingot": "Titanium Ingot",
+      "block.theyear3001.titanium_ore": "Titanium Ore",
+      "entity.robotica.flying_capsule_mech": "Flying Capsule Mech",
+      "item.robotica.orichalcum_shovel": "Orichalcum Shovel",
+      "item.theyear3001.damage_upgrade_card.description_0": "Damage ⬆",
+      "item.theyear3001.orichalcum_axe": "Orichalcum Axe",
+      "item.theyear3001.orichalcum_armor_boots": "Orichalcum Armor Boots",
+      "key.categories.theyear3001": "The Year 3001",
+      "block.robotica.titanium_ore": "Titanium Ore",
+      "item.theyear3001.cobalt_hoe": "Cobalt Shovel",
+      "item.theyear3001.flying_capsule": "Flying Capsule",
+      "item.robotica.speed_upgrade_card.description_0": "Movement Speed ⬆",
+      "item_group.robotica.the_year_3001_tab": "Items 3001",
+      "item.robotica.titanium_sword": "Titanium Sword",
+      "item_group.theyear3001.the_year_3001_tab": "Items 3001",
+      "item.theyear3001.titanium_axe": "Titanium Axe",
+      "entity.robotica.mech_mk_1": "R1-D1",
+      "item_group.robotica.the_year_3001_cards": "Upgrade Crads 3001",
+      "item.robotica.repair_card": "Repair Card",
+      "item.robotica.b_1928_spawn_egg": "B-1928 Spawn Egg",
+      "item.robotica.titanium_ingot": "Titanium Ingot",
+      "block.robotica.scrap_debris": "Scrap Debris",
+      "item.robotica.cobalt_armor_helmet": "Cobalt Armor Helmet",
+      "item.robotica.cobalt_ingot": "Cobalt Ingot",
+      "item.robotica.scrap": "Scrap",
+      "item.robotica.scrap_pickaxe": "Scrap Pickaxe",
+      "item.robotica.cobalt_armor_leggings": "Cobalt Armor Leggings",
+      "item.theyear3001.scrap_armor_chestplate": "Scrap Armor Chestplate",
+      "item.theyear3001.orichalcum_armor_helmet": "Orichalcum Armor Helmet",
+      "entity.robotica.sentinel_mk_1": "Sentinel-7",
+      "item.robotica.b_2050_spawn_egg": "B-2050 Spawn Egg",
+      "item.theyear3001.orichalcum_armor_chestplate": "Orichalcum Armor Chestplate",
+      "subtitles.robot_walk": "robot walk",
+      "fluid.robotica.oil": "Oil",
+      "item.robotica.oil_bucket": "Oil Bucket",
+      "block.theyear3001.scrap_debris": "Scrap Debris",
+      "item.theyear3001.titanium_shovel": "Titanium Shovel",
+      "key.theyear3001.fly_capsule_go_down": "Flying Capsule Go Down",
+      "item.robotica.repair_card.description_0": "Heals The Robot",
+      "item.robotica.orichalcum_armor_leggings": "Orichalcum Armor Leggings",
+      "subtitles.robot_ambient": "robot ambient",
+      "item.theyear3001.mech_mk_1_egg": "Mech MK1",
+      "item.theyear3001.damage_upgrade_card": "Damage Upgrade Card",
+      "item.theyear3001.scrap_armor_boots": "Scrap Armor Boots",
+      "item.theyear3001.cobalt_pickaxe": "Cobalt Pickaxe",
+      "itemGroup.tab_the_year_3001_cards": "Upgrade Crads 3001",
+      "block.robotica.crafting_workstation": "Crafting Workstation Block",
+      "entity.theyear3001.b_1990": "B-1990",
+      "item.theyear3001.defense_upgrade_card.description_0": "Armor ⬆",
+      "item.theyear3001.flying_capsule_mech_spawn_egg": "Flying Capsule Mech Spawn Egg",
+      "block.theyear3001.scrap_stairs_block": "Scrap Slab Block",
+      "item.theyear3001.raw_orichalcum": "Raw Orichalcum",
+      "block.robotica.orichalcum_ore": "Orichalcum Ore",
+      "item.theyear3001.titanium_armor_chestplate": "Titanium Armor Chestplate",
+      "entity.theyear3001.b_2050": "B-2050",
+      "item.robotica.titanium_armor_helmet": "Titanium Armor Helmet",
+      "item.theyear3001.orichalcum_shovel": "Orichalcum Shovel",
+      "item.theyear3001.titanium_armor_leggings": "Titanium Armor Leggings",
+      "item.theyear3001.boggie_mk_1_spawn_egg": "Boggie MK1 Spawn Egg",
+      "item.robotica.damage_upgrade_card.description_0": "Damage ⬆",
+      "item.robotica.flying_capsule_mech_spawn_egg": "Flying Capsule Mech Spawn Egg",
+      "item.theyear3001.raw_titanium": "Raw Titanium",
+      "item.robotica.speed_upgrade_card": "Speed Upgrade Card",
+      "item.robotica.orichalcum_armor_helmet": "Orichalcum Armor Helmet",
+      "item.robotica.raw_orichalcum": "Raw Orichalcum",
+      "item.robotica.scrap_sword": "Scrap Sword",
+      "item.theyear3001.scrap_stick": "Scrap Stick",
+      "item.robotica.orichalcum_armor_boots": "Orichalcum Armor Boots",
+      "item_group.theyear3001.the_year_3001_cards": "Upgrade Crads 3001",
+      "item.theyear3001.orichalcum_pickaxe": "Orichalcum Pickaxe",
+      "item.robotica.orichalcum_pickaxe": "Orichalcum Pickaxe",
+      "key.robotica.fly_capsule_go_down": "Flying Capsule Go Down",
+      "item.robotica.empty_card": "Empty Upgrade Card",
+      "item.theyear3001.speed_upgrade_card": "Speed Upgrade Card",
+      "item.robotica.damage_upgrade_card": "Damage Upgrade Card",
+      "item.theyear3001.repair_card.description_0": "Heals The Robot",
+      "item.robotica.cobalt_axe": "Cobalt Axe",
+      "item.theyear3001.defense_upgrade_card": "Defense Upgrade Card",
+      "key.theyear3001.fly_capsule_go_forward": "Flying Capsule Go Forward",
+      "item.robotica.titanium_pickaxe": "Titanium Pickaxe",
+      "item.robotica.orichalcum_axe": "Orichalcum Axe",
+      "item.theyear3001.titanium_hoe": "Titanium Shovel",
+      "item.robotica.titanium_rod": "Titanium Rod",
+      "item.theyear3001.scrap_pickaxe": "Scrap Pickaxe",
+      "item.robotica.scrap_axe": "Scrap Axe",
+      "entity.robotica.b_2050": "B-2050",
+      "item.robotica.titanium_armor_leggings": "Titanium Armor Leggings",
+      "entity.robotica.b_1990": "B-1990",
+      "block.theyear3001.orichalcum_ore": "Orichalcum Ore",
+      "item.theyear3001.titanium_armor_helmet": "Titanium Armor Helmet",
+      "item.theyear3001.titanium_pickaxe": "Titanium Pickaxe",
+      "entity.theyear3001.flying_capsule_mech": "Flying Capsule Mech",
+      "item.robotica.scrap_armor_chestplate": "Scrap Armor Chestplate",
+      "item.robotica.cobalt_shovel": "Cobalt Shovel",
+      "item.theyear3001.orichalcum_sword": "Orichalcum Sword",
+      "item.robotica.boggie_mk_1_spawn_egg": "Boggie MK1 Spawn Egg",
+      "item.theyear3001.cobalt_armor_leggings": "Cobalt Armor Leggings",
+      "item.robotica.defense_upgrade_card.description_0": "Armor ⬆",
+      "item.theyear3001.repair_card": "Repair Card",
+      "item.theyear3001.cobalt_sword": "Cobalt Sword",
+      "item.theyear3001.cobalt_shovel": "Cobalt Shovel",
+      "key.theyear3001.fly_capsule_go_up": "Flying Capsule Go Up",
+      "item.robotica.bulk_upgrade_card.description_0": "Health ⬆⬆",
+      "item.robotica.bulk_upgrade_card.description_1": "Size ⬆",
+      "item.robotica.raw_cobalt": "Raw Cobalt",
+      "item.theyear3001.cobalt_armor_chestplate": "Cobalt Armor Chestplate",
+      "item.robotica.orichalcum_hoe": "Orichalcum Shovel",
+      "item.theyear3001.titanium_armor_boots": "Titanium Armor Boots",
+      "item.robotica.raw_titanium": "Raw Titanium",
+      "item.robotica.titanium_hoe": "Titanium Shovel",
+      "item.robotica.cobalt_pickaxe": "Cobalt Pickaxe",
+      "item.theyear3001.orichalcum_hoe": "Orichalcum Shovel",
+      "item.robotica.defense_upgrade_card": "Defense Upgrade Card",
+      "item.theyear3001.scrap_hoe": "Scrap Shovel",
+      "item.theyear3001.titanium_rod": "Titanium Rod",
+      "item.robotica.orichalcum_sword": "Orichalcum Sword",
+      "item.robotica.scrap_armor_boots": "Scrap Armor Boots",
+      "item.robotica.scrap_armor_leggings": "Scrap Armor Leggings",
+      "block.theyear3001.scrap_slab": "Scrap Slab Block",
+      "item.robotica.b_1990_spawn_egg": "B-1990 Spawn Egg",
+      "item.robotica.scrap_shovel": "Scrap Shovel",
+      "item.theyear3001.scrap_sword": "Scrap Sword",
+      "item.robotica.central_processing_unit": "Central Processing Unit",
+      "item.robotica.bulk_upgrade_card": "Bulk Upgrade Card",
+      "entity.theyear3001.sentinel_mk_1": "Sentinel-7",
+      "item.theyear3001.scrap": "Scrap",
+      "item.robotica.cobalt_armor_boots": "Cobalt Armor Boots",
+      "itemGroup.tab_the_year_3001_tab": "Items 3001",
+      "item.theyear3001.orichalcum_ingot": "Orichalcum Ingot",
+      "item.robotica.cobalt_armor_chestplate": "Cobalt Armor Chestplate",
+      "block.robotica.cobalt_ore": "Cobalt Ore",
+      "block.theyear3001.cobalt_ore": "Cobalt Ore",
+      "item.theyear3001.bulk_upgrade_card": "Bulk Upgrade Card",
+      "block.robotica.scrap_slab": "Scrap Slab Block",
+      "item.robotica.rocket_launcher": "Rocket Launcher",
+      "entity.robotica.b_1928": "B-1928",
+      "item.robotica.titanium_shovel": "Titanium Shovel",
+      "item.robotica.cobalt_hoe": "Cobalt Shovel",
+      "item.robotica.blank_printed_circuit_board": "Blank Printed Circuit Board",
+      "entity.robotica.boggie_mk_1": "Boggie MK1",
+      "item.theyear3001.b_1928_spawn_egg": "B-1928 Spawn Egg",
+      "item.theyear3001.cobalt_armor_boots": "Cobalt Armor Boots",
+      "item.robotica.scrap_armor_helmet": "Scrap Armor Helmet",
+      "item.robotica.flying_capsule": "Flying Capsule",
+      "item.theyear3001.oil_bucket": "Oil Bucket",
+      "item.robotica.titanium_axe": "Titanium Axe",
+      "entity.theyear3001.boggie_mk_1": "Boggie MK1",
+      "item.robotica.titanium_armor_boots": "Titanium Armor Boots",
+      "subtitles.robot_birds": "robot sounds",
+      "item.theyear3001.central_processing_unit": "Central Processing Unit",
+      "item.theyear3001.electrical_conductors": "Electrical Conductors",
+      "item.theyear3001.scrap_axe": "Scrap Axe",
+      "item.theyear3001.sentinel_mk_1_spawn_egg": "Sentinel-7 Spawn Egg",
+      "item.robotica.cobalt_sword": "Cobalt Sword",
+      "item.theyear3001.scrap_armor_leggings": "Scrap Armor Leggings",
+      "item.theyear3001.speed_upgrade_card.description_0": "Movement Speed ⬆",
+      "item.robotica.scrap_stick": "Scrap Stick",
+      "entity.theyear3001.b_1928": "B-1928",
+      "block.robotica.oil": "Oil",
+      "item.robotica.printed_circuit_board": "Printed Circuit Board",
+      "item.theyear3001.raw_cobalt": "Raw Cobalt",
+      "item.theyear3001.cobalt_ingot": "Cobalt Ingot",
+      "block.robotica.scrap_block": "Scrap Block",
+      "block.theyear3001.scrap_block": "Scrap Block",
+      "block.theyear3001.crafting_workstation": "Crafting Workstation Block",
+      "item.theyear3001.titanium_sword": "Titanium Sword",
+      "item.theyear3001.b_1990_spawn_egg": "B-1990 Spawn Egg",
+      "item.theyear3001.boggie_mk_1_egg": "Boggie MK1",
+      "item.theyear3001.printed_circuit_board": "Printed Circuit Board",
+      "item.robotica.mech_mk_1_spawn_egg": "R1-D1 Spawn Egg",
+      "item.robotica.scrap_hoe": "Scrap Shovel",
+      "item.robotica.mech_mk_1_egg": "Mech MK1",
+      "item.robotica.orichalcum_ingot": "Orichalcum Ingot",
+      "item.robotica.orichalcum_armor_chestplate": "Orichalcum Armor Chestplate",
+      "fluid.theyear3001.oil": "Oil",
+      "block.robotica.scrap_stairs_block": "Scrap Slab Block",
+      "item.theyear3001.bulk_upgrade_card.description_0": "Health ⬆⬆",
+      "item.theyear3001.bulk_upgrade_card.description_1": "Size ⬆",
+      "item.theyear3001.scrap_shovel": "Scrap Shovel",
+      "key.robotica.fly_capsule_go_forward": "Flying Capsule Go Forward",
+      "item.robotica.sentinel_mk_1_spawn_egg": "Sentinel-7 Spawn Egg",
+      "item.theyear3001.cobalt_axe": "Cobalt Axe",
+      "item.theyear3001.mech_mk_1_spawn_egg": "R1-D1 Spawn Egg",
+      "key.robotica.fly_capsule_go_up": "Flying Capsule Go Up",
+      "item.theyear3001.b_2050_spawn_egg": "B-2050 Spawn Egg",
+      "item.theyear3001.empty_card": "Empty Upgrade Card"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Entities",
+        "children": [
+          {
+            "name": "BoggieMK1",
+            "children": []
+          },
+          {
+            "name": "Mechs",
+            "children": [
+              {
+                "name": "FlyingCapsule",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Bees",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Blocks",
+        "children": [
+          {
+            "name": "Crafting Station",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Items",
+        "children": [
+          {
+            "name": "Mechs",
+            "children": []
+          },
+          {
+            "name": "Cards",
+            "children": []
+          },
+          {
+            "name": "ToolsAndWeapons",
+            "children": []
+          },
+          {
+            "name": "Misc",
+            "children": []
+          },
+          {
+            "name": "Ores And Mats",
+            "children": []
+          },
+          {
+            "name": "Armor",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Recipes",
+        "children": []
+      },
+      {
+        "name": "Loot Tables",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "robotica",
+    "modName": "Robotica",
+    "version": "0.7.0",
+    "description": "Robotica is a futuristic Minecraft mod set in a high-tech world filled with advanced robots, towering mechs, and powerful sci-fi weapons.",
+    "author": "NightBeamStudio",
+    "websiteURL": "https://www.nightbeam.cloud",
+    "license": "All Rights Reserved",
+    "serverSideOnly": false,
+    "modPicture": "mech",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "pehkui",
+      "geckolib",
+      "jei"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "moonrayys \u003c3",
+    "modElementsPackage": "tn.nightbeam.robotica"
+  },
+  "mcreatorVersion": 202400452410
+}

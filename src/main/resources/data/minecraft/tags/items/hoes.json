@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "theyear3001:orichalcum_hoe",
-    "theyear3001:cobalt_hoe",
-    "theyear3001:titanium_hoe",
-    "theyear3001:scrap_hoe"
+    "robotica:orichalcum_hoe",
+    "robotica:cobalt_hoe",
+    "robotica:titanium_hoe",
+    "robotica:scrap_hoe"
   ]
 }

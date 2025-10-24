@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "aca"
+  ],
+  "key": {
+    "a": {
+      "item": "robotica:electrical_conductors"
+    },
+    "b": {
+      "item": "minecraft:redstone_torch"
+    },
+    "c": {
+      "item": "robotica:central_processing_unit"
+    },
+    "d": {
+      "item": "robotica:blank_printed_circuit_board"
+    },
+    "e": {
+      "item": "minecraft:repeater"
+    }
+  },
+  "result": {
+    "item": "robotica:printed_circuit_board",
+    "count": 1
+  }
+}

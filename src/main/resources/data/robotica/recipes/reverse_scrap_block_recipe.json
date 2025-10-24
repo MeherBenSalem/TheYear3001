@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "robotica:scrap_block"
+    }
+  ],
+  "result": {
+    "item": "robotica:scrap",
+    "count": 9
+  }
+}

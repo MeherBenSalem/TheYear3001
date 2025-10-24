@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"idle": {
+			"loop": true,
+			"bones": {
+				"submarine": {
+					"rotation": {
+						"vector": ["math.cos(query.anim_time *90) *1", 0, "math.sin(query.anim_time *90) *2"]
+					}
+				},
+				"propeller": {
+					"rotation": {
+						"vector": [0, 0, "query.anim_time *-120"]
+					}
+				}
+			}
+		},
+		"movement": {
+			"loop": true,
+			"bones": {
+				"submarine": {
+					"rotation": {
+						"vector": [0, 0, "math.sin(query.anim_time *180) *2"]
+					}
+				},
+				"propeller": {
+					"rotation": {
+						"vector": [0, 0, "query.anim_time *-480"]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

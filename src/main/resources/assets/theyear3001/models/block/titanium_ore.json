@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "theyear3001:block/titanium_ore_deepslate",
-    "particle": "theyear3001:block/titanium_ore_deepslate"
-  },
-  "render_type": "solid"
-}

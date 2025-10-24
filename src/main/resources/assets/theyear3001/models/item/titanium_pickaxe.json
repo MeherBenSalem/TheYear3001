@@ -1,6 +1,0 @@
-{
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "theyear3001:item/titanium_pickaxe"
-  }
-}

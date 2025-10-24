@@ -1,7 +1,9 @@
 {
   "replace": false,
   "values": [
-    "theyear3001:titanium_sword",
-    "theyear3001:scrap_sword"
+    "robotica:orichalcum_sword",
+    "robotica:cobalt_sword",
+    "robotica:titanium_sword",
+    "robotica:scrap_sword"
   ]
 }

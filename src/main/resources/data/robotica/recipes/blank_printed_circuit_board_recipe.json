@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "robotica:scrap"
+    },
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "robotica:electrical_conductors"
+    },
+    {
+      "item": "robotica:electrical_conductors"
+    }
+  ],
+  "result": {
+    "item": "robotica:blank_printed_circuit_board",
+    "count": 1
+  }
+}

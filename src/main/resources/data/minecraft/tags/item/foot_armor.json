@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "theyear3001:scrap_armor_boots"
+    "robotica:cobalt_armor_boots",
+    "robotica:titanium_armor_boots",
+    "robotica:orichalcum_armor_boots",
+    "robotica:scrap_armor_boots"
   ]
 }

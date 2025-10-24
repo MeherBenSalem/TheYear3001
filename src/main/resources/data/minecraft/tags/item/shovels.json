@@ -1,7 +1,9 @@
 {
   "replace": false,
   "values": [
-    "theyear3001:titanium_shovel",
-    "theyear3001:scrap_shovel"
+    "robotica:orichalcum_shovel",
+    "robotica:cobalt_shovel",
+    "robotica:titanium_shovel",
+    "robotica:scrap_shovel"
   ]
 }

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "robotica:titanium_ingot"
+    },
+    "b": {
+      "item": "robotica:orichalcum_ingot"
+    },
+    "c": {
+      "item": "minecraft:dispenser"
+    }
+  },
+  "result": {
+    "item": "robotica:rocket_launcher",
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "ccc"
+  ],
+  "key": {
+    "a": {
+      "item": "robotica:central_processing_unit"
+    },
+    "b": {
+      "item": "minecraft:crafting_table"
+    },
+    "c": {
+      "item": "robotica:scrap"
+    },
+    "d": {
+      "item": "robotica:printed_circuit_board"
+    }
+  },
+  "result": {
+    "item": "robotica:crafting_workstation",
+    "count": 1
+  }
+}

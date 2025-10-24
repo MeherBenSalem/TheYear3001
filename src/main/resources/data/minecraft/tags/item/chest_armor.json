@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "theyear3001:scrap_armor_chestplate"
+    "robotica:cobalt_armor_chestplate",
+    "robotica:titanium_armor_chestplate",
+    "robotica:orichalcum_armor_chestplate",
+    "robotica:scrap_armor_chestplate"
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    " b ",
+    " b "
+  ],
+  "key": {
+    "a": {
+      "item": "robotica:titanium_ingot"
+    },
+    "b": {
+      "item": "robotica:titanium_rod"
+    }
+  },
+  "result": {
+    "item": "robotica:titanium_pickaxe",
+    "count": 1
+  }
+}

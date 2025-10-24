@@ -1,0 +1,38 @@
+{
+  "robot_die": {
+    "subtitle": "subtitles.robot_die",
+    "sounds": [
+      {
+        "name": "robotica:robot_die",
+        "stream": false
+      }
+    ]
+  },
+  "robot_ambient": {
+    "subtitle": "subtitles.robot_ambient",
+    "sounds": [
+      {
+        "name": "robotica:roboth",
+        "stream": false
+      }
+    ]
+  },
+  "alient_robot_ambient": {
+    "subtitle": "subtitles.alient_robot_ambient",
+    "sounds": [
+      {
+        "name": "robotica:alien-robot-246019",
+        "stream": false
+      }
+    ]
+  },
+  "robot_birds": {
+    "subtitle": "subtitles.robot_birds",
+    "sounds": [
+      {
+        "name": "robotica:robot-birds",
+        "stream": false
+      }
+    ]
+  }
+}

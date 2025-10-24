@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "robotica:block/scrap_debris_up",
+    "up": "robotica:block/scrap_debris_up",
+    "north": "robotica:block/scrap_debris_side",
+    "east": "robotica:block/scrap_debris_side",
+    "south": "robotica:block/scrap_debris_side",
+    "west": "robotica:block/scrap_debris_side",
+    "particle": "robotica:block/scrap_debris_up"
+  },
+  "render_type": "solid"
+}
