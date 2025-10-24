@@ -1,3 +1,11 @@
+## v0.7.0 Patch Notes
+
+### 🛠️ Updates & Improvements
+- Replaced the **Flying Capsule** with a new **Spaceship Model** (now fully renamed and retextured).  
+- Revamped the **Workbench UI** for a cleaner and more futuristic look.  
+- Added a powerful **Rocket Launcher** along with its **crafting recipe**.  
+- Updated the project **namespace** from `year_3001` to `robotica` for consistency and clarity.
+
 ## v0.6.0 Patch Notes
 
 - **New Armors:** Introduced **Titanium, Cobalt, and Orichalcum** armor sets, complete with crafting recipes.  
