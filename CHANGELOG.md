@@ -1,3 +1,11 @@
+## v1.0.0 Patch Notes
+
+- **Refreshed Visuals:** All mod icons have been fully updated for a cleaner, more consistent look.  
+- **Lean & Lightweight:** *Geckolib*, *Pehkui*, and *JEI* are no longer required as dependencies.
+- **Content Adjustments:** All bee-related robots have been removed as part of a larger cleanup and redesign.  
+- **Performance Improvements:** Optimized codebase and cleaned up heavy/“chunky” images to improve performance and reduce load times.  
+- **Expanded Compatibility:** Now supports multiple new Minecraft versions **1.16.5**, **1.18.2**, **1.19.2**, **1.21.5**, and **1.21.8**.
+
 ## v0.7.0 Patch Notes
 
 ### 🛠️ Updates & Improvements
