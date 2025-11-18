@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "robotica:item/scrap_stick"
+    "layer0": "robotica:item/ship"
   }
 }

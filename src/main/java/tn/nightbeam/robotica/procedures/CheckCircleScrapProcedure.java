@@ -21,10 +21,7 @@ public class CheckCircleScrapProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof RoboticaModMenus.MenuAccessor _menu14 ? _menu14.getSlots().get(10).getItem() : ItemStack.EMPTY).getItem() == RoboticaModItems.SCRAP.get()
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof RoboticaModMenus.MenuAccessor _menu16 ? _menu16.getSlots().get(14).getItem() : ItemStack.EMPTY).getItem() == RoboticaModItems.SCRAP.get()
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof RoboticaModMenus.MenuAccessor _menu18 ? _menu18.getSlots().get(15).getItem() : ItemStack.EMPTY).getItem() == RoboticaModItems.SCRAP.get()
-				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof RoboticaModMenus.MenuAccessor _menu20 ? _menu20.getSlots().get(16).getItem() : ItemStack.EMPTY).getItem() == RoboticaModItems.SCRAP.get()
-				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof RoboticaModMenus.MenuAccessor _menu22 ? _menu22.getSlots().get(17).getItem() : ItemStack.EMPTY).getItem() == RoboticaModItems.SCRAP.get()
-				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof RoboticaModMenus.MenuAccessor _menu24 ? _menu24.getSlots().get(18).getItem() : ItemStack.EMPTY).getItem() == RoboticaModItems.SCRAP.get()
-				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof RoboticaModMenus.MenuAccessor _menu26 ? _menu26.getSlots().get(19).getItem() : ItemStack.EMPTY).getItem() == RoboticaModItems.SCRAP.get()) {
+				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof RoboticaModMenus.MenuAccessor _menu20 ? _menu20.getSlots().get(19).getItem() : ItemStack.EMPTY).getItem() == RoboticaModItems.SCRAP.get()) {
 			return true;
 		}
 		return false;

@@ -599,20 +599,6 @@
       "path": "~/Recipes"
     },
     {
-      "name": "ScrapStick",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "scrap_stick",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/robotica/models/item/scrap_stick.json",
-          "src/main/java/tn/nightbeam/robotica/item/ScrapStickItem.java"
-        ]
-      },
-      "path": "~/Items/Misc"
-    },
-    {
       "name": "ScrapAxe",
       "type": "tool",
       "compiles": true,
@@ -639,19 +625,6 @@
         ]
       },
       "path": "~/Items/ToolsAndWeapons"
-    },
-    {
-      "name": "ScrapStickRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "scrap_stick_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/robotica/recipes/scrap_stick_recipe.json"
-        ]
-      },
-      "path": "~/Recipes"
     },
     {
       "name": "ScrapShovel",
@@ -969,11 +942,11 @@
       "type": "item",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "flying_capsule",
+      "registry_name": "space_ship_capsule",
       "metadata": {
         "files": [
-          "src/main/java/tn/nightbeam/robotica/item/FlyingCapsuleItem.java",
-          "src/main/resources/assets/robotica/models/item/flying_capsule.json"
+          "src/main/resources/assets/robotica/models/item/space_ship_capsule.json",
+          "src/main/java/tn/nightbeam/robotica/item/FlyingCapsuleItem.java"
         ]
       },
       "path": "~/Items/Mechs"
@@ -1025,7 +998,6 @@
           "src/main/resources/assets/robotica/models/item/scrap_debris.json",
           "src/main/resources/assets/robotica/models/block/scrap_debris.json",
           "src/main/resources/data/robotica/worldgen/placed_feature/scrap_debris.json",
-          "src/main/resources/data/robotica/loot_tables/blocks/scrap_debris.json",
           "src/main/resources/data/robotica/worldgen/configured_feature/scrap_debris.json",
           "src/main/resources/assets/robotica/blockstates/scrap_debris.json",
           "src/main/resources/data/robotica/forge/biome_modifier/scrap_debris_biome_modifier.json"
@@ -1266,20 +1238,6 @@
       "path": "~/Recipes"
     },
     {
-      "name": "TitaniumRod",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "titanium_rod",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/robotica/models/item/titanium_rod.json",
-          "src/main/java/tn/nightbeam/robotica/item/TitaniumRodItem.java"
-        ]
-      },
-      "path": "~/Items/Misc"
-    },
-    {
       "name": "TitaniumAxe",
       "type": "tool",
       "compiles": true,
@@ -1348,19 +1306,6 @@
         ]
       },
       "path": "~/Items/ToolsAndWeapons"
-    },
-    {
-      "name": "TitaniumRodRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "titanium_rod_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/robotica/recipes/titanium_rod_recipe.json"
-        ]
-      },
-      "path": "~/Recipes"
     },
     {
       "name": "TitaniumSwordRecipe",
@@ -2108,7 +2053,80 @@
           "src/main/java/tn/nightbeam/robotica/procedures/CheckCircleScrapProcedure.java"
         ]
       },
-      "path": "~/Crafting"
+      "path": "~/Crafting/Recipes"
+    },
+    {
+      "name": "RecipeMech",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_mech",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/procedures/RecipeMechProcedure.java"
+        ]
+      },
+      "path": "~/Crafting/Recipes"
+    },
+    {
+      "name": "RecipeBoggie",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_boggie",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/procedures/RecipeBoggieProcedure.java"
+        ]
+      },
+      "path": "~/Crafting/Recipes"
+    },
+    {
+      "name": "RecipeSpaceShip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_space_ship",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/procedures/RecipeSpaceShipProcedure.java"
+        ]
+      },
+      "path": "~/Crafting/Recipes"
+    },
+    {
+      "name": "ScrapDebrisLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap_debris_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/robotica/loot_tables/blocks/scrap_debris.json"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [],
@@ -2205,7 +2223,6 @@
       "ElectricalConductors",
       "MechMK1Egg",
       "BoggieMK1Egg",
-      "FlyingCapsule",
       "ScrapDebris",
       "TitaniumOre",
       "TitaniumIngot",
@@ -2217,13 +2234,11 @@
       "CobaltOre",
       "OrichalcumOre",
       "ScrapArmor",
-      "ScrapStick",
       "ScrapAxe",
       "ScrapSword",
       "ScrapShovel",
       "ScrapHoe",
       "ScrapPickaxe",
-      "TitaniumRod",
       "TitaniumAxe",
       "TitaniumSword",
       "TitaniumShovel",
@@ -2242,7 +2257,8 @@
       "OrichalcumShovel",
       "OrichalcumHoe",
       "OrichalcumPickaxe",
-      "Sentinel"
+      "Sentinel",
+      "FlyingCapsule"
     ],
     "CUSTOM:TheYear3001Cards": [
       "EmptyCard",
@@ -2364,7 +2380,6 @@
       "item.theyear3001.defense_upgrade_card.description_0": "Armor ⬆",
       "item.theyear3001.flying_capsule_mech_spawn_egg": "Flying Capsule Mech Spawn Egg",
       "block.theyear3001.scrap_stairs_block": "Scrap Slab Block",
-      "item.robotica.flying_capsule": "Flying Capsule",
       "item.theyear3001.raw_orichalcum": "Raw Orichalcum",
       "item.theyear3001.oil_bucket": "Oil Bucket",
       "item.robotica.titanium_axe": "Titanium Axe",
@@ -2386,7 +2401,6 @@
       "item.theyear3001.scrap_armor_leggings": "Scrap Armor Leggings",
       "item.theyear3001.speed_upgrade_card.description_0": "Movement Speed ⬆",
       "item.robotica.damage_upgrade_card.description_0": "Damage ⬆",
-      "item.robotica.scrap_stick": "Scrap Stick",
       "entity.theyear3001.b_1928": "B-1928",
       "block.robotica.oil": "Oil",
       "item.robotica.printed_circuit_board": "Printed Circuit Board",
@@ -2423,7 +2437,6 @@
       "item.robotica.mech_mk_1_egg": "Mech MK1",
       "item.robotica.orichalcum_axe": "Orichalcum Axe",
       "item.theyear3001.titanium_hoe": "Titanium Shovel",
-      "item.robotica.titanium_rod": "Titanium Rod",
       "item.robotica.orichalcum_ingot": "Orichalcum Ingot",
       "item.robotica.orichalcum_armor_chestplate": "Orichalcum Armor Chestplate",
       "fluid.theyear3001.oil": "Oil",
@@ -2442,7 +2455,8 @@
       "item.theyear3001.b_2050_spawn_egg": "B-2050 Spawn Egg",
       "item.theyear3001.empty_card": "Empty Upgrade Card",
       "item.theyear3001.titanium_armor_helmet": "Titanium Armor Helmet",
-      "fluid_type.robotica.oil": "Oil"
+      "fluid_type.robotica.oil": "Oil",
+      "item.robotica.space_ship_capsule": "Space Ship"
     }
   },
   "metadata": {
@@ -2536,7 +2550,12 @@
       },
       {
         "name": "Crafting",
-        "children": []
+        "children": [
+          {
+            "name": "Recipes",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -2549,7 +2568,7 @@
     "websiteURL": "https://www.nightbeam.cloud",
     "license": "All Rights Reserved",
     "serverSideOnly": false,
-    "modPicture": "mech",
+    "modPicture": "robotica_logo",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],

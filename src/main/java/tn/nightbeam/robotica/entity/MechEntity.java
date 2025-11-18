@@ -64,7 +64,7 @@ public class MechEntity extends Monster {
 
 	@Override
 	public double getPassengersRidingOffset() {
-		return super.getPassengersRidingOffset() + 1;
+		return super.getPassengersRidingOffset() + 0.7;
 	}
 
 	@Override

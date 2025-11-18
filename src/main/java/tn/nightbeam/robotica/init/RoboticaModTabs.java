@@ -16,7 +16,7 @@ import net.minecraft.core.registries.Registries;
 public class RoboticaModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, RoboticaMod.MODID);
 	public static final RegistryObject<CreativeModeTab> THE_YEAR_3001_TAB = REGISTRY.register("the_year_3001_tab",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.robotica.the_year_3001_tab")).icon(() -> new ItemStack(RoboticaModBlocks.CRAFTING_WORKSTATION.get())).displayItems((parameters, tabData) -> {
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.robotica.the_year_3001_tab")).icon(() -> new ItemStack(RoboticaModItems.PRINTED_CIRCUIT_BOARD.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(RoboticaModItems.OIL_BUCKET.get());
 				tabData.accept(RoboticaModItems.SCRAP.get());
 				tabData.accept(RoboticaModBlocks.SCRAP_BLOCK.get().asItem());
@@ -29,7 +29,6 @@ public class RoboticaModTabs {
 				tabData.accept(RoboticaModItems.ELECTRICAL_CONDUCTORS.get());
 				tabData.accept(RoboticaModItems.MECH_MK_1_EGG.get());
 				tabData.accept(RoboticaModItems.BOGGIE_MK_1_EGG.get());
-				tabData.accept(RoboticaModItems.FLYING_CAPSULE.get());
 				tabData.accept(RoboticaModBlocks.SCRAP_DEBRIS.get().asItem());
 				tabData.accept(RoboticaModBlocks.TITANIUM_ORE.get().asItem());
 				tabData.accept(RoboticaModItems.TITANIUM_INGOT.get());
@@ -44,13 +43,11 @@ public class RoboticaModTabs {
 				tabData.accept(RoboticaModItems.SCRAP_ARMOR_CHESTPLATE.get());
 				tabData.accept(RoboticaModItems.SCRAP_ARMOR_LEGGINGS.get());
 				tabData.accept(RoboticaModItems.SCRAP_ARMOR_BOOTS.get());
-				tabData.accept(RoboticaModItems.SCRAP_STICK.get());
 				tabData.accept(RoboticaModItems.SCRAP_AXE.get());
 				tabData.accept(RoboticaModItems.SCRAP_SWORD.get());
 				tabData.accept(RoboticaModItems.SCRAP_SHOVEL.get());
 				tabData.accept(RoboticaModItems.SCRAP_HOE.get());
 				tabData.accept(RoboticaModItems.SCRAP_PICKAXE.get());
-				tabData.accept(RoboticaModItems.TITANIUM_ROD.get());
 				tabData.accept(RoboticaModItems.TITANIUM_AXE.get());
 				tabData.accept(RoboticaModItems.TITANIUM_SWORD.get());
 				tabData.accept(RoboticaModItems.TITANIUM_SHOVEL.get());
@@ -79,6 +76,7 @@ public class RoboticaModTabs {
 				tabData.accept(RoboticaModItems.ORICHALCUM_HOE.get());
 				tabData.accept(RoboticaModItems.ORICHALCUM_PICKAXE.get());
 				tabData.accept(RoboticaModItems.SENTINEL_SPAWN_EGG.get());
+				tabData.accept(RoboticaModItems.SPACE_SHIP_CAPSULE.get());
 			}).build());
 	public static final RegistryObject<CreativeModeTab> THE_YEAR_3001_CARDS = REGISTRY.register("the_year_3001_cards",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.robotica.the_year_3001_cards")).icon(() -> new ItemStack(RoboticaModItems.BULK_UPGRADE_CARD.get())).displayItems((parameters, tabData) -> {

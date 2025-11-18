@@ -5,7 +5,6 @@ package tn.nightbeam.robotica.init;
 
 import tn.nightbeam.robotica.item.TitaniumSwordItem;
 import tn.nightbeam.robotica.item.TitaniumShovelItem;
-import tn.nightbeam.robotica.item.TitaniumRodItem;
 import tn.nightbeam.robotica.item.TitaniumPickaxeItem;
 import tn.nightbeam.robotica.item.TitaniumIngotItem;
 import tn.nightbeam.robotica.item.TitaniumHoeItem;
@@ -13,7 +12,6 @@ import tn.nightbeam.robotica.item.TitaniumAxeItem;
 import tn.nightbeam.robotica.item.TitaniumArmorItem;
 import tn.nightbeam.robotica.item.SpeedUpgradeCardItem;
 import tn.nightbeam.robotica.item.ScrapSwordItem;
-import tn.nightbeam.robotica.item.ScrapStickItem;
 import tn.nightbeam.robotica.item.ScrapShovelItem;
 import tn.nightbeam.robotica.item.ScrapPickaxeItem;
 import tn.nightbeam.robotica.item.ScrapItem;
@@ -79,7 +77,6 @@ public class RoboticaModItems {
 	public static final RegistryObject<Item> CENTRAL_PROCESSING_UNIT = REGISTRY.register("central_processing_unit", () -> new CentralProcessingUnitItem());
 	public static final RegistryObject<Item> ELECTRICAL_CONDUCTORS = REGISTRY.register("electrical_conductors", () -> new ElectricalConductorsItem());
 	public static final RegistryObject<Item> DEFENSE_UPGRADE_CARD = REGISTRY.register("defense_upgrade_card", () -> new DefenseUpgradeCardItem());
-	public static final RegistryObject<Item> SCRAP_STICK = REGISTRY.register("scrap_stick", () -> new ScrapStickItem());
 	public static final RegistryObject<Item> SCRAP_AXE = REGISTRY.register("scrap_axe", () -> new ScrapAxeItem());
 	public static final RegistryObject<Item> SCRAP_SWORD = REGISTRY.register("scrap_sword", () -> new ScrapSwordItem());
 	public static final RegistryObject<Item> SCRAP_SHOVEL = REGISTRY.register("scrap_shovel", () -> new ScrapShovelItem());
@@ -87,7 +84,7 @@ public class RoboticaModItems {
 	public static final RegistryObject<Item> SCRAP_PICKAXE = REGISTRY.register("scrap_pickaxe", () -> new ScrapPickaxeItem());
 	public static final RegistryObject<Item> SCRAP_SLAB = block(RoboticaModBlocks.SCRAP_SLAB);
 	public static final RegistryObject<Item> SCRAP_STAIRS_BLOCK = block(RoboticaModBlocks.SCRAP_STAIRS_BLOCK);
-	public static final RegistryObject<Item> FLYING_CAPSULE = REGISTRY.register("flying_capsule", () -> new FlyingCapsuleItem());
+	public static final RegistryObject<Item> SPACE_SHIP_CAPSULE = REGISTRY.register("space_ship_capsule", () -> new FlyingCapsuleItem());
 	public static final RegistryObject<Item> SCRAP_DEBRIS = block(RoboticaModBlocks.SCRAP_DEBRIS);
 	public static final RegistryObject<Item> TITANIUM_ORE = block(RoboticaModBlocks.TITANIUM_ORE);
 	public static final RegistryObject<Item> TITANIUM_INGOT = REGISTRY.register("titanium_ingot", () -> new TitaniumIngotItem());
@@ -98,7 +95,6 @@ public class RoboticaModItems {
 	public static final RegistryObject<Item> RAW_ORICHALCUM = REGISTRY.register("raw_orichalcum", () -> new RawOrichalcumItem());
 	public static final RegistryObject<Item> COBALT_ORE = block(RoboticaModBlocks.COBALT_ORE);
 	public static final RegistryObject<Item> ORICHALCUM_ORE = block(RoboticaModBlocks.ORICHALCUM_ORE);
-	public static final RegistryObject<Item> TITANIUM_ROD = REGISTRY.register("titanium_rod", () -> new TitaniumRodItem());
 	public static final RegistryObject<Item> TITANIUM_AXE = REGISTRY.register("titanium_axe", () -> new TitaniumAxeItem());
 	public static final RegistryObject<Item> TITANIUM_SWORD = REGISTRY.register("titanium_sword", () -> new TitaniumSwordItem());
 	public static final RegistryObject<Item> TITANIUM_SHOVEL = REGISTRY.register("titanium_shovel", () -> new TitaniumShovelItem());

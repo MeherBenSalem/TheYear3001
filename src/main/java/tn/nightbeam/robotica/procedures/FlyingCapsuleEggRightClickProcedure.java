@@ -22,7 +22,7 @@ public class FlyingCapsuleEggRightClickProcedure {
 			}
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(RoboticaModItems.FLYING_CAPSULE.get());
+			ItemStack _stktoremove = new ItemStack(RoboticaModItems.SPACE_SHIP_CAPSULE.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 	}

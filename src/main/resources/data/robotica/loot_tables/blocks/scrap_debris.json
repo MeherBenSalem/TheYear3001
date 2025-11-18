@@ -1,20 +1,33 @@
 {
   "type": "minecraft:block",
-  "random_sequence": "robotica:blocks/scrap_debris",
   "pools": [
     {
-      "rolls": 1.0,
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
-      ],
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "robotica:scrap_debris"
+          "name": "robotica:scrap",
+          "weight": 40,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
+            }
+          ]
         }
       ]
     }
-  ]
+  ],
+  "random_sequence": "robotica:blocks/scrap_debris"
 }

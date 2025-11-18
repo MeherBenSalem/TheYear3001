@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "robotica:item/upgrade_card_size"
+    "layer0": "robotica:item/upgrade_card_speed"
   }
 }
