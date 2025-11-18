@@ -1,6 +1,6 @@
 package tn.nightbeam.robotica.procedures;
 
-import tn.nightbeam.robotica.entity.FlyingCapsuleMechEntity;
+import tn.nightbeam.robotica.entity.SpaceShipEntity;
 
 import net.minecraft.world.entity.Entity;
 
@@ -8,7 +8,7 @@ public class FlyCapsuleGoUpOnKeyPressedProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getVehicle()) instanceof FlyingCapsuleMechEntity) {
+		if ((entity.getVehicle()) instanceof SpaceShipEntity) {
 			(entity.getVehicle()).getPersistentData().putDouble("VerticalMovement", 1);
 		}
 	}

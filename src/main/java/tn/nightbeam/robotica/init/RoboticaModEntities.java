@@ -1,16 +1,12 @@
-
 /*
  *    MCreator note: This file will be REGENERATED on each build.
  */
 package tn.nightbeam.robotica.init;
 
-import tn.nightbeam.robotica.entity.SentinelMK1Entity;
-import tn.nightbeam.robotica.entity.MechMK1Entity;
-import tn.nightbeam.robotica.entity.FlyingCapsuleMechEntity;
-import tn.nightbeam.robotica.entity.BoggieMK1Entity;
-import tn.nightbeam.robotica.entity.B2050Entity;
-import tn.nightbeam.robotica.entity.B1990Entity;
-import tn.nightbeam.robotica.entity.B1928Entity;
+import tn.nightbeam.robotica.entity.SpaceShipEntity;
+import tn.nightbeam.robotica.entity.SentinelEntity;
+import tn.nightbeam.robotica.entity.MechEntity;
+import tn.nightbeam.robotica.entity.BoggieEntity;
 import tn.nightbeam.robotica.RoboticaMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -28,32 +24,20 @@ import net.minecraft.world.entity.Entity;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class RoboticaModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, RoboticaMod.MODID);
-	public static final RegistryObject<EntityType<BoggieMK1Entity>> BOGGIE_MK_1 = register("boggie_mk_1",
-			EntityType.Builder.<BoggieMK1Entity>of(BoggieMK1Entity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BoggieMK1Entity::new)
+	public static final RegistryObject<EntityType<BoggieEntity>> BOGGIE = register("boggie",
+			EntityType.Builder.<BoggieEntity>of(BoggieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BoggieEntity::new)
 
-					.sized(0.6f, 0.8f));
-	public static final RegistryObject<EntityType<MechMK1Entity>> MECH_MK_1 = register("mech_mk_1",
-			EntityType.Builder.<MechMK1Entity>of(MechMK1Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MechMK1Entity::new)
+					.sized(0.6f, 1f));
+	public static final RegistryObject<EntityType<SentinelEntity>> SENTINEL = register("sentinel",
+			EntityType.Builder.<SentinelEntity>of(SentinelEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(SentinelEntity::new)
+
+					.sized(0.6f, 3.5f));
+	public static final RegistryObject<EntityType<MechEntity>> MECH = register("mech",
+			EntityType.Builder.<MechEntity>of(MechEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MechEntity::new)
 
 					.sized(2f, 3.7f));
-	public static final RegistryObject<EntityType<B1928Entity>> B_1928 = register("b_1928",
-			EntityType.Builder.<B1928Entity>of(B1928Entity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(B1928Entity::new)
-
-					.sized(0.8f, 1.4f));
-	public static final RegistryObject<EntityType<B1990Entity>> B_1990 = register("b_1990",
-			EntityType.Builder.<B1990Entity>of(B1990Entity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(B1990Entity::new)
-
-					.sized(1.5f, 1.9f));
-	public static final RegistryObject<EntityType<B2050Entity>> B_2050 = register("b_2050",
-			EntityType.Builder.<B2050Entity>of(B2050Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(B2050Entity::new)
-
-					.sized(4f, 4f));
-	public static final RegistryObject<EntityType<SentinelMK1Entity>> SENTINEL_MK_1 = register("sentinel_mk_1",
-			EntityType.Builder.<SentinelMK1Entity>of(SentinelMK1Entity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(SentinelMK1Entity::new)
-
-					.sized(0.6f, 2.5f));
-	public static final RegistryObject<EntityType<FlyingCapsuleMechEntity>> FLYING_CAPSULE_MECH = register("flying_capsule_mech",
-			EntityType.Builder.<FlyingCapsuleMechEntity>of(FlyingCapsuleMechEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FlyingCapsuleMechEntity::new)
+	public static final RegistryObject<EntityType<SpaceShipEntity>> SPACE_SHIP = register("space_ship",
+			EntityType.Builder.<SpaceShipEntity>of(SpaceShipEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SpaceShipEntity::new)
 
 					.sized(4f, 2f));
 
@@ -66,24 +50,18 @@ public class RoboticaModEntities {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
-			BoggieMK1Entity.init();
-			MechMK1Entity.init();
-			B1928Entity.init();
-			B1990Entity.init();
-			B2050Entity.init();
-			SentinelMK1Entity.init();
-			FlyingCapsuleMechEntity.init();
+			BoggieEntity.init();
+			SentinelEntity.init();
+			MechEntity.init();
+			SpaceShipEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
-		event.put(BOGGIE_MK_1.get(), BoggieMK1Entity.createAttributes().build());
-		event.put(MECH_MK_1.get(), MechMK1Entity.createAttributes().build());
-		event.put(B_1928.get(), B1928Entity.createAttributes().build());
-		event.put(B_1990.get(), B1990Entity.createAttributes().build());
-		event.put(B_2050.get(), B2050Entity.createAttributes().build());
-		event.put(SENTINEL_MK_1.get(), SentinelMK1Entity.createAttributes().build());
-		event.put(FLYING_CAPSULE_MECH.get(), FlyingCapsuleMechEntity.createAttributes().build());
+		event.put(BOGGIE.get(), BoggieEntity.createAttributes().build());
+		event.put(SENTINEL.get(), SentinelEntity.createAttributes().build());
+		event.put(MECH.get(), MechEntity.createAttributes().build());
+		event.put(SPACE_SHIP.get(), SpaceShipEntity.createAttributes().build());
 	}
 }

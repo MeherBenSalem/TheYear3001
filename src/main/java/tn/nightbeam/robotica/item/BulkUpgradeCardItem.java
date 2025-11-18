@@ -1,4 +1,3 @@
-
 package tn.nightbeam.robotica.item;
 
 import net.minecraft.world.level.Level;
@@ -19,6 +18,5 @@ public class BulkUpgradeCardItem extends Item {
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.translatable("item.robotica.bulk_upgrade_card.description_0"));
-		list.add(Component.translatable("item.robotica.bulk_upgrade_card.description_1"));
 	}
 }

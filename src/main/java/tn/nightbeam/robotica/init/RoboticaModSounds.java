@@ -1,4 +1,3 @@
-
 /*
  *    MCreator note: This file will be REGENERATED on each build.
  */
@@ -15,8 +14,7 @@ import net.minecraft.resources.ResourceLocation;
 
 public class RoboticaModSounds {
 	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, RoboticaMod.MODID);
-	public static final RegistryObject<SoundEvent> ROBOT_DIE = REGISTRY.register("robot_die", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("robotica", "robot_die")));
-	public static final RegistryObject<SoundEvent> ROBOT_AMBIENT = REGISTRY.register("robot_ambient", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("robotica", "robot_ambient")));
-	public static final RegistryObject<SoundEvent> ALIENT_ROBOT_AMBIENT = REGISTRY.register("alient_robot_ambient", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("robotica", "alient_robot_ambient")));
-	public static final RegistryObject<SoundEvent> ROBOT_BIRDS = REGISTRY.register("robot_birds", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("robotica", "robot_birds")));
+	public static final RegistryObject<SoundEvent> ROBOT_DIE = REGISTRY.register("robot_die", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("robotica", "robot_die")));
+	public static final RegistryObject<SoundEvent> ROBOT_AMBIENT = REGISTRY.register("robot_ambient", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("robotica", "robot_ambient")));
+	public static final RegistryObject<SoundEvent> ALIENT_ROBOT_AMBIENT = REGISTRY.register("alient_robot_ambient", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("robotica", "alient_robot_ambient")));
 }

@@ -11,21 +11,6 @@
       }
     },
     {
-      "name": "BoggieMK1",
-      "type": "animatedentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "boggie_mk_1",
-      "metadata": {
-        "files": [
-          "src/main/java/tn/nightbeam/robotica/client/renderer/BoggieMK1Renderer.java",
-          "src/main/java/tn/nightbeam/robotica/entity/BoggieMK1Entity.java",
-          "src/main/java/tn/nightbeam/robotica/entity/model/BoggieMK1Model.java"
-        ]
-      },
-      "path": "~/Entities/BoggieMK1"
-    },
-    {
       "name": "BoggieMK1RightClickedOnEntity",
       "type": "procedure",
       "compiles": true,
@@ -133,21 +118,6 @@
       "path": "~/Items/Cards"
     },
     {
-      "name": "MechMK1",
-      "type": "animatedentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mech_mk_1",
-      "metadata": {
-        "files": [
-          "src/main/java/tn/nightbeam/robotica/entity/model/MechMK1Model.java",
-          "src/main/java/tn/nightbeam/robotica/client/renderer/MechMK1Renderer.java",
-          "src/main/java/tn/nightbeam/robotica/entity/MechMK1Entity.java"
-        ]
-      },
-      "path": "~/Entities/Mechs"
-    },
-    {
       "name": "MechMK1RightClickedOnEntity",
       "type": "procedure",
       "compiles": true,
@@ -169,56 +139,6 @@
         ]
       },
       "path": "~/Entities/Mechs"
-    },
-    {
-      "name": "B1928",
-      "type": "animatedentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "b_1928",
-      "metadata": {
-        "files": [
-          "src/main/java/tn/nightbeam/robotica/entity/B1928Entity.java",
-          "src/main/java/tn/nightbeam/robotica/client/renderer/B1928Renderer.java",
-          "src/main/java/tn/nightbeam/robotica/entity/model/B1928Model.java",
-          "src/main/resources/data/robotica/forge/biome_modifier/b_1928_biome_modifier.json",
-          "src/main/resources/assets/robotica/models/item/b_1928_spawn_egg.json"
-        ]
-      },
-      "path": "~/Entities/Bees"
-    },
-    {
-      "name": "B1990",
-      "type": "animatedentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "b_1990",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/robotica/models/item/b_1990_spawn_egg.json",
-          "src/main/resources/data/robotica/forge/biome_modifier/b_1990_biome_modifier.json",
-          "src/main/java/tn/nightbeam/robotica/entity/B1990Entity.java",
-          "src/main/java/tn/nightbeam/robotica/entity/model/B1990Model.java",
-          "src/main/java/tn/nightbeam/robotica/client/renderer/B1990Renderer.java"
-        ]
-      },
-      "path": "~/Entities/Bees"
-    },
-    {
-      "name": "B2050",
-      "type": "animatedentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "b_2050",
-      "metadata": {
-        "files": [
-          "src/main/java/tn/nightbeam/robotica/entity/B2050Entity.java",
-          "src/main/java/tn/nightbeam/robotica/entity/model/B2050Model.java",
-          "src/main/java/tn/nightbeam/robotica/client/renderer/B2050Renderer.java",
-          "src/main/resources/assets/robotica/models/item/b_2050_spawn_egg.json"
-        ]
-      },
-      "path": "~/Entities/Bees"
     },
     {
       "name": "RepairCard",
@@ -297,20 +217,6 @@
         ]
       },
       "path": "~/Blocks/Crafting Station"
-    },
-    {
-      "name": "ExtendedCrafting",
-      "type": "jeirecipetype",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "extended_crafting",
-      "metadata": {
-        "files": [
-          "src/main/java/tn/nightbeam/robotica/jei_recipes/ExtendedCraftingRecipeCategory.java",
-          "src/main/java/tn/nightbeam/robotica/jei_recipes/ExtendedCraftingRecipe.java"
-        ]
-      },
-      "path": "~/Recipes"
     },
     {
       "name": "ScrapBlockRecipe",
@@ -621,19 +527,6 @@
       "path": "~/Recipes"
     },
     {
-      "name": "BoggieRecipe",
-      "type": "jeirecipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "boggie_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/robotica/recipes/boggie_recipe.json"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
       "name": "CraftExtended",
       "type": "procedure",
       "compiles": true,
@@ -647,27 +540,10 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
       "path": "~/Blocks/Crafting Station"
-    },
-    {
-      "name": "MechMK1Recipe",
-      "type": "jeirecipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mech_mk_1_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/robotica/recipes/mech_mk_1_recipe.json"
-        ]
-      },
-      "path": "~/Recipes"
     },
     {
       "name": "CraftingWorkstationRecipe",
@@ -708,23 +584,6 @@
         ]
       },
       "path": "~/Recipes"
-    },
-    {
-      "name": "SentinelMK1",
-      "type": "animatedentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sentinel_mk_1",
-      "metadata": {
-        "files": [
-          "src/main/java/tn/nightbeam/robotica/client/renderer/SentinelMK1Renderer.java",
-          "src/main/java/tn/nightbeam/robotica/entity/model/SentinelMK1Model.java",
-          "src/main/java/tn/nightbeam/robotica/entity/SentinelMK1Entity.java",
-          "src/main/resources/assets/robotica/models/item/sentinel_mk_1_spawn_egg.json",
-          "src/main/resources/data/robotica/forge/biome_modifier/sentinel_mk_1_biome_modifier.json"
-        ]
-      },
-      "path": "~/Entities"
     },
     {
       "name": "ScrapSwordRecipe",
@@ -953,22 +812,6 @@
       "path": "~/Recipes"
     },
     {
-      "name": "FlyingCapsuleMech",
-      "type": "animatedentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "flying_capsule_mech",
-      "metadata": {
-        "files": [
-          "src/main/java/tn/nightbeam/robotica/entity/FlyingCapsuleMechEntity.java",
-          "src/main/resources/assets/robotica/models/item/flying_capsule_mech_spawn_egg.json",
-          "src/main/java/tn/nightbeam/robotica/entity/model/FlyingCapsuleMechModel.java",
-          "src/main/java/tn/nightbeam/robotica/client/renderer/FlyingCapsuleMechRenderer.java"
-        ]
-      },
-      "path": "~/Entities/Mechs/FlyingCapsule"
-    },
-    {
       "name": "FlyCapsuleGoUp",
       "type": "keybind",
       "compiles": true,
@@ -1189,19 +1032,6 @@
         ]
       },
       "path": "~/Blocks"
-    },
-    {
-      "name": "FlyingCapsuleRecipe",
-      "type": "jeirecipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "flying_capsule_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/robotica/recipes/flying_capsule_recipe.json"
-        ]
-      },
-      "path": "~/Recipes"
     },
     {
       "name": "SmeltDebris",
@@ -2144,56 +1974,141 @@
       "path": "~/Recipes"
     },
     {
-      "name": "RocketLauncherPlayerFinishesUsingItem",
+      "name": "Boggie",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boggie",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/entity/BoggieEntity.java",
+          "src/main/java/tn/nightbeam/robotica/client/renderer/BoggieRenderer.java"
+        ]
+      },
+      "path": "~/Entities/BoggieMK1"
+    },
+    {
+      "name": "CheckIdleAnim",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rocket_launcher_player_finishes_using_item",
+      "registry_name": "check_idle_anim",
       "metadata": {
+        "return_type": "logic",
         "files": [
-          "src/main/java/tn/nightbeam/robotica/procedures/RocketLauncherPlayerFinishesUsingItemProcedure.java"
+          "src/main/java/tn/nightbeam/robotica/procedures/CheckIdleAnimProcedure.java"
         ],
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
           }
         ]
       },
-      "path": "~/Items"
+      "path": "~/Entities"
     },
     {
-      "name": "RocketLauncher",
-      "type": "animateditem",
+      "name": "CheckAttackAnim",
+      "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rocket_launcher",
+      "registry_name": "check_attack_anim",
       "metadata": {
+        "return_type": "logic",
         "files": [
-          "src/main/java/tn/nightbeam/robotica/item/model/RocketLauncherItemModel.java",
-          "src/main/java/tn/nightbeam/robotica/item/renderer/RocketLauncherItemRenderer.java",
-          "src/main/java/tn/nightbeam/robotica/item/RocketLauncherItem.java",
-          "src/main/resources/assets/robotica/models/item/rocket_launcher.json"
+          "src/main/java/tn/nightbeam/robotica/procedures/CheckAttackAnimProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
       },
-      "path": "~/Items/ToolsAndWeapons"
+      "path": "~/Entities"
     },
     {
-      "name": "RocketLauncherRecipe",
-      "type": "recipe",
+      "name": "Sentinel",
+      "type": "livingentity",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rocket_launcher_recipe",
+      "registry_name": "sentinel",
       "metadata": {
         "files": [
-          "src/main/resources/data/robotica/recipes/rocket_launcher_recipe.json"
+          "src/main/java/tn/nightbeam/robotica/entity/SentinelEntity.java",
+          "src/main/resources/data/robotica/forge/biome_modifier/sentinel_biome_modifier.json",
+          "src/main/resources/assets/robotica/models/item/sentinel_spawn_egg.json",
+          "src/main/java/tn/nightbeam/robotica/client/renderer/SentinelRenderer.java"
         ]
       },
-      "path": "~/Recipes"
+      "path": "~/Entities"
+    },
+    {
+      "name": "Mech",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mech",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/client/renderer/MechRenderer.java",
+          "src/main/java/tn/nightbeam/robotica/entity/MechEntity.java"
+        ]
+      },
+      "path": "~/Entities/Mechs"
+    },
+    {
+      "name": "SpaceShip",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "space_ship",
+      "metadata": {
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/entity/SpaceShipEntity.java",
+          "src/main/java/tn/nightbeam/robotica/client/renderer/SpaceShipRenderer.java"
+        ]
+      },
+      "path": "~/Entities/Mechs/FlyingCapsule"
+    },
+    {
+      "name": "RemoveItemsFromCraftingGrid",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_items_from_crafting_grid",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/procedures/RemoveItemsFromCraftingGridProcedure.java"
+        ]
+      },
+      "path": "~/Crafting"
+    },
+    {
+      "name": "CheckCircleScrap",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_circle_scrap",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/tn/nightbeam/robotica/procedures/CheckCircleScrapProcedure.java"
+        ]
+      },
+      "path": "~/Crafting"
     }
   ],
   "variable_elements": [],
@@ -2221,14 +2136,6 @@
       ],
       "category": "neutral",
       "subtitle": "alient robot ambient"
-    },
-    {
-      "name": "robot_birds",
-      "files": [
-        "robot-birds"
-      ],
-      "category": "neutral",
-      "subtitle": "robot sounds"
     }
   ],
   "tag_elements": {
@@ -2241,18 +2148,6 @@
       "~CUSTOM:TitaniumOre",
       "~CUSTOM:ScrapDebris"
     ],
-    "ITEMS:minecraft:pickaxes": [
-      "~CUSTOM:OrichalcumPickaxe",
-      "~CUSTOM:CobaltPickaxe",
-      "~CUSTOM:TitaniumPickaxe",
-      "~CUSTOM:ScrapPickaxe"
-    ],
-    "ITEMS:minecraft:hoes": [
-      "~CUSTOM:OrichalcumHoe",
-      "~CUSTOM:CobaltHoe",
-      "~CUSTOM:TitaniumHoe",
-      "~CUSTOM:ScrapHoe"
-    ],
     "BLOCKS:minecraft:slabs": [
       "~CUSTOM:ScrapSlab"
     ],
@@ -2261,6 +2156,12 @@
       "~CUSTOM:CobaltOre",
       "~CUSTOM:TitaniumOre",
       "~CUSTOM:ScrapDebris"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:OrichalcumPickaxe",
+      "~CUSTOM:CobaltPickaxe",
+      "~CUSTOM:TitaniumPickaxe",
+      "~CUSTOM:ScrapPickaxe"
     ],
     "ITEMS:minecraft:axes": [
       "~CUSTOM:OrichalcumAxe",
@@ -2277,6 +2178,12 @@
       "~CUSTOM:TitaniumSword",
       "~CUSTOM:ScrapSword"
     ],
+    "ITEMS:minecraft:hoes": [
+      "~CUSTOM:OrichalcumHoe",
+      "~CUSTOM:CobaltHoe",
+      "~CUSTOM:TitaniumHoe",
+      "~CUSTOM:ScrapHoe"
+    ],
     "ITEMS:minecraft:shovels": [
       "~CUSTOM:OrichalcumShovel",
       "~CUSTOM:CobaltShovel",
@@ -2286,13 +2193,6 @@
   },
   "tab_element_order": {
     "CUSTOM:TheYear3001Tab": [
-      "MechMK1",
-      "B1928",
-      "B1990",
-      "BoggieMK1",
-      "B2050",
-      "SentinelMK1",
-      "FlyingCapsuleMech",
       "Oil",
       "Scrap",
       "ScrapBlock",
@@ -2342,7 +2242,7 @@
       "OrichalcumShovel",
       "OrichalcumHoe",
       "OrichalcumPickaxe",
-      "RocketLauncher"
+      "Sentinel"
     ],
     "CUSTOM:TheYear3001Cards": [
       "EmptyCard",
@@ -2356,89 +2256,162 @@
   "language_map": {
     "en_us": {
       "item.robotica.boggie_mk_1_egg": "Boggie MK1",
+      "item.theyear3001.titanium_pickaxe": "Titanium Pickaxe",
       "item.robotica.electrical_conductors": "Electrical Conductors",
       "item.theyear3001.scrap_armor_helmet": "Scrap Armor Helmet",
       "subtitles.alient_robot_ambient": "alient robot ambient",
+      "entity.theyear3001.flying_capsule_mech": "Flying Capsule Mech",
       "item.robotica.titanium_armor_chestplate": "Titanium Armor Chestplate",
+      "item.robotica.scrap_armor_chestplate": "Scrap Armor Chestplate",
+      "item.robotica.cobalt_shovel": "Cobalt Shovel",
+      "item.theyear3001.orichalcum_sword": "Orichalcum Sword",
       "block.theyear3001.oil": "Oil",
       "entity.theyear3001.mech_mk_1": "R1-D1",
       "item.theyear3001.cobalt_armor_helmet": "Cobalt Armor Helmet",
       "subtitles.robot_die": "robot die",
       "item.theyear3001.orichalcum_armor_leggings": "Orichalcum Armor Leggings",
+      "item.theyear3001.cobalt_armor_leggings": "Cobalt Armor Leggings",
       "item.theyear3001.blank_printed_circuit_board": "Blank Printed Circuit Board",
       "item.theyear3001.titanium_ingot": "Titanium Ingot",
+      "item.robotica.defense_upgrade_card.description_0": "Armor ⬆",
       "block.theyear3001.titanium_ore": "Titanium Ore",
-      "entity.robotica.flying_capsule_mech": "Flying Capsule Mech",
+      "item.theyear3001.repair_card": "Repair Card",
       "item.robotica.orichalcum_shovel": "Orichalcum Shovel",
       "item.theyear3001.damage_upgrade_card.description_0": "Damage ⬆",
       "item.theyear3001.orichalcum_axe": "Orichalcum Axe",
       "item.theyear3001.orichalcum_armor_boots": "Orichalcum Armor Boots",
       "key.categories.theyear3001": "The Year 3001",
       "block.robotica.titanium_ore": "Titanium Ore",
+      "item.theyear3001.cobalt_sword": "Cobalt Sword",
       "item.theyear3001.cobalt_hoe": "Cobalt Shovel",
+      "entity.robotica.boggie": "Boggie",
+      "item.theyear3001.cobalt_shovel": "Cobalt Shovel",
+      "key.theyear3001.fly_capsule_go_up": "Flying Capsule Go Up",
+      "item.robotica.bulk_upgrade_card.description_0": "Health ⬆⬆",
       "item.theyear3001.flying_capsule": "Flying Capsule",
+      "item.robotica.bulk_upgrade_card.description_1": "Size ⬆",
+      "item.robotica.raw_cobalt": "Raw Cobalt",
       "item.robotica.speed_upgrade_card.description_0": "Movement Speed ⬆",
       "item_group.robotica.the_year_3001_tab": "Items 3001",
+      "item.theyear3001.cobalt_armor_chestplate": "Cobalt Armor Chestplate",
       "item.robotica.titanium_sword": "Titanium Sword",
+      "item.robotica.orichalcum_hoe": "Orichalcum Shovel",
       "item_group.theyear3001.the_year_3001_tab": "Items 3001",
       "item.theyear3001.titanium_axe": "Titanium Axe",
-      "entity.robotica.mech_mk_1": "R1-D1",
       "item_group.robotica.the_year_3001_cards": "Upgrade Crads 3001",
+      "item.theyear3001.titanium_armor_boots": "Titanium Armor Boots",
       "item.robotica.repair_card": "Repair Card",
-      "item.robotica.b_1928_spawn_egg": "B-1928 Spawn Egg",
       "item.robotica.titanium_ingot": "Titanium Ingot",
       "block.robotica.scrap_debris": "Scrap Debris",
+      "item.robotica.raw_titanium": "Raw Titanium",
       "item.robotica.cobalt_armor_helmet": "Cobalt Armor Helmet",
+      "item.robotica.titanium_hoe": "Titanium Shovel",
       "item.robotica.cobalt_ingot": "Cobalt Ingot",
       "item.robotica.scrap": "Scrap",
+      "item.robotica.cobalt_pickaxe": "Cobalt Pickaxe",
+      "entity.robotica.mech": "R1-D1",
       "item.robotica.scrap_pickaxe": "Scrap Pickaxe",
+      "item.theyear3001.orichalcum_hoe": "Orichalcum Shovel",
+      "item.robotica.defense_upgrade_card": "Defense Upgrade Card",
       "item.robotica.cobalt_armor_leggings": "Cobalt Armor Leggings",
+      "item.theyear3001.scrap_hoe": "Scrap Shovel",
+      "item.robotica.sentinel_spawn_egg": "Sentinel Spawn Egg",
       "item.theyear3001.scrap_armor_chestplate": "Scrap Armor Chestplate",
+      "item.theyear3001.titanium_rod": "Titanium Rod",
+      "item.robotica.orichalcum_sword": "Orichalcum Sword",
+      "item.robotica.scrap_armor_boots": "Scrap Armor Boots",
       "item.theyear3001.orichalcum_armor_helmet": "Orichalcum Armor Helmet",
-      "entity.robotica.sentinel_mk_1": "Sentinel-7",
-      "item.robotica.b_2050_spawn_egg": "B-2050 Spawn Egg",
+      "item.robotica.scrap_armor_leggings": "Scrap Armor Leggings",
+      "block.theyear3001.scrap_slab": "Scrap Slab Block",
+      "item.robotica.scrap_shovel": "Scrap Shovel",
+      "item.theyear3001.scrap_sword": "Scrap Sword",
+      "item.robotica.central_processing_unit": "Central Processing Unit",
       "item.theyear3001.orichalcum_armor_chestplate": "Orichalcum Armor Chestplate",
+      "item.robotica.bulk_upgrade_card": "Bulk Upgrade Card",
       "subtitles.robot_walk": "robot walk",
       "fluid.robotica.oil": "Oil",
+      "entity.theyear3001.sentinel_mk_1": "Sentinel-7",
       "item.robotica.oil_bucket": "Oil Bucket",
+      "item.theyear3001.scrap": "Scrap",
       "block.theyear3001.scrap_debris": "Scrap Debris",
+      "item.robotica.cobalt_armor_boots": "Cobalt Armor Boots",
       "item.theyear3001.titanium_shovel": "Titanium Shovel",
       "key.theyear3001.fly_capsule_go_down": "Flying Capsule Go Down",
+      "itemGroup.tab_the_year_3001_tab": "Items 3001",
+      "item.theyear3001.orichalcum_ingot": "Orichalcum Ingot",
       "item.robotica.repair_card.description_0": "Heals The Robot",
       "item.robotica.orichalcum_armor_leggings": "Orichalcum Armor Leggings",
+      "item.robotica.cobalt_armor_chestplate": "Cobalt Armor Chestplate",
+      "block.robotica.cobalt_ore": "Cobalt Ore",
+      "block.theyear3001.cobalt_ore": "Cobalt Ore",
+      "item.theyear3001.bulk_upgrade_card": "Bulk Upgrade Card",
+      "block.robotica.scrap_slab": "Scrap Slab Block",
       "subtitles.robot_ambient": "robot ambient",
       "item.theyear3001.mech_mk_1_egg": "Mech MK1",
       "item.theyear3001.damage_upgrade_card": "Damage Upgrade Card",
       "item.theyear3001.scrap_armor_boots": "Scrap Armor Boots",
+      "item.robotica.titanium_shovel": "Titanium Shovel",
+      "item.robotica.cobalt_hoe": "Cobalt Shovel",
+      "item.robotica.blank_printed_circuit_board": "Blank Printed Circuit Board",
       "item.theyear3001.cobalt_pickaxe": "Cobalt Pickaxe",
       "itemGroup.tab_the_year_3001_cards": "Upgrade Crads 3001",
       "block.robotica.crafting_workstation": "Crafting Workstation Block",
+      "entity.robotica.space_ship": "Space Ship",
       "entity.theyear3001.b_1990": "B-1990",
+      "item.theyear3001.b_1928_spawn_egg": "B-1928 Spawn Egg",
+      "item.theyear3001.cobalt_armor_boots": "Cobalt Armor Boots",
+      "item.robotica.scrap_armor_helmet": "Scrap Armor Helmet",
       "item.theyear3001.defense_upgrade_card.description_0": "Armor ⬆",
       "item.theyear3001.flying_capsule_mech_spawn_egg": "Flying Capsule Mech Spawn Egg",
       "block.theyear3001.scrap_stairs_block": "Scrap Slab Block",
+      "item.robotica.flying_capsule": "Flying Capsule",
       "item.theyear3001.raw_orichalcum": "Raw Orichalcum",
+      "item.theyear3001.oil_bucket": "Oil Bucket",
+      "item.robotica.titanium_axe": "Titanium Axe",
+      "entity.theyear3001.boggie_mk_1": "Boggie MK1",
+      "item.robotica.titanium_armor_boots": "Titanium Armor Boots",
+      "subtitles.robot_birds": "robot sounds",
       "block.robotica.orichalcum_ore": "Orichalcum Ore",
+      "item.theyear3001.central_processing_unit": "Central Processing Unit",
+      "item.theyear3001.electrical_conductors": "Electrical Conductors",
       "item.theyear3001.titanium_armor_chestplate": "Titanium Armor Chestplate",
+      "item.theyear3001.scrap_axe": "Scrap Axe",
+      "item.theyear3001.sentinel_mk_1_spawn_egg": "Sentinel-7 Spawn Egg",
       "entity.theyear3001.b_2050": "B-2050",
       "item.robotica.titanium_armor_helmet": "Titanium Armor Helmet",
+      "item.robotica.cobalt_sword": "Cobalt Sword",
       "item.theyear3001.orichalcum_shovel": "Orichalcum Shovel",
       "item.theyear3001.titanium_armor_leggings": "Titanium Armor Leggings",
       "item.theyear3001.boggie_mk_1_spawn_egg": "Boggie MK1 Spawn Egg",
+      "item.theyear3001.scrap_armor_leggings": "Scrap Armor Leggings",
+      "item.theyear3001.speed_upgrade_card.description_0": "Movement Speed ⬆",
       "item.robotica.damage_upgrade_card.description_0": "Damage ⬆",
-      "item.robotica.flying_capsule_mech_spawn_egg": "Flying Capsule Mech Spawn Egg",
+      "item.robotica.scrap_stick": "Scrap Stick",
+      "entity.theyear3001.b_1928": "B-1928",
+      "block.robotica.oil": "Oil",
+      "item.robotica.printed_circuit_board": "Printed Circuit Board",
+      "entity.robotica.sentinel": "Sentinel",
       "item.theyear3001.raw_titanium": "Raw Titanium",
+      "item.theyear3001.raw_cobalt": "Raw Cobalt",
       "item.robotica.speed_upgrade_card": "Speed Upgrade Card",
+      "item.theyear3001.cobalt_ingot": "Cobalt Ingot",
+      "block.robotica.scrap_block": "Scrap Block",
+      "block.theyear3001.scrap_block": "Scrap Block",
       "item.robotica.orichalcum_armor_helmet": "Orichalcum Armor Helmet",
-      "item.robotica.raw_orichalcum": "Raw Orichalcum",
-      "item.robotica.scrap_sword": "Scrap Sword",
+      "block.theyear3001.crafting_workstation": "Crafting Workstation Block",
+      "item.theyear3001.titanium_sword": "Titanium Sword",
       "item.theyear3001.scrap_stick": "Scrap Stick",
+      "item.robotica.scrap_sword": "Scrap Sword",
+      "item.robotica.raw_orichalcum": "Raw Orichalcum",
+      "item.theyear3001.b_1990_spawn_egg": "B-1990 Spawn Egg",
+      "item.theyear3001.boggie_mk_1_egg": "Boggie MK1",
       "item.robotica.orichalcum_armor_boots": "Orichalcum Armor Boots",
       "item_group.theyear3001.the_year_3001_cards": "Upgrade Crads 3001",
       "item.theyear3001.orichalcum_pickaxe": "Orichalcum Pickaxe",
       "item.robotica.orichalcum_pickaxe": "Orichalcum Pickaxe",
       "key.robotica.fly_capsule_go_down": "Flying Capsule Go Down",
       "item.robotica.empty_card": "Empty Upgrade Card",
+      "item.theyear3001.printed_circuit_board": "Printed Circuit Board",
       "item.theyear3001.speed_upgrade_card": "Speed Upgrade Card",
       "item.robotica.damage_upgrade_card": "Damage Upgrade Card",
       "item.theyear3001.repair_card.description_0": "Heals The Robot",
@@ -2446,98 +2419,11 @@
       "item.theyear3001.defense_upgrade_card": "Defense Upgrade Card",
       "key.theyear3001.fly_capsule_go_forward": "Flying Capsule Go Forward",
       "item.robotica.titanium_pickaxe": "Titanium Pickaxe",
+      "item.robotica.scrap_hoe": "Scrap Shovel",
+      "item.robotica.mech_mk_1_egg": "Mech MK1",
       "item.robotica.orichalcum_axe": "Orichalcum Axe",
       "item.theyear3001.titanium_hoe": "Titanium Shovel",
       "item.robotica.titanium_rod": "Titanium Rod",
-      "item.theyear3001.scrap_pickaxe": "Scrap Pickaxe",
-      "item.robotica.scrap_axe": "Scrap Axe",
-      "entity.robotica.b_2050": "B-2050",
-      "item.robotica.titanium_armor_leggings": "Titanium Armor Leggings",
-      "entity.robotica.b_1990": "B-1990",
-      "block.theyear3001.orichalcum_ore": "Orichalcum Ore",
-      "item.theyear3001.titanium_armor_helmet": "Titanium Armor Helmet",
-      "item.theyear3001.titanium_pickaxe": "Titanium Pickaxe",
-      "entity.theyear3001.flying_capsule_mech": "Flying Capsule Mech",
-      "item.robotica.scrap_armor_chestplate": "Scrap Armor Chestplate",
-      "item.robotica.cobalt_shovel": "Cobalt Shovel",
-      "item.theyear3001.orichalcum_sword": "Orichalcum Sword",
-      "item.robotica.boggie_mk_1_spawn_egg": "Boggie MK1 Spawn Egg",
-      "item.theyear3001.cobalt_armor_leggings": "Cobalt Armor Leggings",
-      "item.robotica.defense_upgrade_card.description_0": "Armor ⬆",
-      "item.theyear3001.repair_card": "Repair Card",
-      "item.theyear3001.cobalt_sword": "Cobalt Sword",
-      "item.theyear3001.cobalt_shovel": "Cobalt Shovel",
-      "key.theyear3001.fly_capsule_go_up": "Flying Capsule Go Up",
-      "item.robotica.bulk_upgrade_card.description_0": "Health ⬆⬆",
-      "item.robotica.bulk_upgrade_card.description_1": "Size ⬆",
-      "item.robotica.raw_cobalt": "Raw Cobalt",
-      "item.theyear3001.cobalt_armor_chestplate": "Cobalt Armor Chestplate",
-      "item.robotica.orichalcum_hoe": "Orichalcum Shovel",
-      "item.theyear3001.titanium_armor_boots": "Titanium Armor Boots",
-      "item.robotica.raw_titanium": "Raw Titanium",
-      "item.robotica.titanium_hoe": "Titanium Shovel",
-      "item.robotica.cobalt_pickaxe": "Cobalt Pickaxe",
-      "item.theyear3001.orichalcum_hoe": "Orichalcum Shovel",
-      "item.robotica.defense_upgrade_card": "Defense Upgrade Card",
-      "item.theyear3001.scrap_hoe": "Scrap Shovel",
-      "item.theyear3001.titanium_rod": "Titanium Rod",
-      "item.robotica.orichalcum_sword": "Orichalcum Sword",
-      "item.robotica.scrap_armor_boots": "Scrap Armor Boots",
-      "item.robotica.scrap_armor_leggings": "Scrap Armor Leggings",
-      "block.theyear3001.scrap_slab": "Scrap Slab Block",
-      "item.robotica.b_1990_spawn_egg": "B-1990 Spawn Egg",
-      "item.robotica.scrap_shovel": "Scrap Shovel",
-      "item.theyear3001.scrap_sword": "Scrap Sword",
-      "item.robotica.central_processing_unit": "Central Processing Unit",
-      "item.robotica.bulk_upgrade_card": "Bulk Upgrade Card",
-      "entity.theyear3001.sentinel_mk_1": "Sentinel-7",
-      "item.theyear3001.scrap": "Scrap",
-      "item.robotica.cobalt_armor_boots": "Cobalt Armor Boots",
-      "itemGroup.tab_the_year_3001_tab": "Items 3001",
-      "item.theyear3001.orichalcum_ingot": "Orichalcum Ingot",
-      "item.robotica.cobalt_armor_chestplate": "Cobalt Armor Chestplate",
-      "block.robotica.cobalt_ore": "Cobalt Ore",
-      "block.theyear3001.cobalt_ore": "Cobalt Ore",
-      "item.theyear3001.bulk_upgrade_card": "Bulk Upgrade Card",
-      "block.robotica.scrap_slab": "Scrap Slab Block",
-      "item.robotica.rocket_launcher": "Rocket Launcher",
-      "entity.robotica.b_1928": "B-1928",
-      "item.robotica.titanium_shovel": "Titanium Shovel",
-      "item.robotica.cobalt_hoe": "Cobalt Shovel",
-      "item.robotica.blank_printed_circuit_board": "Blank Printed Circuit Board",
-      "entity.robotica.boggie_mk_1": "Boggie MK1",
-      "item.theyear3001.b_1928_spawn_egg": "B-1928 Spawn Egg",
-      "item.theyear3001.cobalt_armor_boots": "Cobalt Armor Boots",
-      "item.robotica.scrap_armor_helmet": "Scrap Armor Helmet",
-      "item.robotica.flying_capsule": "Flying Capsule",
-      "item.theyear3001.oil_bucket": "Oil Bucket",
-      "item.robotica.titanium_axe": "Titanium Axe",
-      "entity.theyear3001.boggie_mk_1": "Boggie MK1",
-      "item.robotica.titanium_armor_boots": "Titanium Armor Boots",
-      "subtitles.robot_birds": "robot sounds",
-      "item.theyear3001.central_processing_unit": "Central Processing Unit",
-      "item.theyear3001.electrical_conductors": "Electrical Conductors",
-      "item.theyear3001.scrap_axe": "Scrap Axe",
-      "item.theyear3001.sentinel_mk_1_spawn_egg": "Sentinel-7 Spawn Egg",
-      "item.robotica.cobalt_sword": "Cobalt Sword",
-      "item.theyear3001.scrap_armor_leggings": "Scrap Armor Leggings",
-      "item.theyear3001.speed_upgrade_card.description_0": "Movement Speed ⬆",
-      "item.robotica.scrap_stick": "Scrap Stick",
-      "entity.theyear3001.b_1928": "B-1928",
-      "block.robotica.oil": "Oil",
-      "item.robotica.printed_circuit_board": "Printed Circuit Board",
-      "item.theyear3001.raw_cobalt": "Raw Cobalt",
-      "item.theyear3001.cobalt_ingot": "Cobalt Ingot",
-      "block.robotica.scrap_block": "Scrap Block",
-      "block.theyear3001.scrap_block": "Scrap Block",
-      "block.theyear3001.crafting_workstation": "Crafting Workstation Block",
-      "item.theyear3001.titanium_sword": "Titanium Sword",
-      "item.theyear3001.b_1990_spawn_egg": "B-1990 Spawn Egg",
-      "item.theyear3001.boggie_mk_1_egg": "Boggie MK1",
-      "item.theyear3001.printed_circuit_board": "Printed Circuit Board",
-      "item.robotica.mech_mk_1_spawn_egg": "R1-D1 Spawn Egg",
-      "item.robotica.scrap_hoe": "Scrap Shovel",
-      "item.robotica.mech_mk_1_egg": "Mech MK1",
       "item.robotica.orichalcum_ingot": "Orichalcum Ingot",
       "item.robotica.orichalcum_armor_chestplate": "Orichalcum Armor Chestplate",
       "fluid.theyear3001.oil": "Oil",
@@ -2546,13 +2432,40 @@
       "item.theyear3001.bulk_upgrade_card.description_1": "Size ⬆",
       "item.theyear3001.scrap_shovel": "Scrap Shovel",
       "key.robotica.fly_capsule_go_forward": "Flying Capsule Go Forward",
-      "item.robotica.sentinel_mk_1_spawn_egg": "Sentinel-7 Spawn Egg",
+      "item.theyear3001.scrap_pickaxe": "Scrap Pickaxe",
+      "item.robotica.scrap_axe": "Scrap Axe",
+      "item.robotica.titanium_armor_leggings": "Titanium Armor Leggings",
       "item.theyear3001.cobalt_axe": "Cobalt Axe",
+      "block.theyear3001.orichalcum_ore": "Orichalcum Ore",
       "item.theyear3001.mech_mk_1_spawn_egg": "R1-D1 Spawn Egg",
       "key.robotica.fly_capsule_go_up": "Flying Capsule Go Up",
       "item.theyear3001.b_2050_spawn_egg": "B-2050 Spawn Egg",
-      "item.theyear3001.empty_card": "Empty Upgrade Card"
+      "item.theyear3001.empty_card": "Empty Upgrade Card",
+      "item.theyear3001.titanium_armor_helmet": "Titanium Armor Helmet",
+      "fluid_type.robotica.oil": "Oil"
     }
+  },
+  "metadata": {
+    "files": [
+      "src/main/resources/assets/robotica/sounds.json",
+      "src/main/java/tn/nightbeam/robotica/init/RoboticaModSounds.java",
+      "src/main/java/tn/nightbeam/robotica/init/RoboticaModTabs.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/java/tn/nightbeam/robotica/init/RoboticaModModels.java",
+      "src/main/java/tn/nightbeam/robotica/RoboticaMod.java",
+      "src/main/java/tn/nightbeam/robotica/init/RoboticaModFluidTypes.java",
+      "src/main/java/tn/nightbeam/robotica/init/RoboticaModFluids.java",
+      "src/main/java/tn/nightbeam/robotica/network/MenuStateUpdateMessage.java",
+      "src/main/java/tn/nightbeam/robotica/init/RoboticaModMenus.java",
+      "src/main/java/tn/nightbeam/robotica/init/RoboticaModScreens.java",
+      "src/main/java/tn/nightbeam/robotica/init/RoboticaModKeyMappings.java",
+      "src/main/java/tn/nightbeam/robotica/init/RoboticaModBlocks.java",
+      "src/main/java/tn/nightbeam/robotica/init/RoboticaModBlockEntities.java",
+      "src/main/java/tn/nightbeam/robotica/init/RoboticaModItems.java",
+      "src/main/java/tn/nightbeam/robotica/init/RoboticaModEntityRenderers.java",
+      "src/main/java/tn/nightbeam/robotica/init/RoboticaModEntities.java"
+    ]
   },
   "foldersRoot": {
     "name": "~",
@@ -2572,10 +2485,6 @@
                 "children": []
               }
             ]
-          },
-          {
-            "name": "Bees",
-            "children": []
           }
         ]
       },
@@ -2624,13 +2533,17 @@
       {
         "name": "Loot Tables",
         "children": []
+      },
+      {
+        "name": "Crafting",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "robotica",
     "modName": "Robotica",
-    "version": "0.7.0",
+    "version": "1.0.0",
     "description": "Robotica is a futuristic Minecraft mod set in a high-tech world filled with advanced robots, towering mechs, and powerful sci-fi weapons.",
     "author": "NightBeamStudio",
     "websiteURL": "https://www.nightbeam.cloud",
@@ -2640,14 +2553,10 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [
-      "pehkui",
-      "geckolib",
-      "jei"
-    ],
+    "mcreatorDependencies": [],
     "currentGenerator": "forge-1.20.1",
     "credits": "moonrayys \u003c3",
     "modElementsPackage": "tn.nightbeam.robotica"
   },
-  "mcreatorVersion": 202400452410
+  "mcreatorVersion": 202500228610
 }

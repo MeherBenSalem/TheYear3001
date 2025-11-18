@@ -1,4 +1,3 @@
-
 package tn.nightbeam.robotica.network;
 
 import tn.nightbeam.robotica.procedures.FlyCapsuleGoUpOnKeyReleasedProcedure;

@@ -1,6 +1,0 @@
-{
-  "parent": "robotica:displaysettings/rocket",
-  "textures": {
-    "layer0": "robotica:item/rocket"
-  }
-}

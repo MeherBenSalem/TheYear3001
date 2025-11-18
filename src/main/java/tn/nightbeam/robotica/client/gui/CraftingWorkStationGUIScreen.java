@@ -2,6 +2,7 @@ package tn.nightbeam.robotica.client.gui;
 
 import tn.nightbeam.robotica.world.inventory.CraftingWorkStationGUIMenu;
 import tn.nightbeam.robotica.network.CraftingWorkStationGUIButtonMessage;
+import tn.nightbeam.robotica.init.RoboticaModScreens;
 import tn.nightbeam.robotica.RoboticaMod;
 
 import net.minecraft.world.level.Level;
@@ -13,15 +14,13 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
-import java.util.HashMap;
-
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class CraftingWorkStationGUIScreen extends AbstractContainerScreen<CraftingWorkStationGUIMenu> {
-	private final static HashMap<String, Object> guistate = CraftingWorkStationGUIMenu.guistate;
+public class CraftingWorkStationGUIScreen extends AbstractContainerScreen<CraftingWorkStationGUIMenu> implements RoboticaModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	private boolean menuStateUpdateActive = false;
 	ImageButton imagebutton_forge_button;
 
 	public CraftingWorkStationGUIScreen(CraftingWorkStationGUIMenu container, Inventory inventory, Component text) {
@@ -35,7 +34,13 @@ public class CraftingWorkStationGUIScreen extends AbstractContainerScreen<Crafti
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("robotica:textures/screens/crafting_work_station_gui.png");
+	@Override
+	public void updateMenuState(int elementType, String name, Object elementState) {
+		menuStateUpdateActive = true;
+		menuStateUpdateActive = false;
+	}
+
+	private static final ResourceLocation texture = ResourceLocation.parse("robotica:textures/screens/crafting_work_station_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -45,16 +50,13 @@ public class CraftingWorkStationGUIScreen extends AbstractContainerScreen<Crafti
 	}
 
 	@Override
-	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int mouseX, int mouseY) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-
-		guiGraphics.blit(new ResourceLocation("robotica:textures/screens/crafting_work_station_gui_overlay.png"), this.leftPos + 0, this.topPos + -1, 0, 0, 176, 166, 176, 166);
-
-		guiGraphics.blit(new ResourceLocation("robotica:textures/screens/arrow.png"), this.leftPos + 102, this.topPos + 36, 0, 0, 22, 14, 22, 14);
-
+		guiGraphics.blit(ResourceLocation.parse("robotica:textures/screens/crafting_work_station_gui_overlay.png"), this.leftPos + 0, this.topPos + -1, 0, 0, 176, 166, 176, 166);
+		guiGraphics.blit(ResourceLocation.parse("robotica:textures/screens/arrow.png"), this.leftPos + 102, this.topPos + 36, 0, 0, 22, 14, 22, 14);
 		RenderSystem.disableBlend();
 	}
 
@@ -74,13 +76,14 @@ public class CraftingWorkStationGUIScreen extends AbstractContainerScreen<Crafti
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_forge_button = new ImageButton(this.leftPos + 104, this.topPos + 52, 18, 18, 0, 0, 18, new ResourceLocation("robotica:textures/screens/atlas/imagebutton_forge_button.png"), 18, 36, e -> {
+		imagebutton_forge_button = new ImageButton(this.leftPos + 104, this.topPos + 52, 18, 18, 0, 0, 18, ResourceLocation.parse("robotica:textures/screens/atlas/imagebutton_forge_button.png"), 18, 36, e -> {
+			int x = CraftingWorkStationGUIScreen.this.x;
+			int y = CraftingWorkStationGUIScreen.this.y;
 			if (true) {
 				RoboticaMod.PACKET_HANDLER.sendToServer(new CraftingWorkStationGUIButtonMessage(0, x, y, z));
 				CraftingWorkStationGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		});
-		guistate.put("button:imagebutton_forge_button", imagebutton_forge_button);
 		this.addRenderableWidget(imagebutton_forge_button);
 	}
 }

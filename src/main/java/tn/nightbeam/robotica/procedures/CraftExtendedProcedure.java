@@ -1,169 +1,60 @@
 package tn.nightbeam.robotica.procedures;
 
-import tn.nightbeam.robotica.jei_recipes.ExtendedCraftingRecipe;
+import tn.nightbeam.robotica.init.RoboticaModMenus;
+import tn.nightbeam.robotica.init.RoboticaModItems;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.core.NonNullList;
-
-import java.util.function.Supplier;
-import java.util.Map;
-import java.util.List;
 
 public class CraftExtendedProcedure {
-	public static void execute(LevelAccessor world, Entity entity) {
+	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
 		ItemStack resultItem = ItemStack.EMPTY;
-		if (new Object() {
-			public int getAmount(int sltid) {
-				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-					ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
-					if (stack != null)
-						return stack.getCount();
-				}
-				return 0;
-			}
-		}.getAmount(20) == 0) {
-			resultItem = (new Object() {
-				public ItemStack getResult() {
-					if (world instanceof Level _lvl) {
-						net.minecraft.world.item.crafting.RecipeManager rm = _lvl.getRecipeManager();
-						List<ExtendedCraftingRecipe> recipes = rm.getAllRecipesFor(ExtendedCraftingRecipe.Type.INSTANCE);
-						for (ExtendedCraftingRecipe recipe : recipes) {
-							NonNullList<Ingredient> ingredients = recipe.getIngredients();
-							if (!ingredients.get(0).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY)))
-								continue;
-							if (!ingredients.get(1).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)))
-								continue;
-							if (!ingredients.get(2).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY)))
-								continue;
-							if (!ingredients.get(3).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)))
-								continue;
-							if (!ingredients.get(4).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(4)).getItem() : ItemStack.EMPTY)))
-								continue;
-							if (!ingredients.get(5).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(5)).getItem() : ItemStack.EMPTY)))
-								continue;
-							if (!ingredients.get(6).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(6)).getItem() : ItemStack.EMPTY)))
-								continue;
-							if (!ingredients.get(7).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(7)).getItem() : ItemStack.EMPTY)))
-								continue;
-							if (!ingredients.get(8).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(8)).getItem() : ItemStack.EMPTY)))
-								continue;
-							if (!ingredients.get(9).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(9)).getItem() : ItemStack.EMPTY)))
-								continue;
-							if (!ingredients.get(10).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(10)).getItem() : ItemStack.EMPTY)))
-								continue;
-							if (!ingredients.get(11).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(11)).getItem() : ItemStack.EMPTY)))
-								continue;
-							if (!ingredients.get(12).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(12)).getItem() : ItemStack.EMPTY)))
-								continue;
-							if (!ingredients.get(13).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(13)).getItem() : ItemStack.EMPTY)))
-								continue;
-							if (!ingredients.get(14).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(14)).getItem() : ItemStack.EMPTY)))
-								continue;
-							if (!ingredients.get(15).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(15)).getItem() : ItemStack.EMPTY)))
-								continue;
-							if (!ingredients.get(16).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(16)).getItem() : ItemStack.EMPTY)))
-								continue;
-							if (!ingredients.get(17).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(17)).getItem() : ItemStack.EMPTY)))
-								continue;
-							if (!ingredients.get(18).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(18)).getItem() : ItemStack.EMPTY)))
-								continue;
-							if (!ingredients.get(19).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(19)).getItem() : ItemStack.EMPTY)))
-								continue;
-							return recipe.getResultItem(null);
-						}
+		if (CheckCircleScrapProcedure.execute(entity)) {
+			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof RoboticaModMenus.MenuAccessor _menu0 ? _menu0.getSlots().get(6).getItem() : ItemStack.EMPTY).getItem() == RoboticaModItems.ELECTRICAL_CONDUCTORS.get()
+					&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof RoboticaModMenus.MenuAccessor _menu2 ? _menu2.getSlots().get(7).getItem() : ItemStack.EMPTY).getItem() == RoboticaModItems.PRINTED_CIRCUIT_BOARD
+							.get()
+					&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof RoboticaModMenus.MenuAccessor _menu4 ? _menu4.getSlots().get(8).getItem() : ItemStack.EMPTY).getItem() == RoboticaModItems.ELECTRICAL_CONDUCTORS
+							.get()) {
+				if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof RoboticaModMenus.MenuAccessor _menu6 ? _menu6.getSlots().get(11).getItem() : ItemStack.EMPTY).getItem() == Blocks.REDSTONE_BLOCK.asItem()
+						&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof RoboticaModMenus.MenuAccessor _menu8 ? _menu8.getSlots().get(12).getItem() : ItemStack.EMPTY)
+								.getItem() == RoboticaModItems.CENTRAL_PROCESSING_UNIT.get()
+						&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof RoboticaModMenus.MenuAccessor _menu10 ? _menu10.getSlots().get(13).getItem() : ItemStack.EMPTY).getItem() == Blocks.REDSTONE_BLOCK.asItem()) {
+					RemoveItemsFromCraftingGridProcedure.execute(entity);
+					if (entity instanceof Player _player && _player.containerMenu instanceof RoboticaModMenus.MenuAccessor _menu) {
+						ItemStack _setstack = new ItemStack(RoboticaModItems.MECH_MK_1_EGG.get()).copy();
+						_setstack.setCount(1);
+						_menu.getSlots().get(20).set(_setstack);
+						_player.containerMenu.broadcastChanges();
 					}
-					return ItemStack.EMPTY;
+				} else if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof RoboticaModMenus.MenuAccessor _menu13 ? _menu13.getSlots().get(11).getItem() : ItemStack.EMPTY)
+						.getItem() == RoboticaModItems.PRINTED_CIRCUIT_BOARD.get()
+						&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof RoboticaModMenus.MenuAccessor _menu15 ? _menu15.getSlots().get(12).getItem() : ItemStack.EMPTY)
+								.getItem() == RoboticaModItems.CENTRAL_PROCESSING_UNIT.get()
+						&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof RoboticaModMenus.MenuAccessor _menu17 ? _menu17.getSlots().get(13).getItem() : ItemStack.EMPTY)
+								.getItem() == RoboticaModItems.PRINTED_CIRCUIT_BOARD.get()) {
+					RemoveItemsFromCraftingGridProcedure.execute(entity);
+					if (entity instanceof Player _player && _player.containerMenu instanceof RoboticaModMenus.MenuAccessor _menu) {
+						ItemStack _setstack = new ItemStack(RoboticaModItems.FLYING_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_menu.getSlots().get(20).set(_setstack);
+						_player.containerMenu.broadcastChanges();
+					}
+				} else if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof RoboticaModMenus.MenuAccessor _menu20 ? _menu20.getSlots().get(11).getItem() : ItemStack.EMPTY).getItem() == Blocks.COAL_BLOCK.asItem()
+						&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof RoboticaModMenus.MenuAccessor _menu22 ? _menu22.getSlots().get(12).getItem() : ItemStack.EMPTY)
+								.getItem() == RoboticaModItems.CENTRAL_PROCESSING_UNIT.get()
+						&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof RoboticaModMenus.MenuAccessor _menu24 ? _menu24.getSlots().get(13).getItem() : ItemStack.EMPTY).getItem() == Blocks.COAL_BLOCK.asItem()) {
+					RemoveItemsFromCraftingGridProcedure.execute(entity);
+					if (entity instanceof Player _player && _player.containerMenu instanceof RoboticaModMenus.MenuAccessor _menu) {
+						ItemStack _setstack = new ItemStack(RoboticaModItems.BOGGIE_MK_1_EGG.get()).copy();
+						_setstack.setCount(1);
+						_menu.getSlots().get(20).set(_setstack);
+						_player.containerMenu.broadcastChanges();
+					}
 				}
-			}.getResult()).copy();
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get(1)).set(ItemStack.EMPTY);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get(2)).set(ItemStack.EMPTY);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get(3)).set(ItemStack.EMPTY);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get(4)).set(ItemStack.EMPTY);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get(5)).set(ItemStack.EMPTY);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get(6)).set(ItemStack.EMPTY);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get(7)).set(ItemStack.EMPTY);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get(8)).set(ItemStack.EMPTY);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get(9)).set(ItemStack.EMPTY);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get(10)).set(ItemStack.EMPTY);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get(11)).set(ItemStack.EMPTY);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get(12)).set(ItemStack.EMPTY);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get(13)).set(ItemStack.EMPTY);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get(14)).set(ItemStack.EMPTY);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get(15)).set(ItemStack.EMPTY);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get(16)).set(ItemStack.EMPTY);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get(17)).set(ItemStack.EMPTY);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get(18)).set(ItemStack.EMPTY);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get(19)).set(ItemStack.EMPTY);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				ItemStack _setstack = resultItem.copy();
-				_setstack.setCount(resultItem.getCount());
-				((Slot) _slots.get(20)).set(_setstack);
-				_player.containerMenu.broadcastChanges();
 			}
 		}
 	}

@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "robotica:orichalcum_ore",
-    "robotica:cobalt_ore",
     "robotica:titanium_ore",
-    "robotica:scrap_debris"
+    "robotica:scrap_debris",
+    "robotica:orichalcum_ore",
+    "robotica:cobalt_ore"
   ]
 }

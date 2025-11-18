@@ -1,4 +1,3 @@
-
 /*
  *    MCreator note: This file will be REGENERATED on each build.
  */
@@ -21,7 +20,6 @@ import tn.nightbeam.robotica.item.ScrapItem;
 import tn.nightbeam.robotica.item.ScrapHoeItem;
 import tn.nightbeam.robotica.item.ScrapAxeItem;
 import tn.nightbeam.robotica.item.ScrapArmorItem;
-import tn.nightbeam.robotica.item.RocketLauncherItem;
 import tn.nightbeam.robotica.item.RepairCardItem;
 import tn.nightbeam.robotica.item.RawTitaniumItem;
 import tn.nightbeam.robotica.item.RawOrichalcumItem;
@@ -69,9 +67,6 @@ public class RoboticaModItems {
 	public static final RegistryObject<Item> OIL_BUCKET = REGISTRY.register("oil_bucket", () -> new OilItem());
 	public static final RegistryObject<Item> BULK_UPGRADE_CARD = REGISTRY.register("bulk_upgrade_card", () -> new BulkUpgradeCardItem());
 	public static final RegistryObject<Item> SPEED_UPGRADE_CARD = REGISTRY.register("speed_upgrade_card", () -> new SpeedUpgradeCardItem());
-	public static final RegistryObject<Item> B_1928_SPAWN_EGG = REGISTRY.register("b_1928_spawn_egg", () -> new ForgeSpawnEggItem(RoboticaModEntities.B_1928, -16776961, -1, new Item.Properties()));
-	public static final RegistryObject<Item> B_1990_SPAWN_EGG = REGISTRY.register("b_1990_spawn_egg", () -> new ForgeSpawnEggItem(RoboticaModEntities.B_1990, -13395712, -1, new Item.Properties()));
-	public static final RegistryObject<Item> B_2050_SPAWN_EGG = REGISTRY.register("b_2050_spawn_egg", () -> new ForgeSpawnEggItem(RoboticaModEntities.B_2050, -6750157, -1, new Item.Properties()));
 	public static final RegistryObject<Item> REPAIR_CARD = REGISTRY.register("repair_card", () -> new RepairCardItem());
 	public static final RegistryObject<Item> SCRAP = REGISTRY.register("scrap", () -> new ScrapItem());
 	public static final RegistryObject<Item> SCRAP_BLOCK = block(RoboticaModBlocks.SCRAP_BLOCK);
@@ -84,7 +79,6 @@ public class RoboticaModItems {
 	public static final RegistryObject<Item> CENTRAL_PROCESSING_UNIT = REGISTRY.register("central_processing_unit", () -> new CentralProcessingUnitItem());
 	public static final RegistryObject<Item> ELECTRICAL_CONDUCTORS = REGISTRY.register("electrical_conductors", () -> new ElectricalConductorsItem());
 	public static final RegistryObject<Item> DEFENSE_UPGRADE_CARD = REGISTRY.register("defense_upgrade_card", () -> new DefenseUpgradeCardItem());
-	public static final RegistryObject<Item> SENTINEL_MK_1_SPAWN_EGG = REGISTRY.register("sentinel_mk_1_spawn_egg", () -> new ForgeSpawnEggItem(RoboticaModEntities.SENTINEL_MK_1, -13421773, -6710887, new Item.Properties()));
 	public static final RegistryObject<Item> SCRAP_STICK = REGISTRY.register("scrap_stick", () -> new ScrapStickItem());
 	public static final RegistryObject<Item> SCRAP_AXE = REGISTRY.register("scrap_axe", () -> new ScrapAxeItem());
 	public static final RegistryObject<Item> SCRAP_SWORD = REGISTRY.register("scrap_sword", () -> new ScrapSwordItem());
@@ -93,7 +87,6 @@ public class RoboticaModItems {
 	public static final RegistryObject<Item> SCRAP_PICKAXE = REGISTRY.register("scrap_pickaxe", () -> new ScrapPickaxeItem());
 	public static final RegistryObject<Item> SCRAP_SLAB = block(RoboticaModBlocks.SCRAP_SLAB);
 	public static final RegistryObject<Item> SCRAP_STAIRS_BLOCK = block(RoboticaModBlocks.SCRAP_STAIRS_BLOCK);
-	public static final RegistryObject<Item> FLYING_CAPSULE_MECH_SPAWN_EGG = REGISTRY.register("flying_capsule_mech_spawn_egg", () -> new ForgeSpawnEggItem(RoboticaModEntities.FLYING_CAPSULE_MECH, -1, -3407719, new Item.Properties()));
 	public static final RegistryObject<Item> FLYING_CAPSULE = REGISTRY.register("flying_capsule", () -> new FlyingCapsuleItem());
 	public static final RegistryObject<Item> SCRAP_DEBRIS = block(RoboticaModBlocks.SCRAP_DEBRIS);
 	public static final RegistryObject<Item> TITANIUM_ORE = block(RoboticaModBlocks.TITANIUM_ORE);
@@ -137,11 +130,15 @@ public class RoboticaModItems {
 	public static final RegistryObject<Item> ORICHALCUM_SHOVEL = REGISTRY.register("orichalcum_shovel", () -> new OrichalcumShovelItem());
 	public static final RegistryObject<Item> ORICHALCUM_HOE = REGISTRY.register("orichalcum_hoe", () -> new OrichalcumHoeItem());
 	public static final RegistryObject<Item> ORICHALCUM_PICKAXE = REGISTRY.register("orichalcum_pickaxe", () -> new OrichalcumPickaxeItem());
-	public static final RegistryObject<Item> ROCKET_LAUNCHER = REGISTRY.register("rocket_launcher", () -> new RocketLauncherItem());
+	public static final RegistryObject<Item> SENTINEL_SPAWN_EGG = REGISTRY.register("sentinel_spawn_egg", () -> new ForgeSpawnEggItem(RoboticaModEntities.SENTINEL, -13421773, -6710887, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
-		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
+		return block(block, new Item.Properties());
+	}
+
+	private static RegistryObject<Item> block(RegistryObject<Block> block, Item.Properties properties) {
+		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), properties));
 	}
 }

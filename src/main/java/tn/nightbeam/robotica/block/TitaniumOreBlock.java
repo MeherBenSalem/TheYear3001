@@ -1,4 +1,3 @@
-
 package tn.nightbeam.robotica.block;
 
 import net.minecraft.world.level.block.state.BlockState;

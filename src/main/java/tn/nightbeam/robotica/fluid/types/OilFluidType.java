@@ -1,4 +1,3 @@
-
 package tn.nightbeam.robotica.fluid.types;
 
 import net.minecraftforge.fluids.FluidType;
@@ -20,8 +19,8 @@ public class OilFluidType extends FluidType {
 	@Override
 	public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
 		consumer.accept(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = new ResourceLocation("robotica:block/oil_still");
-			private static final ResourceLocation FLOWING_TEXTURE = new ResourceLocation("robotica:block/oil_still");
+			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("robotica:block/oil_still");
+			private static final ResourceLocation FLOWING_TEXTURE = ResourceLocation.parse("robotica:block/oil_still");
 
 			@Override
 			public ResourceLocation getStillTexture() {

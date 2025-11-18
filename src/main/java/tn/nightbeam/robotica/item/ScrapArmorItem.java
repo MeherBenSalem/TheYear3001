@@ -1,4 +1,3 @@
-
 package tn.nightbeam.robotica.item;
 
 import tn.nightbeam.robotica.init.RoboticaModItems;
@@ -35,7 +34,7 @@ public abstract class ScrapArmorItem extends ArmorItem {
 
 			@Override
 			public SoundEvent getEquipSound() {
-				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.armor.equip_iron"));
+				return ForgeRegistries.SOUND_EVENTS.getValue(ResourceLocation.parse("item.armor.equip_iron"));
 			}
 
 			@Override

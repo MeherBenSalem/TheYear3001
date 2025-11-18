@@ -1,4 +1,3 @@
-
 /*
  *	MCreator note: This file will be REGENERATED on each build.
  */
@@ -20,5 +19,9 @@ public class RoboticaModScreens {
 		event.enqueueWork(() -> {
 			MenuScreens.register(RoboticaModMenus.CRAFTING_WORK_STATION_GUI.get(), CraftingWorkStationGUIScreen::new);
 		});
+	}
+
+	public interface ScreenAccessor {
+		void updateMenuState(int elementType, String name, Object elementState);
 	}
 }
