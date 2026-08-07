@@ -4,6 +4,7 @@ import tn.nightbeam.robotica.procedures.CheckIdleAnimProcedure;
 import tn.nightbeam.robotica.procedures.CheckAttackAnimProcedure;
 import tn.nightbeam.robotica.init.RoboticaModItems;
 import tn.nightbeam.robotica.init.RoboticaModEntities;
+import tn.nightbeam.robotica.init.RoboticaModSounds;
 
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
@@ -84,7 +85,7 @@ public class SentinelEntity extends Monster {
 
 	@Override
 	public SoundEvent getAmbientSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(ResourceLocation.parse("robotica:alient_robot_ambient"));
+		return RoboticaModSounds.ALIENT_ROBOT_AMBIENT.get();
 	}
 
 	@Override

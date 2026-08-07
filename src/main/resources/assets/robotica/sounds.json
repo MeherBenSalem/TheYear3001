@@ -4,7 +4,8 @@
     "sounds": [
       {
         "name": "robotica:robot_die",
-        "stream": false
+        "stream": false,
+        "attenuation_distance": 16
       }
     ]
   },
@@ -13,7 +14,8 @@
     "sounds": [
       {
         "name": "robotica:roboth",
-        "stream": false
+        "stream": false,
+        "attenuation_distance": 16
       }
     ]
   },
@@ -22,7 +24,8 @@
     "sounds": [
       {
         "name": "robotica:alien-robot-246019",
-        "stream": false
+        "stream": false,
+        "attenuation_distance": 16
       }
     ]
   }
