@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "robotica:cobalt_armor_leggings",
+    "robotica:titanium_armor_leggings",
+    "robotica:orichalcum_armor_leggings",
+    "robotica:scrap_armor_leggings"
+  ]
+}

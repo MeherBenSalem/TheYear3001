@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "robotica:block/scifi_panel_2",
+    "up": "robotica:block/samurai_block",
+    "north": "robotica:block/scifi_panel_2",
+    "east": "robotica:block/scifi_panel_2",
+    "south": "robotica:block/scifi_panel_2",
+    "west": "robotica:block/scifi_panel_2",
+    "particle": "robotica:block/scifi_panel_2"
+  },
+  "render_type": "solid"
+}

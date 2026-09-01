@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "robotica:block/scrap_slab"
+    },
+    "type=top": {
+      "model": "robotica:block/scrap_slab_top"
+    },
+    "type=double": {
+      "model": "robotica:block/scrap_slab_full"
+    }
+  }
+}

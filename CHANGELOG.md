@@ -1,85 +1,47 @@
-## v1.0.0 Patch Notes
+# Robotica changelog
 
-- **Refreshed Visuals:** All mod icons have been fully updated for a cleaner, more consistent look.  
-- **Lean & Lightweight:** *Geckolib*, *Pehkui*, and *JEI* are no longer required as dependencies.
-- **Content Adjustments:** All bee-related robots have been removed as part of a larger cleanup and redesign.  
-- **Performance Improvements:** Optimized codebase and cleaned up heavy/“chunky” images to improve performance and reduce load times.  
-- **Expanded Compatibility:** Now supports multiple new Minecraft versions **1.16.5**, **1.18.2**, **1.19.2**, **1.21.5**, and **1.21.8**.
+## 1.0.1
 
-## v0.7.0 Patch Notes
+- MultiLoader workspace layout (1.20.1, 1.21.1, 26.2)
+- Apache License 2.0
+- Removed MCreator project files and build dependency
+- Fabric and Forge/NeoForge builds per version root
 
-### 🛠️ Updates & Improvements
-- Replaced the **Flying Capsule** with a new **Spaceship Model** (now fully renamed and retextured).  
-- Revamped the **Workbench UI** for a cleaner and more futuristic look.  
-- Added a powerful **Rocket Launcher** along with its **crafting recipe**.  
-- Updated the project **namespace** from `year_3001` to `robotica` for consistency and clarity.
+## 1.0.0
 
-## v0.6.0 Patch Notes
+- Refreshed mod icons
+- Removed Geckolib, Pehkui, and JEI as required dependencies
+- Removed bee-related robots
+- Performance and asset cleanup
+- Namespace `robotica` (formerly `year_3001`)
 
-- **New Armors:** Introduced **Titanium, Cobalt, and Orichalcum** armor sets, complete with crafting recipes.  
-- **New Tools:** Added full **Cobalt and Orichalcum** tool sets with their respective recipes.  
-- **Visual Update:** Updated the icon for the **Flying Capsule** for better clarity.  
-- **Bug Fix:** Resolved an issue where repairing **Titanium tools** sometimes required scrap instead of **Titanium Ingots**.  
+## 0.7.0
 
-## v0.5.0 Patch Notes
+- Spaceship model replaces flying capsule visuals
+- Crafting workstation UI refresh
+- Rocket launcher and recipe added
 
-### Blocks & Ores
-- **Updated Scrap Debris texture** for a fresh new look.  
-- Scrap Debris **no longer drops Scrap directly** — it now must be **smelted** to obtain Scrap.  
-- **Added 4 new ores and metals**, each with their own full toolset.  
-- **Adjusted ore generation**:
-  - Scrap now spawns more frequently.  
-  - Generation pattern is now similar to **Ancient Debris**.  
+## 0.6.0
 
-### Crafting & Recipes
-- Fixed the **repair recipe for Scrap tools** (now uses Scrap instead of Scrap Stick).  
-- Corrected **Scrap Stick recipes** to function properly.  
+- Titanium, cobalt, and orichalcum armor and tools
+- Titanium repair recipe fix
 
-### Gameplay & Features
-- Fixed the **sitting position** in the Flying Capsule.  
-- **Added Scrap Armor** with full protection set.  
+## 0.5.0
 
-## v0.4.0 Patch Notes
+- Scrap debris smelting, new ores, scrap armor
+- Scrap tool repair and recipe fixes
 
-### New Features
-- **Flying Capsule Controls**  
-  Added **3 new keybinds** to navigate the flying capsule in space:  
-  • Move **Forward**  
-  • Ascend (**Up**)  
-  • Descend (**Down**)
+## 0.4.0
 
-- **Flying Capsule Entity & Recipe**  
-  Introduced a **new flying capsule entity** along with a **extended craftable recipe** to create it.
+- Flying capsule controls and entity
+- Scrap debris ore worldgen
 
-- **Scrap Debris Ore**  
-  A brand-new **Scrap Debris ore** now generates naturally in the world, dropping **3 scrap** per block.
+## 0.3.0
 
-## v0.3.0 Patch Notes
+- Scrap tool set and block variants
+- Mob sounds and hitbox fixes
 
-### Removals
-- **Vanilla Spawn Eggs**: Disabled spawn eggs for **Boggie** and **R1-D1 Mech** to maintain mod balance.  
-- **B-2050 Entity**: No longer spawns naturally in the world.
+## 0.2.0
 
-### Fixes
-- **Hitbox Adjustments**: Corrected collision boxes for **R1-D1**, **B-1928**, **B-1990**, and **B-2050** to improve combat accuracy and movement.
-
-### Additions
-- **Scrap Tool Set**: Introduced a complete set of **Scrap Tools** — **Sword, Axe, Shovel, Hoe,** and **Pickaxe**.  
-- **Scrap Block Variants**: Added new decorative options including **Slabs, Stairs**, and more.  
-- **Mob Sound Effects**: All new mobs now feature **living, death, and ambient sounds** for a richer experience.
-
-## v0.2.0 Patch Notes
-
-- **New Content**
-  - Added **Defense Upgrade Card** with a full crafting recipe.
-  - Added detailed **card descriptions** so players can easily understand each upgrade’s effects.
-  - Added a **mod description** visible in the in-game mod menu.
-  - Introduced a **CHANGELOG.md** to the workspace for easier version tracking.
-
-- **Balance & Gameplay**
-  - **RobotMK1** has been **renamed to Sentinel-7** for a sleeker, lore-friendly identity.
-  - Increased **Sentinel-7 spawn rate** to make encounters more dynamic.
-  - Boosted **Sentinel-7 HP** from **20 → 30** for tougher battles.
-
-- **Visuals**
-  - Updated the **Blank PCB texture** for a cleaner, more polished look.
+- Upgrade cards with descriptions
+- Sentinel-7 rename and balance tweaks

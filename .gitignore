@@ -1,12 +1,36 @@
-theyear3001.mcreator
-.gradle
-.mcreator
-.eclipse
-.settings
-bin
-elements
-run
-runs
+# Gradle / build
+.gradle/
+**/.gradle/
+**/build/
+build/
+all-jars/
+
+# MCreator
+*.mcreator
+.mcreator/
 mcreator.gradle
-/build/
-**/build
+theyear3001.mcreator
+
+# IDE
+.idea/
+.vscode/
+.settings/
+.eclipse/
+bin/
+*.iml
+
+# Run directories
+run/
+runs/
+**/run/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local env
+.env
+.env.*

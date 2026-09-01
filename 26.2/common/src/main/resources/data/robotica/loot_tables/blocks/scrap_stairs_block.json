@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "robotica:blocks/scrap_stairs_block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "robotica:scrap_stairs_block"
+        }
+      ]
+    }
+  ]
+}

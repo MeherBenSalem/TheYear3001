@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "robotica:titanium_hoe",
+    "robotica:scrap_hoe",
+    "robotica:orichalcum_hoe",
+    "robotica:cobalt_hoe"
+  ]
+}

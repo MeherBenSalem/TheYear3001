@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "robotica:block/scrap",
+    "bottom": "robotica:block/scrap",
+    "top": "robotica:block/scrap",
+    "side": "robotica:block/scrap"
+  },
+  "render_type": "solid"
+}

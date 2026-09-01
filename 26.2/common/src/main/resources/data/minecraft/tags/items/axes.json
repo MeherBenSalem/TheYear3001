@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "robotica:titanium_axe",
+    "robotica:scrap_axe",
+    "robotica:orichalcum_axe",
+    "robotica:cobalt_axe"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "robot_die": {
+    "subtitle": "subtitles.robot_die",
+    "sounds": [
+      {
+        "name": "robotica:robot_die",
+        "stream": false,
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "robot_ambient": {
+    "subtitle": "subtitles.robot_ambient",
+    "sounds": [
+      {
+        "name": "robotica:roboth",
+        "stream": false,
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "alient_robot_ambient": {
+    "subtitle": "subtitles.alient_robot_ambient",
+    "sounds": [
+      {
+        "name": "robotica:alien-robot-246019",
+        "stream": false,
+        "attenuation_distance": 16
+      }
+    ]
+  }
+}

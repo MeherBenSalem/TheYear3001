@@ -1,0 +1,30 @@
+{
+    "schemaVersion": 1,
+    "id": "robotica",
+    "version": "${version}",
+    "name": "${mod_name}",
+    "description": "${description}",
+    "authors": [
+        "${mod_author}"
+    ],
+    "license": "${license}",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "tn.nightbeam.robotica.RoboticaModFabric"
+        ],
+        "client": [
+            "tn.nightbeam.robotica.RoboticaModFabricClient"
+        ]
+    },
+    "mixins": [
+        "robotica.mixins.json",
+        "robotica.fabric.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.14",
+        "fabric": "*",
+        "minecraft": "${minecraft_version}",
+        "java": ">=21"
+    }
+}

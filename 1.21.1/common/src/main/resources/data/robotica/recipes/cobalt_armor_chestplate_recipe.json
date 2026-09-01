@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "robotica:cobalt_ingot"
+    }
+  },
+  "result": {
+    "item": "robotica:cobalt_armor_chestplate",
+    "count": 1
+  }
+}
