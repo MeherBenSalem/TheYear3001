@@ -22,7 +22,7 @@ workspace, not from the README), what players of futuristic and tech mods ask fo
 | Oil | A fluid and a bucket with no use. |
 | Tools and armour | Four sets (scrap, titanium, cobalt, orichalcum), several hoes named "Shovel", all armour named "Armor Helmet". |
 | Sounds | Two robot sounds; stereo files that did not attenuate until a late fix. |
-| Versions | 1.20.1 (Fabric, Forge), 1.21.1 (Fabric, NeoForge, plus an unused `forge/` folder and a stray `src/`), 26.2 (Fabric, NeoForge). No 26.1.2 or 26.3. |
+| Versions | 1.20.1 (Fabric, Forge), 1.21.1 (Fabric, NeoForge, plus an unused `forge/` folder and a stray `src/`), 26.2 (Fabric, NeoForge). No 26.1.2 or 26.3. **The 26.2 builds crashed on startup on both loaders** ("Block id not set": 26.x needs the id on the block and item properties before construction), so 1.0.1 never ran on 26.2. |
 | Tooling | Leftover generator scripts (`scripts/gen_*.py`, `scopes/`), an `upload_platforms.mjs`, a publish workflow that guessed the loader from the file name and published every jar with the same Minecraft versions; no tests, no QA, no release jars. |
 
 ## 2. What players of futuristic and tech mods ask for

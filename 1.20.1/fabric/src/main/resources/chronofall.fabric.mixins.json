@@ -3,7 +3,7 @@
   "minVersion": "0.8",
   "package": "tn.nightbeam.chronofall.fabric.mixin",
   "compatibilityLevel": "JAVA_17",
-  "mixins": [],
+  "mixins": ["MappedRegistryMixin"],
   "injectors": {
     "defaultRequire": 1
   }

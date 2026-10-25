@@ -23,6 +23,7 @@
             "tn.nightbeam.chronofall.fabric.ChronofallFabricClient"
         ]
     },
+    "accessWidener": "chronofall.accesswidener",
     "mixins": [
         "${mod_id}.fabric.mixins.json"
     ],

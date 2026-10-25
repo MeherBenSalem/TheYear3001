@@ -25,9 +25,10 @@ for build in $BUILDS; do
   out="$LOGS/results/$ws-$loader.txt"
   "$QA/devrun.sh" stop-client; "$QA/devrun.sh" stop-server; sleep 10
   fixture="$QA/fixtures/legacy-$ws.zip"
-  # 26.1.2 has no Robotica release: it upgrades the 1.21.1 world, the way a player moving to 26.1.2 would. 26.3 likewise
-  # upgrades the 26.2 world.
-  case $ws in 26.1.2) fixture="$QA/fixtures/legacy-1.21.1.zip";; 26.3) fixture="$QA/fixtures/legacy-26.2.zip";; esac
+  # 26.1.2 has no Robotica release: it upgrades the 1.21.1 world, the way a player moving to 26.1.2 would. Robotica
+  # 1.0.1 for 26.2 crashed on startup on both loaders, so no 26.2 world with it exists; 26.2 and 26.3 upgrade the 1.21.1
+  # world too.
+  case $ws in 26.*) fixture="$QA/fixtures/legacy-1.21.1.zip";; esac
   extra=""
   if [ -f "$fixture" ]; then
     QA_FIXTURE="$fixture" "$QA/devrun.sh" prepare-server "$ws" "$loader"
