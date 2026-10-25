@@ -8,7 +8,7 @@ jetpack, a drone, a rideable mech, a hover skiff, rift gates and a holographic F
 
 **2.0 "Impact"** is a full remake of the mod formerly published as **Robotica** and **The Year 3001**: see the
 [2.0.0 notes](patchnotes/2.0.0.md), the [design notes](docs/DESIGN-2.0.md) and the [QA record](docs/QA-2.0.0.md)
-(81 in-game checks on all ten builds). Old worlds load with their blocks, items and robots migrated.
+(84 in-game checks per build, on all ten builds). Old worlds load with their blocks, items and robots migrated.
 
 ## Which jar do I download?
 
@@ -22,7 +22,7 @@ Jar names are `chronofall-{loader}-{minecraft}-{modVersion}.jar`. Match **both**
 | 26.2 | 25+ | `chronofall-fabric-26.2-2.0.0.jar` | `chronofall-neoforge-26.2-2.0.0.jar` (NeoForge 26.2.0.93 or newer) |
 | 26.3 | 25+ | `chronofall-fabric-26.3-2.0.0.jar` | `chronofall-neoforge-26.3-2.0.0.jar` (NeoForge 26.3.0.97 or newer) |
 
-Install it on the server and on clients. No other library is needed (Geckolib, Pehkui and JEI are not required).
+Install it on the server and on clients. No other library is needed.
 
 ## Features
 

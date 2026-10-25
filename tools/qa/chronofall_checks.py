@@ -547,6 +547,7 @@ def client_checks(s, shots):
     s.cmd(f'clear {PLAYER}')
     s.cmd(f'data merge entity @e[type={NS}:drone,limit=1] {{Flux:0}}')
     time.sleep(3)
+    s.cmd(f'clear {PLAYER}')  # the Collector chip may have brought something (a slime ball) into the empty hand
     drone = [s.entity_number(f'@e[type={NS}:drone,limit=1]', f'Pos[{i}]') for i in range(3)]
     if None in drone:
         drone = [x + 0.5, GY, z + 2.5]
@@ -682,9 +683,9 @@ def check_log():
 
 def main():
     s = Server(ARGS.port, ARGS.ws == '1.20.1')
-    s.cmd('gamerule doMobSpawning false')
-    s.cmd('gamerule doDaylightCycle false')
-    s.cmd('gamerule doWeatherCycle false')
+    # Older and 26.x names of the same rules (the other spelling is just rejected).
+    for rule in ('doMobSpawning', 'spawn_mobs', 'doDaylightCycle', 'advance_time', 'doWeatherCycle', 'advance_weather'):
+        s.cmd(f'gamerule {rule} false')
     s.cmd('time set 6000')
     s.cmd('difficulty normal')
     # The tests run along a strip far from spawn; keep it loaded and ticking without a player nearby.

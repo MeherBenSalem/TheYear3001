@@ -20,7 +20,7 @@ Full notes: [patchnotes/2.0.0.md](patchnotes/2.0.0.md).
 
 ### 1.0.0
 - Refreshed mod icons
-- Removed Geckolib, Pehkui and JEI as required dependencies
+- No longer required three external libraries
 - Removed bee-related robots
 - Namespace `robotica` (formerly `theyear3001`)
 
