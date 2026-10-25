@@ -1,9 +1,8 @@
 {
-  "replace": false,
   "values": [
-    "robotica:orichalcum_sword",
-    "robotica:titanium_sword",
-    "robotica:scrap_sword",
-    "robotica:cobalt_sword"
+    "chronofall:scrap_sword",
+    "chronofall:titanium_sword",
+    "chronofall:cobalt_sword",
+    "chronofall:orichalcum_sword"
   ]
 }

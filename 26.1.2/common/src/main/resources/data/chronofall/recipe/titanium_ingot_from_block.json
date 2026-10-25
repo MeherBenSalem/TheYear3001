@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "chronofall:titanium_block"
+  ],
+  "result": {
+    "id": "chronofall:titanium_ingot",
+    "count": 9
+  }
+}

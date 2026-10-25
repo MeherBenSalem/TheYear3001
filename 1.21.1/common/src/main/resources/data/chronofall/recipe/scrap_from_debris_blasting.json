@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "chronofall:scrap_debris"
+  },
+  "experience": 0.5,
+  "cookingtime": 100,
+  "category": "misc",
+  "result": {
+    "id": "chronofall:scrap"
+  }
+}

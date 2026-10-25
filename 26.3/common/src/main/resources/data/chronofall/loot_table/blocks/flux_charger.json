@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "chronofall:blocks/flux_charger",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "chronofall:flux_charger"
+        }
+      ],
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      }
+    }
+  ]
+}

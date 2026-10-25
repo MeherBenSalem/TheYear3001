@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "chronofall:cobalt"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "chronofall:cobalt"
+      }
+    ]
+  }
+}

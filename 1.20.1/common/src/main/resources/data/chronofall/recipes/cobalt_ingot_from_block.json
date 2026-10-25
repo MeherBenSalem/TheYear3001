@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "chronofall:cobalt_block"
+    }
+  ],
+  "result": {
+    "item": "chronofall:cobalt_ingot",
+    "count": 9
+  }
+}

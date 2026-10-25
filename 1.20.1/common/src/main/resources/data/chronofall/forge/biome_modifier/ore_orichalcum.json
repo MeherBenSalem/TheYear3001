@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "chronofall:ore_orichalcum",
+  "step": "underground_ores"
+}

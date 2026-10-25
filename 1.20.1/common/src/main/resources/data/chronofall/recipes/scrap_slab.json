@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "chronofall:scrap_block"
+    }
+  },
+  "result": {
+    "item": "chronofall:scrap_slab",
+    "count": 6
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "chronofall:block/scrap_block",
+    "top": "chronofall:block/scrap_block",
+    "side": "chronofall:block/scrap_block"
+  }
+}

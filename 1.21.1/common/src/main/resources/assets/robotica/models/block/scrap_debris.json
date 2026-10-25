@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "robotica:block/junk",
-    "particle": "robotica:block/junk"
-  },
-  "render_type": "solid"
-}

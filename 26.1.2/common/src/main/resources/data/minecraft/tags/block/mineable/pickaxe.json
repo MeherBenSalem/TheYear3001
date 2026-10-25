@@ -1,0 +1,19 @@
+{
+  "values": [
+    "chronofall:scrap_block",
+    "chronofall:scrap_slab",
+    "chronofall:scrap_stairs_block",
+    "chronofall:scrap_debris",
+    "chronofall:titanium_ore",
+    "chronofall:cobalt_ore",
+    "chronofall:orichalcum_ore",
+    "chronofall:titanium_block",
+    "chronofall:cobalt_block",
+    "chronofall:orichalcum_block",
+    "chronofall:rift_glass",
+    "chronofall:fabricator",
+    "chronofall:flux_charger",
+    "chronofall:rift_gate",
+    "chronofall:rift_beacon"
+  ]
+}

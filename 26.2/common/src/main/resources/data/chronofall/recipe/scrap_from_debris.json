@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": "chronofall:scrap_debris",
+  "experience": 0.5,
+  "cookingtime": 200,
+  "category": "misc",
+  "result": {
+    "id": "chronofall:scrap"
+  }
+}

@@ -1,9 +1,8 @@
 {
-  "replace": false,
   "values": [
-    "robotica:orichalcum_shovel",
-    "robotica:cobalt_shovel",
-    "robotica:titanium_shovel",
-    "robotica:scrap_shovel"
+    "chronofall:scrap_shovel",
+    "chronofall:titanium_shovel",
+    "chronofall:cobalt_shovel",
+    "chronofall:orichalcum_shovel"
   ]
 }

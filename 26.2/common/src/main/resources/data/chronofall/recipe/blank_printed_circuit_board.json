@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:iron_ingot",
+    "minecraft:green_dye",
+    "chronofall:scrap"
+  ],
+  "result": {
+    "id": "chronofall:blank_printed_circuit_board",
+    "count": 2
+  }
+}

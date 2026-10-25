@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "chronofall:orichalcum_ore"
+  },
+  "experience": 1.0,
+  "cookingtime": 100,
+  "category": "misc",
+  "result": {
+    "id": "chronofall:orichalcum_ingot"
+  }
+}

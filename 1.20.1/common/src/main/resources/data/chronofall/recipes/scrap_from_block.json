@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "chronofall:scrap_block"
+    }
+  ],
+  "result": {
+    "item": "chronofall:scrap",
+    "count": 9
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:paper",
+    "minecraft:paper",
+    "minecraft:iron_nugget",
+    "minecraft:redstone"
+  ],
+  "result": {
+    "id": "chronofall:blank_card",
+    "count": 2
+  }
+}

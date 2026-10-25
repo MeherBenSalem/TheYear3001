@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "linked=false": {
+      "model": "chronofall:block/rift_gate"
+    },
+    "linked=true": {
+      "model": "chronofall:block/rift_gate"
+    }
+  }
+}

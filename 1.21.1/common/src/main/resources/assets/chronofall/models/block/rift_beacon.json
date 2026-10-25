@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "chronofall:block/rift_beacon_side",
+    "end": "chronofall:block/rift_beacon_top"
+  }
+}

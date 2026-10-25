@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "top": "chronofall:block/fabricator_top",
+    "front": "chronofall:block/fabricator_front",
+    "side": "chronofall:block/fabricator_side",
+    "bottom": "chronofall:block/fabricator_bottom"
+  }
+}

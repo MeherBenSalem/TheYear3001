@@ -1,9 +1,8 @@
 {
-  "replace": false,
   "values": [
-    "robotica:cobalt_armor_helmet",
-    "robotica:titanium_armor_helmet",
-    "robotica:orichalcum_armor_helmet",
-    "robotica:scrap_armor_helmet"
+    "chronofall:scrap_armor_helmet",
+    "chronofall:titanium_armor_helmet",
+    "chronofall:cobalt_armor_helmet",
+    "chronofall:orichalcum_armor_helmet"
   ]
 }

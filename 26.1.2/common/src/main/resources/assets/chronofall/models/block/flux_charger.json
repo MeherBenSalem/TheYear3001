@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "top": "chronofall:block/flux_charger_top",
+    "front": "chronofall:block/flux_charger_front",
+    "side": "chronofall:block/flux_charger_side",
+    "bottom": "chronofall:block/fabricator_bottom"
+  }
+}

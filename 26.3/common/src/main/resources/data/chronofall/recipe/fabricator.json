@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "tct",
+    "rbr",
+    "sss"
+  ],
+  "key": {
+    "t": "chronofall:titanium_ingot",
+    "c": "minecraft:crafting_table",
+    "r": "minecraft:redstone",
+    "b": "chronofall:scrap_block",
+    "s": "chronofall:scrap"
+  },
+  "result": {
+    "id": "chronofall:fabricator",
+    "count": 1
+  }
+}

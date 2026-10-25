@@ -1,9 +1,10 @@
 {
-  "replace": false,
   "values": [
-    "robotica:orichalcum_ore",
-    "robotica:cobalt_ore",
-    "robotica:titanium_ore",
-    "robotica:scrap_debris"
+    "chronofall:titanium_ore",
+    "chronofall:cobalt_ore",
+    "chronofall:titanium_block",
+    "chronofall:cobalt_block",
+    "chronofall:rift_gate",
+    "chronofall:rift_beacon"
   ]
 }

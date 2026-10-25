@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": "chronofall:raw_cobalt",
+  "experience": 0.9,
+  "cookingtime": 200,
+  "category": "misc",
+  "result": {
+    "id": "chronofall:cobalt_ingot"
+  }
+}

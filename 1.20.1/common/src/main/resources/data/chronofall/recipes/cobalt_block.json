@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "chronofall:cobalt_ingot"
+    }
+  },
+  "result": {
+    "item": "chronofall:cobalt_block",
+    "count": 1
+  }
+}

@@ -1,9 +1,8 @@
 {
-  "replace": false,
   "values": [
-    "robotica:orichalcum_axe",
-    "robotica:cobalt_axe",
-    "robotica:titanium_axe",
-    "robotica:scrap_axe"
+    "chronofall:scrap_axe",
+    "chronofall:titanium_axe",
+    "chronofall:cobalt_axe",
+    "chronofall:orichalcum_axe"
   ]
 }

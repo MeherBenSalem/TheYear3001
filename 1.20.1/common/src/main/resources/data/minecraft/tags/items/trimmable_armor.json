@@ -1,0 +1,20 @@
+{
+  "values": [
+    "chronofall:scrap_armor_helmet",
+    "chronofall:scrap_armor_chestplate",
+    "chronofall:scrap_armor_leggings",
+    "chronofall:scrap_armor_boots",
+    "chronofall:titanium_armor_helmet",
+    "chronofall:titanium_armor_chestplate",
+    "chronofall:titanium_armor_leggings",
+    "chronofall:titanium_armor_boots",
+    "chronofall:cobalt_armor_helmet",
+    "chronofall:cobalt_armor_chestplate",
+    "chronofall:cobalt_armor_leggings",
+    "chronofall:cobalt_armor_boots",
+    "chronofall:orichalcum_armor_helmet",
+    "chronofall:orichalcum_armor_chestplate",
+    "chronofall:orichalcum_armor_leggings",
+    "chronofall:orichalcum_armor_boots"
+  ]
+}

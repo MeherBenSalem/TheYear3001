@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "chronofall:block/fabricator"
+    },
+    "facing=east": {
+      "model": "chronofall:block/fabricator",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "chronofall:block/fabricator",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chronofall:block/fabricator",
+      "y": 270
+    }
+  }
+}

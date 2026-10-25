@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "chronofall:cobalt_ore"
+  },
+  "experience": 0.9,
+  "cookingtime": 100,
+  "category": "misc",
+  "result": {
+    "id": "chronofall:cobalt_ingot"
+  }
+}

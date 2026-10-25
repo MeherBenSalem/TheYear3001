@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "tct",
+    "cfc",
+    "tbt"
+  ],
+  "key": {
+    "t": {
+      "item": "chronofall:titanium_ingot"
+    },
+    "c": {
+      "item": "chronofall:cobalt_ingot"
+    },
+    "f": {
+      "item": "minecraft:furnace"
+    },
+    "b": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "result": {
+    "item": "chronofall:flux_charger",
+    "count": 1
+  }
+}

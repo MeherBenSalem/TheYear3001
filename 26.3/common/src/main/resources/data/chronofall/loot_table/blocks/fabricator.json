@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "chronofall:blocks/fabricator",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "chronofall:fabricator"
+        }
+      ],
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      }
+    }
+  ]
+}

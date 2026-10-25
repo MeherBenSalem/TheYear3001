@@ -1,0 +1,7 @@
+accessWidener v2 official
+
+# 26.1.2 keeps the BlockEntityType constructor private (public from 26.2 on).
+accessible class net/minecraft/world/level/block/entity/BlockEntityType$BlockEntitySupplier
+accessible method net/minecraft/world/level/block/entity/BlockEntityType <init> (Lnet/minecraft/world/level/block/entity/BlockEntityType$BlockEntitySupplier;Ljava/util/Set;)V
+# Jetpack flight resets the server's "floating too long" counter (see item/Jetpack).
+accessible field net/minecraft/server/network/ServerGamePacketListenerImpl aboveGroundTickCount I

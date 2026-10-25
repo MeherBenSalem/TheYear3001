@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "ggg",
+    "gsg",
+    "ggg"
+  ],
+  "key": {
+    "g": "minecraft:black_stained_glass",
+    "s": "chronofall:rift_shard"
+  },
+  "result": {
+    "id": "chronofall:rift_glass",
+    "count": 8
+  }
+}

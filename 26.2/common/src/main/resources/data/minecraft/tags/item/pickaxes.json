@@ -1,9 +1,8 @@
 {
-  "replace": false,
   "values": [
-    "robotica:orichalcum_pickaxe",
-    "robotica:cobalt_pickaxe",
-    "robotica:titanium_pickaxe",
-    "robotica:scrap_pickaxe"
+    "chronofall:scrap_pickaxe",
+    "chronofall:titanium_pickaxe",
+    "chronofall:cobalt_pickaxe",
+    "chronofall:orichalcum_pickaxe"
   ]
 }

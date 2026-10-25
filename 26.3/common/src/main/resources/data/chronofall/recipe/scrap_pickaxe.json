@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "XXX",
+    " # ",
+    " # "
+  ],
+  "key": {
+    "X": "chronofall:scrap",
+    "#": "minecraft:stick"
+  },
+  "result": {
+    "id": "chronofall:scrap_pickaxe",
+    "count": 1
+  }
+}

@@ -1,9 +1,8 @@
 {
-  "replace": false,
   "values": [
-    "robotica:cobalt_armor_leggings",
-    "robotica:titanium_armor_leggings",
-    "robotica:orichalcum_armor_leggings",
-    "robotica:scrap_armor_leggings"
+    "chronofall:scrap_armor_leggings",
+    "chronofall:titanium_armor_leggings",
+    "chronofall:cobalt_armor_leggings",
+    "chronofall:orichalcum_armor_leggings"
   ]
 }

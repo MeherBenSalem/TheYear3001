@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "chronofall:blocks/scrap_stairs_block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "chronofall:scrap_stairs_block"
+        }
+      ],
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      }
+    }
+  ]
+}

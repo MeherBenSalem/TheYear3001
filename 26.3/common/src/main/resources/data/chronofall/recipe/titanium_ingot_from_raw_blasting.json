@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": "chronofall:raw_titanium",
+  "experience": 0.8,
+  "cookingtime": 100,
+  "result": {
+    "id": "chronofall:titanium_ingot"
+  }
+}

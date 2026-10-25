@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "chronofall:orichalcum_block"
+    }
+  ],
+  "result": {
+    "item": "chronofall:orichalcum_ingot",
+    "count": 9
+  }
+}

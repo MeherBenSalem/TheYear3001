@@ -1,6 +1,5 @@
 {
-  "replace": false,
   "values": [
-    "robotica:scrap_slab"
+    "chronofall:scrap_slab"
   ]
 }

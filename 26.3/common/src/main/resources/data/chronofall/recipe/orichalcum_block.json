@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "chronofall:orichalcum_ingot"
+  },
+  "result": {
+    "id": "chronofall:orichalcum_block",
+    "count": 1
+  }
+}

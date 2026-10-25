@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "X",
+    "#",
+    "#"
+  ],
+  "key": {
+    "X": "chronofall:scrap",
+    "#": "minecraft:stick"
+  },
+  "result": {
+    "id": "chronofall:scrap_shovel",
+    "count": 1
+  }
+}

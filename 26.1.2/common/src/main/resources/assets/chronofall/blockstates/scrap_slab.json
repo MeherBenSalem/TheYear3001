@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "chronofall:block/scrap_slab"
+    },
+    "type=top": {
+      "model": "chronofall:block/scrap_slab_top"
+    },
+    "type=double": {
+      "model": "chronofall:block/scrap_block"
+    }
+  }
+}

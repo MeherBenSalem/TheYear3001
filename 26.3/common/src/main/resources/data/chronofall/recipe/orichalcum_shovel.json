@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "X",
+    "#",
+    "#"
+  ],
+  "key": {
+    "X": "chronofall:orichalcum_ingot",
+    "#": "minecraft:stick"
+  },
+  "result": {
+    "id": "chronofall:orichalcum_shovel",
+    "count": 1
+  }
+}

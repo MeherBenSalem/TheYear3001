@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "chronofall:ore_scrap_debris",
+  "step": "underground_ores"
+}

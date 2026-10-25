@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": "chronofall:orichalcum_ore",
+  "experience": 1.0,
+  "cookingtime": 200,
+  "result": {
+    "id": "chronofall:orichalcum_ingot"
+  }
+}

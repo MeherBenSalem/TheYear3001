@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "chronofall:titanium_ore"
+  },
+  "experience": 0.8,
+  "cookingtime": 200,
+  "category": "misc",
+  "result": {
+    "id": "chronofall:titanium_ingot"
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "rift_open": {
+    "subtitle": "subtitles.chronofall.rift_open",
+    "sounds": [
+      {
+        "name": "chronofall:rift_open",
+        "attenuation_distance": 160
+      }
+    ]
+  },
+  "pod_fall": {
+    "subtitle": "subtitles.chronofall.pod_fall",
+    "sounds": [
+      {
+        "name": "chronofall:pod_fall",
+        "attenuation_distance": 160
+      }
+    ]
+  },
+  "pod_impact": {
+    "subtitle": "subtitles.chronofall.pod_impact",
+    "sounds": [
+      {
+        "name": "chronofall:pod_impact",
+        "attenuation_distance": 160
+      }
+    ]
+  },
+  "cache_open": {
+    "subtitle": "subtitles.chronofall.cache_open",
+    "sounds": [
+      {
+        "name": "chronofall:cache_open",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "laser_shot": {
+    "subtitle": "subtitles.chronofall.laser_shot",
+    "sounds": [
+      {
+        "name": "chronofall:laser_shot",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "laser_hit": {
+    "subtitle": "subtitles.chronofall.laser_hit",
+    "sounds": [
+      {
+        "name": "chronofall:laser_hit",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "jetpack_loop": {
+    "subtitle": "subtitles.chronofall.jetpack_loop",
+    "sounds": [
+      {
+        "name": "chronofall:jetpack_loop",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "skiff_loop": {
+    "subtitle": "subtitles.chronofall.skiff_loop",
+    "sounds": [
+      {
+        "name": "chronofall:skiff_loop",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "cutter_loop": {
+    "subtitle": "subtitles.chronofall.cutter_loop",
+    "sounds": [
+      {
+        "name": "chronofall:cutter_loop",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "mech_step": {
+    "subtitle": "subtitles.chronofall.mech_step",
+    "sounds": [
+      {
+        "name": "chronofall:mech_step",
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "mech_slam": {
+    "subtitle": "subtitles.chronofall.mech_slam",
+    "sounds": [
+      {
+        "name": "chronofall:mech_slam",
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "gate_charge": {
+    "subtitle": "subtitles.chronofall.gate_charge",
+    "sounds": [
+      {
+        "name": "chronofall:gate_charge",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "gate_warp": {
+    "subtitle": "subtitles.chronofall.gate_warp",
+    "sounds": [
+      {
+        "name": "chronofall:gate_warp",
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "fabricator_print": {
+    "subtitle": "subtitles.chronofall.fabricator_print",
+    "sounds": [
+      {
+        "name": "chronofall:fabricator_print",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "fabricator_done": {
+    "subtitle": "subtitles.chronofall.fabricator_done",
+    "sounds": [
+      {
+        "name": "chronofall:fabricator_done",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "charger_hum": {
+    "subtitle": "subtitles.chronofall.charger_hum",
+    "sounds": [
+      {
+        "name": "chronofall:charger_hum",
+        "attenuation_distance": 10
+      }
+    ]
+  },
+  "drone_beep": {
+    "subtitle": "subtitles.chronofall.drone_beep",
+    "sounds": [
+      {
+        "name": "chronofall:drone_beep",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "sentinel_ambient": {
+    "subtitle": "subtitles.chronofall.sentinel_ambient",
+    "sounds": [
+      {
+        "name": "chronofall:sentinel_ambient",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "sentinel_hurt": {
+    "subtitle": "subtitles.chronofall.sentinel_hurt",
+    "sounds": [
+      {
+        "name": "chronofall:sentinel_hurt",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "sentinel_death": {
+    "subtitle": "subtitles.chronofall.sentinel_death",
+    "sounds": [
+      {
+        "name": "chronofall:sentinel_death",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "robot_hurt": {
+    "subtitle": "subtitles.chronofall.robot_hurt",
+    "sounds": [
+      {
+        "name": "chronofall:robot_hurt",
+        "attenuation_distance": 16
+      }
+    ]
+  }
+}

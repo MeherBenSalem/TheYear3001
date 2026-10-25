@@ -1,0 +1,4 @@
+accessWidener v2 named
+
+# Jetpack flight resets the server's "floating too long" counter (see item/Jetpack).
+accessible field net/minecraft/server/network/ServerGamePacketListenerImpl aboveGroundTickCount I

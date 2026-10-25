@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "chronofall:blocks/titanium_block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "chronofall:titanium_block"
+        }
+      ],
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      }
+    }
+  ]
+}
