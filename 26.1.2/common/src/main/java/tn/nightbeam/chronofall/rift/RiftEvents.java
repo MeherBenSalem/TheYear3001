@@ -227,7 +227,7 @@ public final class RiftEvents {
         if (state.isAir() || state.hasBlockEntity()) {
             return false;
         }
-        return state.is(BlockTags.DIRT) || state.is(BlockTags.BASE_STONE_OVERWORLD) || state.is(BlockTags.SAND) || state.is(Blocks.GRAVEL)
+        return state.is(BlockTags.SUBSTRATE_OVERWORLD) || state.is(BlockTags.BASE_STONE_OVERWORLD) || state.is(BlockTags.SAND) || state.is(Blocks.GRAVEL)
                 || state.is(BlockTags.SNOW) || state.is(BlockTags.TERRACOTTA) || state.is(Blocks.SANDSTONE) || state.is(Blocks.RED_SANDSTONE)
                 || state.is(Blocks.CLAY) || state.is(Blocks.MUD) || state.is(BlockTags.ICE) || state.is(Blocks.FARMLAND) || state.is(Blocks.DIRT_PATH)
                 || state.canBeReplaced();

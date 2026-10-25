@@ -33,10 +33,10 @@ public class JetpackLayer extends RenderLayer<AvatarRenderState, PlayerModel> {
         pose.pushPose();
         getParentModel().body.translateAndRotate(pose);
         collector.submitModel(model, Unit.INSTANCE, pose, RenderTypes.entityCutout(Textures.entity("jetpack")), light, OverlayTexture.NO_OVERLAY,
-                state.outlineColor, null);
+                state.outlineColor);
         if (jetpack.flux(pack) > 0) {
             collector.order(1).submitModel(model, Unit.INSTANCE, pose, RenderTypes.eyes(Textures.glow("jetpack")), 0xF000F0, OverlayTexture.NO_OVERLAY,
-                    state.outlineColor, null);
+                    state.outlineColor);
         }
         pose.popPose();
     }

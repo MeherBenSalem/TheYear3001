@@ -16,14 +16,11 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import java.util.Set;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.level.block.Block;
@@ -164,7 +161,7 @@ public final class ModContent {
                 .sound(SoundType.AMETHYST).requiresCorrectToolForDrops().lightLevel(state -> state.getValue(RiftGateBlock.LINKED) ? 11 : 4)
                 .noOcclusion()));
         RIFT_CACHE = block(r, "rift_cache", id -> new RiftCacheBlock(props(id).mapColor(MapColor.COLOR_BLACK)
-                .strength(-1.0F, 3_600_000.0F).sound(SoundType.METAL).lightLevel(state -> 9).noLootTable().pushReaction(PushReaction.BLOCK)
+                .strength(-1.0F, 3_600_000.0F).sound(SoundType.METAL).lightLevel(state -> 9).noLootTable().pushReaction(PushReaction.IMMOVEABLE)
                 .noOcclusion()));
         RIFT_BEACON = block(r, "rift_beacon", id -> new RiftBeaconBlock(props(id).mapColor(MapColor.COLOR_PURPLE)
                 .strength(5.0F, 1200.0F).sound(SoundType.METAL).requiresCorrectToolForDrops().lightLevel(state -> 12).noOcclusion()));
@@ -199,9 +196,9 @@ public final class ModContent {
             ModMaterials.Metal m = ModMaterials.metal(metal);
             item(r, metal + "_sword", id -> new Item(item(id).sword(m.tool(), 3.0F, -2.4F)));
             item(r, metal + "_pickaxe", id -> new Item(item(id).pickaxe(m.tool(), 1.0F, -2.8F)));
-            item(r, metal + "_axe", id -> new AxeItem(m.tool(), m.axeDamage(), m.axeSpeed(), item(id)));
-            item(r, metal + "_shovel", id -> new ShovelItem(m.tool(), 1.5F, -3.0F, item(id)));
-            item(r, metal + "_hoe", id -> new HoeItem(m.tool(), m.hoeDamage(), m.hoeSpeed(), item(id)));
+            item(r, metal + "_axe", id -> new Item(item(id).axe(m.tool(), m.axeDamage(), m.axeSpeed())));
+            item(r, metal + "_shovel", id -> new Item(item(id).shovel(m.tool(), 1.5F, -3.0F)));
+            item(r, metal + "_hoe", id -> new Item(item(id).hoe(m.tool(), m.hoeDamage(), m.hoeSpeed())));
             for (ArmorType type : List.of(ArmorType.HELMET, ArmorType.CHESTPLATE, ArmorType.LEGGINGS, ArmorType.BOOTS)) {
                 String piece = type.getName();
                 item(r, metal + "_armor_" + piece, id -> new Item(item(id).humanoidArmor(m.armor(), type)));

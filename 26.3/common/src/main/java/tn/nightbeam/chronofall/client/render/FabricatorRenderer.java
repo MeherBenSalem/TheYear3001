@@ -71,7 +71,7 @@ public class FabricatorRenderer implements BlockEntityRenderer<FabricatorBlockEn
         }
         pose.pushPose();
         pose.translate(0.5, 1.32 + Mth.sin(state.time * 0.08F) * 0.04, 0.5);
-        pose.mulPose(Axis.YP.rotationDegrees(state.time * (state.printing ? 6.0F : 2.0F)));
+        pose.rotateDegrees(Axis.YP, state.time * (state.printing ? 6.0F : 2.0F));
         pose.scale(0.55F * state.grow, 0.55F * state.grow, 0.55F * state.grow);
         state.item.submit(pose, collector, 0xF000F0, OverlayTexture.NO_OVERLAY, 0);
         pose.popPose();

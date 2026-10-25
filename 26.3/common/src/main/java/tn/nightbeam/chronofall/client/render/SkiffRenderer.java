@@ -39,17 +39,17 @@ public class SkiffRenderer extends EntityRenderer<SkiffEntity, PartRenderState> 
     @Override
     public void submit(PartRenderState state, PoseStack pose, SubmitNodeCollector collector, CameraRenderState camera) {
         pose.pushPose();
-        pose.mulPose(Axis.YP.rotationDegrees(180.0F - state.yRot));
+        pose.rotateDegrees(Axis.YP, 180.0F - state.yRot);
         pose.translate(0, 0.45, 0);
-        pose.mulPose(Axis.ZP.rotationDegrees(state.roll));
+        pose.rotateDegrees(Axis.ZP, state.roll);
         pose.translate(0, -0.45, 0);
         pose.scale(-1.0F, -1.0F, 1.0F);
         pose.translate(0.0F, -1.501F, 0.0F);
         collector.submitModel(model, Unit.INSTANCE, pose, RenderTypes.entityCutout(Textures.entity("skiff")), state.lightCoords,
-                OverlayTexture.NO_OVERLAY, state.outlineColor, null);
+                OverlayTexture.NO_OVERLAY, state.outlineColor);
         if (state.lit) {
             collector.order(1).submitModel(model, Unit.INSTANCE, pose, RenderTypes.eyes(Textures.glow("skiff")), 0xF000F0, OverlayTexture.NO_OVERLAY,
-                    state.outlineColor, null);
+                    state.outlineColor);
         }
         pose.popPose();
         super.submit(state, pose, collector, camera);

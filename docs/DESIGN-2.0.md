@@ -196,8 +196,8 @@ gate.
 
 ### Materials, ores, tools and armour
 
-Titanium, cobalt, orichalcum and scrap debris generate again on every loader (titanium -64 to 48, cobalt and
-orichalcum deep, scrap debris in the deepslate layer). The four tool and armour sets stay with proper names and a
+Titanium, cobalt, orichalcum and scrap debris generate again on every loader (titanium from Y -64 to 16, most
+common around -24; cobalt below -16; orichalcum below -40; scrap debris below 0). The four tool and armour sets stay with proper names and a
 clear tier order: scrap (between stone and iron) < titanium (between iron and diamond) < cobalt (diamond) <
 orichalcum (between diamond and netherite). Rift Shards, Flux Cells, wiring, circuit boards and processors are the
 tech components.

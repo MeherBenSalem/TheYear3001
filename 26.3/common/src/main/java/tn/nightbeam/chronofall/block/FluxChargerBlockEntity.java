@@ -109,7 +109,7 @@ public class FluxChargerBlockEntity extends BlockEntity implements WorldlyContai
         if (fuel.isEmpty() || stored > Flux.CHARGER_CAPACITY - BURN_RATE * 20) {
             return false;
         }
-        int flux = fuel.is(ModContent.item("rift_shard")) ? Flux.PER_RIFT_SHARD : Flux.fromBurnTicks(level.fuelValues().burnDuration(fuel));
+        int flux = fuel.is(ModContent.item("rift_shard")) ? Flux.PER_RIFT_SHARD : Flux.fromBurnTicks(burnTicks(level, fuel));
         if (flux <= 0) {
             return false;
         }
@@ -220,8 +220,25 @@ public class FluxChargerBlockEntity extends BlockEntity implements WorldlyContai
         return isFuel(level, stack);
     }
 
+    /** A fuel's furnace burn time (26.3 resolves it from the item's cooking_fuel component in a loot context). */
+    private int burnTicks(Level level, ItemStack fuel) {
+        if (!(level instanceof ServerLevel server)) {
+            return 0;
+        }
+        net.minecraft.world.level.storage.loot.LootContext context = new net.minecraft.world.level.storage.loot.LootContext.Builder(
+                new net.minecraft.world.level.storage.loot.LootParams.Builder(server)
+                        .withParameter(net.minecraft.world.level.storage.loot.parameters.LootContextParams.BLOCK_STATE, getBlockState())
+                        .withParameter(net.minecraft.world.level.storage.loot.parameters.LootContextParams.BLOCK_ENTITY, this)
+                        .withParameter(net.minecraft.world.level.storage.loot.parameters.LootContextParams.ORIGIN, Vec3.atCenterOf(getBlockPos()))
+                        .withParameter(net.minecraft.world.level.storage.loot.parameters.LootContextParams.CONTAINER, this)
+                        .create(net.minecraft.world.level.storage.loot.parameters.LootContextParamSets.CONTAINER_PROCESS))
+                .create(java.util.Optional.empty());
+        return net.minecraft.world.level.storage.loot.providers.number.ints.ResolvableInt.getFromItem(fuel,
+                net.minecraft.core.component.DataComponents.COOKING_FUEL, net.minecraft.world.item.component.CookingFuel::burnTime, context, 0);
+    }
+
     public static boolean isFuel(@Nullable Level level, ItemStack stack) {
-        return stack.is(ModContent.item("rift_shard")) || level != null && level.fuelValues().isFuel(stack);
+        return stack.is(ModContent.item("rift_shard")) || stack.has(net.minecraft.core.component.DataComponents.COOKING_FUEL);
     }
 
     @Override

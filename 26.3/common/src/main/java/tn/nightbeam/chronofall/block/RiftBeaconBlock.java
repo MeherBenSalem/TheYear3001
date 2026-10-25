@@ -1,6 +1,5 @@
 package tn.nightbeam.chronofall.block;
 
-import com.mojang.serialization.MapCodec;
 import org.jspecify.annotations.Nullable;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -21,15 +20,9 @@ import tn.nightbeam.chronofall.core.ChronoConfig;
 
 /** Takes Rift Shards on right-click and calls a Chrono Rift nearby after a countdown. */
 public class RiftBeaconBlock extends BaseEntityBlock {
-    public static final MapCodec<RiftBeaconBlock> CODEC = simpleCodec(RiftBeaconBlock::new);
 
     public RiftBeaconBlock(Properties properties) {
         super(properties);
-    }
-
-    @Override
-    protected MapCodec<? extends BaseEntityBlock> codec() {
-        return CODEC;
     }
 
     @Override

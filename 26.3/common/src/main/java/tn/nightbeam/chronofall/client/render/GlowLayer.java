@@ -22,7 +22,7 @@ public class GlowLayer<M extends EntityModel<RobotRenderState>> extends RenderLa
     @Override
     public void submit(PoseStack poseStack, SubmitNodeCollector collector, int light, RobotRenderState state, float yRot, float xRot) {
         if (state.lit) {
-            collector.order(1).submitModel(getParentModel(), state, poseStack, type, 0xF000F0, OverlayTexture.NO_OVERLAY, state.outlineColor, null);
+            collector.order(1).submitModel(getParentModel(), state, poseStack, type, 0xF000F0, OverlayTexture.NO_OVERLAY, state.outlineColor);
         }
     }
 }

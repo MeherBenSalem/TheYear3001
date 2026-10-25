@@ -45,7 +45,6 @@ public class SkiffEntity extends Entity implements Packable, FluxHolder {
     private double climb;
     private float bank;
     private float bankO;
-    private final net.minecraft.world.entity.InterpolationHandler interpolation = new net.minecraft.world.entity.InterpolationHandler(this, 10);
     /** Server: position at the previous tick (the rider's client moves the skiff between ticks). */
     private Vec3 lastPos;
 
@@ -180,18 +179,18 @@ public class SkiffEntity extends Entity implements Packable, FluxHolder {
 
 
     @Override
-    public net.minecraft.world.entity.InterpolationHandler getInterpolation() {
-        return interpolation;
+    protected net.minecraft.world.entity.InterpolationHandler createInterpolationHandler() {
+        return net.minecraft.world.entity.LinearInterpolationHandler.create(this, 10);
     }
 
     private void tickLerp() {
         if (isLocalInstanceAuthoritative()) {
-            interpolation.cancel();
+            getInterpolation().cancel();
             syncPacketPositionCodec(getX(), getY(), getZ());
         }
-        if (interpolation.hasActiveInterpolation()) {
+        if (getInterpolation().hasActiveInterpolation()) {
             float oldYaw = getYRot();
-            interpolation.interpolate();
+            getInterpolation().interpolate();
             bank = Mth.lerp(0.2F, bank, -Mth.clamp(Mth.wrapDegrees(getYRot() - oldYaw), -6.0F, 6.0F) * 4.0F);
         }
     }

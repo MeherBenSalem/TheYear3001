@@ -1,6 +1,5 @@
 package tn.nightbeam.chronofall.block;
 
-import com.mojang.serialization.MapCodec;
 import org.jspecify.annotations.Nullable;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -24,17 +23,11 @@ import net.minecraft.world.phys.BlockHitResult;
 import tn.nightbeam.chronofall.content.ModContent;
 
 public class FluxChargerBlock extends BaseEntityBlock {
-    public static final MapCodec<FluxChargerBlock> CODEC = simpleCodec(FluxChargerBlock::new);
     public static final BooleanProperty LIT = BlockStateProperties.LIT;
 
     public FluxChargerBlock(Properties properties) {
         super(properties);
         registerDefaultState(stateDefinition.any().setValue(HorizontalDirectionalBlock.FACING, Direction.NORTH).setValue(LIT, false));
-    }
-
-    @Override
-    protected MapCodec<? extends BaseEntityBlock> codec() {
-        return CODEC;
     }
 
     @Override

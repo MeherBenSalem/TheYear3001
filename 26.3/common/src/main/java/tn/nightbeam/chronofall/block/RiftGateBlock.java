@@ -1,6 +1,5 @@
 package tn.nightbeam.chronofall.block;
 
-import com.mojang.serialization.MapCodec;
 import org.jspecify.annotations.Nullable;
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.RandomSource;
@@ -27,18 +26,12 @@ import tn.nightbeam.chronofall.item.RiftTunerItem;
 
 /** A teleport pad: stand on a linked gate to arrive on its partner (link two with a Rift Tuner). */
 public class RiftGateBlock extends BaseEntityBlock {
-    public static final MapCodec<RiftGateBlock> CODEC = simpleCodec(RiftGateBlock::new);
     public static final BooleanProperty LINKED = BooleanProperty.create("linked");
     private static final VoxelShape SHAPE = Block.box(0, 0, 0, 16, 4, 16);
 
     public RiftGateBlock(Properties properties) {
         super(properties);
         registerDefaultState(stateDefinition.any().setValue(LINKED, false));
-    }
-
-    @Override
-    protected MapCodec<? extends BaseEntityBlock> codec() {
-        return CODEC;
     }
 
     @Override

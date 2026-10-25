@@ -37,13 +37,13 @@ public class ChronoPodRenderer extends EntityRenderer<ChronoPodEntity, PartRende
     @Override
     public void submit(PartRenderState state, PoseStack pose, SubmitNodeCollector collector, CameraRenderState camera) {
         pose.pushPose();
-        pose.mulPose(Axis.YP.rotationDegrees(state.yRot));
+        pose.rotateDegrees(Axis.YP, state.yRot);
         pose.scale(-1.0F, -1.0F, 1.0F);
         pose.translate(0.0F, -1.501F, 0.0F);
         collector.submitModel(model, Unit.INSTANCE, pose, RenderTypes.entityCutout(Textures.entity("chrono_pod")), 0xF000F0,
-                OverlayTexture.NO_OVERLAY, state.outlineColor, null);
+                OverlayTexture.NO_OVERLAY, state.outlineColor);
         collector.order(1).submitModel(model, Unit.INSTANCE, pose, RenderTypes.eyes(Textures.glow("chrono_pod")), 0xF000F0, OverlayTexture.NO_OVERLAY,
-                state.outlineColor, null);
+                state.outlineColor);
         pose.popPose();
         super.submit(state, pose, collector, camera);
     }

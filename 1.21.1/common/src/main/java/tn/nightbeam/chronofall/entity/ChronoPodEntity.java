@@ -49,10 +49,13 @@ public class ChronoPodEntity extends Entity {
         }
         move(MoverType.SELF, getDeltaMovement());
         if (onGround() || verticalCollision || horizontalCollision || getY() < level().getMinBuildHeight() + 2) {
-            // The ground block the pod hit: the first solid block at or below its base (a fast pod can end its last
-            // move a little inside the ground).
+            // The ground block the pod hit: the top of the ground at its base (a fast pod can end its last move a
+            // block or two inside the ground).
             BlockPos impact = BlockPos.containing(getX(), getY() + 0.5, getZ());
-            while (level().getBlockState(impact).getCollisionShape(level(), impact).isEmpty() && impact.getY() > getY() - 3) {
+            for (int i = 0; i < 3 && solid(impact.above()); i++) {
+                impact = impact.above();
+            }
+            while (!solid(impact) && impact.getY() > getY() - 3) {
                 impact = impact.below();
             }
             if (level() instanceof ServerLevel server) {
@@ -63,6 +66,10 @@ public class ChronoPodEntity extends Entity {
         if (tickCount > 600) {
             discard();
         }
+    }
+
+    private boolean solid(BlockPos pos) {
+        return !level().getBlockState(pos).getCollisionShape(level(), pos).isEmpty();
     }
 
     /** Spin for the renderer: the pod turns slowly as it falls. */

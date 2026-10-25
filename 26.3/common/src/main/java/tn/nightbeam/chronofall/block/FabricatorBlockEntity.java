@@ -161,7 +161,7 @@ public class FabricatorBlockEntity extends BlockEntity implements WorldlyContain
             }
             for (Map.Entry<String, Integer> need : recipe.totals().entrySet()) {
                 Item item = BuiltInRegistries.ITEM.getValue(Identifier.parse(need.getKey()));
-                player.getInventory().clearOrCountMatchingItems(stack -> stack.is(item), need.getValue(), player.inventoryMenu.getCraftSlots());
+                player.getInventory().clearOrCountMatchingItems(stack -> stack.is(item), false, need.getValue(), player.inventoryMenu.getCraftSlots());
             }
         }
         printing = selected;
