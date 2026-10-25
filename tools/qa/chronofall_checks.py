@@ -126,14 +126,25 @@ class Server:
 
 
 def count_items(text):
+    """Item counts in a `data get` reply listing stacks; each stack is a top-level {...} (1.20.1 nests a tag in it)."""
     totals: dict[str, int] = {}
-    for obj in re.findall(r'\{[^{}]*id: "[^"]+"[^{}]*\}', text):
-        item = re.search(r'id: "([^"]+)"', obj).group(1)
-        m = re.search(r'\b[cC]ount: (\d+)', obj)
-        totals[item] = totals.get(item, 0) + (int(m.group(1)) if m else 1)
-    if not totals:
-        for item, count in re.findall(r'id: "([^"]+)", [cC]ount: (\d+)', text):
-            totals[item] = totals.get(item, 0) + int(count)
+    depth, begin = 0, None
+    objects = []
+    for i, ch in enumerate(text):
+        if ch == '{':
+            if depth == 0:
+                begin = i
+            depth += 1
+        elif ch == '}' and depth:
+            depth -= 1
+            if depth == 0:
+                objects.append(text[begin:i + 1])
+    for obj in objects:
+        m = re.search(r'\bid: "([^"]+)"', obj)
+        if not m:
+            continue
+        n = re.search(r'\b[cC]ount: (\d+)', obj)
+        totals[m.group(1)] = totals.get(m.group(1), 0) + (int(n.group(1)) if n else 1)
     return totals
 
 
@@ -175,6 +186,13 @@ def check_config():
 
 
 def check_legacy(s):
+    if ARGS.loader == 'forge':
+        # Forge maps old ids when it loads a world (registry aliases and missing-mapping remaps), but commands only take
+        # current ids; the --fixture checks cover Forge with a world saved by Robotica 1.0.1.
+        print('SKIP legacy: old ids in commands (Forge: covered by the fixture world)', flush=True)
+        check('legacy: removed content (oil) is not resurrected', 'Unknown' in s.cmd(f'setblock 20 {GY} -34 robotica:oil')
+              or 'Invalid' in s.cmd(f'setblock 20 {GY} -34 robotica:oil'))
+        return
     x, z = 20, -40
     pairs = [('robotica:titanium_ore', f'{NS}:titanium_ore'), ('theyear3001:cobalt_ore', f'{NS}:cobalt_ore'),
              ('robotica:crafting_workstation', f'{NS}:fabricator'), ('theyear3001:scrap_stairs_block', f'{NS}:scrap_stairs_block')]
@@ -436,6 +454,10 @@ def client_checks(s, shots):
     check('client: the skiff climbs with jump', sy0 is not None and sy1 is not None and sy1 - sy0 > 1.5, (sy0, sy1))
     flux = s.entity_number('@e[tag=cf_skiff,limit=1]', 'Flux')
     check('client: the skiff used Flux', flux is not None and flux < 30000, flux)
+    # Hovering longer than the server's 4-second "floating a vehicle" limit must not kick the rider.
+    time.sleep(5)
+    check('client: hovering in the skiff does not get the rider kicked', PLAYER in s.cmd('list') and
+          'cf_skiff' in s.cmd(f'data get entity {PLAYER} RootVehicle'))
     c.key('shift', delay=0.6)
     time.sleep(1)
     s.cmd('kill @e[tag=cf_skiff]')
@@ -485,6 +507,8 @@ def client_checks(s, shots):
     time.sleep(2)
     check('client: using the drone item deploys a drone', s.count(f'@e[type={NS}:drone]') == 1)
     drone = [s.entity_number(f'@e[type={NS}:drone,limit=1]', f'Pos[{i}]') for i in range(3)]
+    if None in drone:
+        drone = [x + 0.5, GY, z + 2.5]  # no drone: the checks below fail instead of stopping the run
     for item in ('guard_chip', 'collector_chip', 'flux_cell'):
         hold_item(f'{NS}:{item}')
         c.tp(drone[0], GY, drone[2] - 1.6, facing=(drone[0], drone[1] + 0.3, drone[2]))
@@ -505,7 +529,7 @@ def client_checks(s, shots):
     check('client: a guard drone shoots a hostile mob near its owner', zhealth is None or zhealth < 20, zhealth)
     inv = count_items(s.cmd(f'data get entity {PLAYER} Inventory'))
     check('client: a collector drone brings items to its owner', inv.get('minecraft:diamond', 0) == 3, inv)
-    if shots:
+    if shots and s.count(f'@e[type={NS}:drone]'):
         drone = [s.entity_number(f'@e[type={NS}:drone,limit=1]', f'Pos[{i}]') for i in range(3)]
         c.tp(drone[0] + 1.5, GY, drone[2] + 2.5, facing=tuple(drone))
         time.sleep(1.5)
@@ -515,6 +539,8 @@ def client_checks(s, shots):
     s.cmd(f'data merge entity @e[type={NS}:drone,limit=1] {{Flux:0}}')
     time.sleep(3)
     drone = [s.entity_number(f'@e[type={NS}:drone,limit=1]', f'Pos[{i}]') for i in range(3)]
+    if None in drone:
+        drone = [x + 0.5, GY, z + 2.5]
     c.tp(drone[0], GY, drone[2] - 1.6, facing=(drone[0], drone[1] + 0.3, drone[2]))
     time.sleep(1)
     c.focus()

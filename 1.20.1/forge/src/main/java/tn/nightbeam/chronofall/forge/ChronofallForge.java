@@ -8,6 +8,7 @@ import java.util.function.Function;
 import java.util.function.IntConsumer;
 import java.util.function.Supplier;
 import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -39,11 +40,13 @@ import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.simple.SimpleChannel;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistry;
+import net.minecraftforge.registries.MissingMappingsEvent;
 import net.minecraftforge.registries.RegisterEvent;
 import tn.nightbeam.chronofall.Chronofall;
 import tn.nightbeam.chronofall.Constants;
 import tn.nightbeam.chronofall.ServerEvents;
 import tn.nightbeam.chronofall.content.ModContent;
+import tn.nightbeam.chronofall.core.LegacyIds;
 import tn.nightbeam.chronofall.entity.DroneEntity;
 import tn.nightbeam.chronofall.entity.MechEntity;
 import tn.nightbeam.chronofall.entity.SentinelEntity;
@@ -82,6 +85,9 @@ public final class ChronofallForge {
                 }
             }
         });
+        // A world saved with the old mod lists its ids; map each one to its successor (or drop removed content such as
+        // oil) so Forge loads the world without "unidentified mapping" warnings.
+        MinecraftForge.EVENT_BUS.addListener(ChronofallForge::remapMissing);
         modBus.addListener((EntityAttributeCreationEvent event) -> {
             event.put(ModContent.SENTINEL.get(), SentinelEntity.createAttributes().build());
             event.put(ModContent.DRONE.get(), DroneEntity.createAttributes().build());
@@ -114,6 +120,22 @@ public final class ChronofallForge {
             }
         });
         DistExecutor.unsafeRunWhenOn(net.minecraftforge.api.distmarker.Dist.CLIENT, () -> () -> ChronofallForgeClient.init(modBus));
+    }
+
+    @SuppressWarnings({"unchecked", "rawtypes"})
+    private static void remapMissing(MissingMappingsEvent event) {
+        for (String namespace : LegacyIds.OLD_NAMESPACES) {
+            List<MissingMappingsEvent.Mapping<Object>> mappings = event.getMappings((ResourceKey) event.getKey(), namespace);
+            for (MissingMappingsEvent.Mapping<Object> mapping : mappings) {
+                String current = LegacyIds.remap(mapping.getKey().toString());
+                Registry registry = BuiltInRegistries.REGISTRY.get(event.getKey().location());
+                if (current != null && registry != null && registry.containsKey(new ResourceLocation(current))) {
+                    mapping.remap(registry.get(new ResourceLocation(current)));
+                } else {
+                    mapping.ignore();
+                }
+            }
+        }
     }
 
     @SuppressWarnings("unchecked")

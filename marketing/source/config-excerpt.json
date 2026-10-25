@@ -1,0 +1,42 @@
+// Chronofall. Changes apply after a restart.
+{
+  // Chrono Rifts: at night, once a minute, each player in the Overworld has chance_per_minute (0 to 1)
+  // of a rift opening above a spot min_distance to max_distance blocks away, at least
+  // min_minutes_between minutes after their last one. A Chrono Pod crashes there with a Rift Cache
+  // and up to max_sentinels Sentinels (none on Peaceful). crater: scorch and dig a small crater
+  // (no other blocks are destroyed). announce: tell nearby players. beacon_shards: Rift Shards a
+  // Rift Beacon takes to call a rift.
+  "rifts": {
+    "enabled": true,
+    "chance_per_minute": 0.04,
+    "min_minutes_between": 15,
+    "min_distance": 24,
+    "max_distance": 48,
+    "max_sentinels": 3,
+    "crater": true,
+    "announce": true,
+    "beacon_shards": 4
+  },
+
+  // Rift Gates: cross_dimension lets linked gates be in different dimensions. A player standing on a
+  // linked gate for charge_ticks (20 = one second) is sent to the other gate, then waits
+  // cooldown_ticks before the next jump.
+  "rift_gates": {
+    "cross_dimension": true,
+    "charge_ticks": 40,
+    "cooldown_ticks": 60
+  },
+
+  // mech_slam_damage and mech_slam_radius: the Mech's ground slam. drone_range: how far a Drone looks
+  // for items (Collector chip) and hostile mobs (Guard chip). drone_lamp_light: the Lamp chip places
+  // a light block that follows the drone.
+  "robots": {
+    "mech_slam_damage": 8.0,
+    "mech_slam_radius": 4.0,
+    "drone_range": 10,
+    "drone_lamp_light": true
+  },
+
+  // How far the Plasma Cutter reaches, in blocks.
+  "plasma_cutter_range": 12
+}

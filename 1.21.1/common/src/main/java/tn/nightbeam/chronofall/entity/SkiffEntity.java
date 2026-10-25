@@ -52,7 +52,6 @@ public class SkiffEntity extends Entity implements Packable, FluxHolder {
 
     public SkiffEntity(EntityType<? extends SkiffEntity> type, Level level) {
         super(type, level);
-        setNoGravity(true);
         blocksBuilding = true;
     }
 
@@ -312,5 +311,14 @@ public class SkiffEntity extends Entity implements Packable, FluxHolder {
     @Override
     public ItemStack getPickResult() {
         return new ItemStack(ModContent.item("skiff"));
+    }
+
+    /**
+     * The skiff moves itself (hovering, climbing, settling), so vanilla gravity never applies. Saved and summoned skiffs
+     * would otherwise load NoGravity as false, and the server would then count a hovering skiff as "floating too long".
+     */
+    @Override
+    public boolean isNoGravity() {
+        return true;
     }
 }
