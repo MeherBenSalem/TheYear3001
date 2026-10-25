@@ -10,7 +10,7 @@ Each scene is set up with commands near a plains biome (the ground is flattened 
 the mod does in the pictures (the rift and the falling pod, the crater, laser bolts, charge beams, the hologram, the
 thruster flames, the HUD, the cutter beam) is the mod running. Each shot is one unedited frame: a screen capture, or
 for moments too quick for that (the pod in the sky, a laser bolt in flight) one frame of a lossless screen recording,
-picked by a fixed rule (the most rift-magenta or laser-red pixels).
+picked by a fixed rule (the widest spread of rift magenta, or the most laser-red pixels).
 """
 from __future__ import annotations
 
@@ -130,7 +130,7 @@ class Showcase:
             self.cmd(f'give {PLAYER} {NS}:{stack}')
         self.cmd(f'gamemode survival {PLAYER}')
         self.s.tp(x + 0.5, y, z + 2.5, facing=(x + 0.5, y + 0.5, z + 0.5))
-        time.sleep(1)
+        time.sleep(16)  # the recipe and advancement toasts and the chat line fade first
         self.s.hud(True)
         self.s.click(3)
         time.sleep(1.5)
@@ -140,31 +140,43 @@ class Showcase:
 
     def charger(self):
         """A Flux Charger at night beaming charge into a Drone and a Mech."""
-        self.reset(14000)
-        x, y, z = self.ox + 8, self.gy + 1, self.oz
+        self.reset(13600)
+        x, y, z = self.ox + 12, self.gy + 1, self.oz + 4
         self.cmd(f'setblock {x} {y} {z} {NS}:flux_charger[facing=south]',
                  f'item replace block {x} {y} {z} container.0 with minecraft:coal_block 64',
-                 f'summon {NS}:drone {x - 4}.5 {y + 1} {z + 2}.5 {{Flux:0,NoAI:1b,Rotation:[60f,0f]}}',
-                 f'summon {NS}:mech {x + 4}.5 {y} {z + 1}.5 {{Flux:0,NoAI:1b,Rotation:[-120f,0f]}}')
-        self.s.tp(x + 0.5, y + 1.5, z + 9.5, facing=(x + 0.5, y + 1.0, z + 0.5))
+                 f'summon {NS}:drone {x - 3}.5 {y + 1} {z + 1}.5 {{Flux:0,NoAI:1b,Rotation:[60f,0f]}}',
+                 f'summon {NS}:mech {x + 3}.5 {y} {z}.5 {{Flux:0,NoAI:1b,Rotation:[-120f,0f]}}')
+        self.cmd(f'gamemode spectator {PLAYER}')
+        self.s.tp(x + 0.5, y + 1.2, z + 6.0, facing=(x + 0.5, y + 1.0, z + 0.5))
         self.save('charger', 4)
+        self.cmd(f'gamemode creative {PLAYER}')
 
     def rift(self):
         """A Chrono Rift open in the night sky with the Chrono Pod falling out of it."""
         self.reset(16000)
         x, z = self.ox, self.oz - 30
-        self.s.tp(self.ox + 0.5, self.gy + 1, self.oz + 12.5, facing=(x + 0.5, self.gy + 22, z + 0.5))
+        self.cmd(f'gamemode spectator {PLAYER}')
+        self.s.tp(x + 0.5, self.gy + 4, z + 18.5, facing=(x + 0.5, self.gy + 30, z + 0.5))
         time.sleep(2)
 
         def magenta(img):
-            small = img.resize((240, 135))
-            return sum(1 for r, g, b in small.getdata() if r > 170 and b > 150 and g < 120)
+            # How much of the sky the rift covers: grid cells (of a 96x54 grid) holding rift-magenta pixels.
+            small = img.resize((480, 270))
+            px = small.load()
+            cells = set()
+            for y in range(270):
+                for x in range(480):
+                    r, g, b = px[x, y]
+                    if r > 140 and b > 120 and g < 110:
+                        cells.add((x // 5, y // 5))
+            return len(cells)
 
         self.best_frame('rift', 7, magenta, before=lambda: self.cmd(f'chronofall rift_at {x} {self.gy + 1} {z}'))
+        self.cmd(f'gamemode creative {PLAYER}')
 
     def crater(self):
-        """The crash site in the morning: crater, Rift Cache and its Sentinels."""
-        self.cmd(f'gamemode spectator {PLAYER}', 'time set 23500')
+        """The crash site the next morning: crater, Rift Cache and its Sentinels."""
+        self.cmd(f'gamemode spectator {PLAYER}', 'time set 1500')
         self.view(0)
         out = self.cmd('chronofall last_landing')
         m = re.search(r'at (-?\d+) (-?\d+) (-?\d+)', out)
@@ -173,18 +185,18 @@ class Showcase:
             return
         x, y, z = (int(v) for v in m.groups())
         self.cmd(f'execute as @e[type={NS}:sentinel] run data merge entity @s {{NoAI:1b}}')
-        self.s.tp(x + 0.5, y + 6, z + 10.5, facing=(x + 0.5, y + 0.5, z + 0.5))
+        self.s.tp(x + 7.5, y + 8, z + 9.5, facing=(x + 0.5, y + 0.5, z + 0.5))
         self.save('crater', 3)
         self.cmd(f'gamemode creative {PLAYER}')
 
     def sentinel(self):
         """A Sentinel at night firing a laser bolt, its visor glowing."""
-        self.reset(18000)
+        self.reset(13000)
         x, y, z = self.ox - 8, self.gy + 1, self.oz
         self.cmd(f'summon {NS}:sentinel {x}.5 {y} {z}.5 {{PersistenceRequired:1b,Rotation:[90f,0f]}}',
-                 f'summon minecraft:iron_golem {x - 9}.5 {y} {z}.5 {{NoAI:1b,PersistenceRequired:1b}}')
+                 f'summon minecraft:iron_golem {x - 7}.5 {y} {z}.5 {{NoAI:1b,PersistenceRequired:1b}}')
         self.cmd(f'gamemode spectator {PLAYER}')
-        self.s.tp(x + 1.5, y + 1.2, z + 5.5, facing=(x - 3, y + 1.6, z + 0.5))
+        self.s.tp(x + 0.5, y + 0.6, z + 4.5, facing=(x - 3, y + 1.4, z + 0.5))
         time.sleep(3)
 
         def red(img):
@@ -260,7 +272,7 @@ class Showcase:
 
     def drone(self):
         """A Drone with its Lamp chip lighting the way at night, beside its owner."""
-        self.reset(18000)
+        self.reset(13300)
         self.cmd(f'gamemode survival {PLAYER}')
         x, y, z = self.ox, self.gy + 1, self.oz
         self.s.tp(x + 0.5, y, z + 0.5, yaw=180, pitch=0)
@@ -280,7 +292,7 @@ class Showcase:
 
     def gate(self):
         """Two linked Rift Gates with their particles, the player stepping onto one."""
-        self.reset(15000)
+        self.reset(13000)
         x, y, z = self.ox + 6, self.gy + 1, self.oz + 8
         self.cmd(f'setblock {x} {y} {z} {NS}:rift_gate', f'setblock {x + 6} {y} {z} {NS}:rift_gate')
         self.cmd(f'item replace entity {PLAYER} weapon.mainhand with {NS}:rift_tuner')
@@ -293,7 +305,7 @@ class Showcase:
         self.s.click(3)
         time.sleep(0.8)
         self.cmd(f'clear {PLAYER}', f'gamemode spectator {PLAYER}')
-        self.s.tp(x + 3.5, y + 2.2, z + 6.5, facing=(x + 3.5, y + 0.4, z + 0.5))
+        self.s.tp(x + 3.5, y + 1.6, z + 4.5, facing=(x + 3.5, y + 0.3, z + 0.5))
         self.save('gate', 3)
         self.cmd(f'gamemode creative {PLAYER}')
 

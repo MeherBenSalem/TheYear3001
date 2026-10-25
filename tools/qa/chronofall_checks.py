@@ -179,7 +179,8 @@ def check_registry(s):
 
 
 def check_config():
-    cfg = ROOT / ARGS.ws / ARGS.loader / 'runs' / 'server' / 'config' / 'chronofall.json'
+    server = Path(ARGS.server_dir) if ARGS.server_dir else ROOT / ARGS.ws / ARGS.loader / 'runs' / 'server'
+    cfg = server / 'config' / 'chronofall.json'
     text = cfg.read_text() if cfg.exists() else ''
     check('config: written with comments', text.startswith('// Chronofall.') and '// Rift Gates' in text, str(cfg))
     check('config: QA values kept (chance 1 per minute)', '"chance_per_minute": 1' in text, text[:300])
@@ -399,6 +400,14 @@ def client_checks(s, shots):
         s.cmd(f'item replace entity {PLAYER} weapon.mainhand with {s.item_arg(item, flux)} {count}')
         time.sleep(0.5)
 
+    def dismount():
+        # Hold sneak for a second: a short tap can fall between two client ticks on a slow software-rendered client.
+        c.focus()
+        c.xdo('keydown', 'shift')
+        time.sleep(1.0)
+        c.xdo('keyup', 'shift')
+        time.sleep(1.0)
+
     def health():
         return s.entity_number(PLAYER, 'Health')
 
@@ -458,8 +467,8 @@ def client_checks(s, shots):
     time.sleep(5)
     check('client: hovering in the skiff does not get the rider kicked', PLAYER in s.cmd('list') and
           'cf_skiff' in s.cmd(f'data get entity {PLAYER} RootVehicle'))
-    c.key('shift', delay=0.6)
-    time.sleep(1)
+    dismount()
+    check('client: sneaking gets off the skiff', 'cf_skiff' not in s.cmd(f'data get entity {PLAYER} RootVehicle'))
     s.cmd('kill @e[tag=cf_skiff]')
 
     # Mech ------------------------------------------------------------------------------------------------------------
@@ -484,8 +493,8 @@ def client_checks(s, shots):
     check('client: the mech walks', mz0 is not None and mz1 is not None and mz1 - mz0 > 2, (mz0, mz1))
     flux = s.entity_number('@e[tag=cf_mech,limit=1]', 'Flux')
     check('client: the mech used Flux', flux is not None and flux < 30000, flux)
-    c.key('shift', delay=0.6)
-    time.sleep(1)
+    dismount()
+    check('client: sneaking gets off the mech', 'cf_mech' not in s.cmd(f'data get entity {PLAYER} RootVehicle'))
     mx, my, mz = (s.entity_number('@e[tag=cf_mech,limit=1]', f'Pos[{i}]') for i in range(3))
     hold_item(f'{NS}:bulk_upgrade_card')
     c.tp(mx, GY, mz - 2.2, facing=(mx, GY + 1.0, mz))
@@ -612,12 +621,18 @@ def client_checks(s, shots):
     s.cmd(f'setblock {x} {GY} {z + 2} {NS}:rift_gate')
     s.cmd(f'setblock {x + 4} {GY} {z + 2} {NS}:rift_gate')
     hold_item(f'{NS}:rift_tuner')
-    for gx in (x, x + 4):
-        c.tp(gx + 0.5, GY, z - 0.5, facing=(gx + 0.5, GY + 0.2, z + 2.5))
-        time.sleep(1)
-        c.click(3)
-        time.sleep(0.8)
-    linked = (s.block_number(x, GY, z + 2, 'TargetX'), s.block_number(x + 4, GY, z + 2, 'TargetX'))
+    time.sleep(1)  # the gates' chunk reaches the client
+    linked = (None, None)
+    for _ in range(2):  # a second try if a click went out before the client had the gate
+        for gx in (x, x + 4):
+            c.tp(gx + 0.5, GY, z - 0.5, facing=(gx + 0.5, GY + 0.2, z + 2.5))
+            time.sleep(1.5)
+            c.click(3)
+            time.sleep(0.8)
+        linked = (s.block_number(x, GY, z + 2, 'TargetX'), s.block_number(x + 4, GY, z + 2, 'TargetX'))
+        if linked == (x + 4, x):
+            break
+        hold_item(f'{NS}:rift_tuner')
     check('client: the Rift Tuner links two gates both ways', linked == (x + 4, x), linked)
 
     # Rift Cache and Rift Beacon ----------------------------------------------------------------------------------------
@@ -705,5 +720,6 @@ if __name__ == '__main__':
     ap.add_argument('--client', action='store_true')
     ap.add_argument('--fixture', action='store_true')
     ap.add_argument('--shots')
+    ap.add_argument('--server-dir', help='server directory (default: the dev run of --ws/--loader), for release jars on real servers')
     ARGS = ap.parse_args()
     main()

@@ -63,7 +63,7 @@ thousand downloads), so a polished one has little direct competition.
 | Tools and weapons | Four metal tool sets | The sets stay (named properly, tiers rebalanced), plus the **Plasma Cutter** (a mining beam that cuts blocks 12 blocks away) and the **Pulse Rifle** (laser bolts). |
 | Travel | none | **Rift Gates**: link two gates with a **Rift Tuner**, stand on one and arrive at the other, across dimensions. |
 | Feedback | Chat messages with raw doubles | Charge bars, a flux gauge on the HUD while flying or riding, tooltips with numbers, actionbar messages. |
-| Visuals and sound | Two sounds, one model replaced by the player model on 26.2 | New code models for every robot and vehicle with animations, glowing emissive layers, three custom particles (flux, rift, thruster), animated textures, a hologram renderer and fourteen sound events. |
+| Visuals and sound | Two sounds, one model replaced by the player model on 26.2 | New code models for every robot and vehicle with animations, glowing emissive layers, four custom particles (flux, rift, laser, thruster), a hologram renderer and 21 synthesised sound effects. |
 | Old worlds | 0.x worlds broke at 1.0.0 | Every kept item, block and entity loads from **both** old namespaces (`robotica:` and `theyear3001:`), including renamed ids (`crafting_workstation` → `fabricator`, `boggie` → `drone`, `space_ship` → `skiff`). |
 | Versions | 1.20.1, 1.21.1, 26.2 | 1.20.1 (Fabric, Forge), 1.21.1, 26.1.2, 26.2 and 26.3 (Fabric, NeoForge), identical features and ids |
 | Tests / QA | none | JUnit for the Minecraft-free rules; a real dev server and client on all ten builds, driven by RCON and real input; the remapped release jars run on real servers |

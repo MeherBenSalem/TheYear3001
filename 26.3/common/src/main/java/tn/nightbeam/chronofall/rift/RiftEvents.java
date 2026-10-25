@@ -97,12 +97,24 @@ public final class RiftEvents {
 
     private static void tickRift(ServerLevel level, Rift rift) {
         int age = rift.age;
-        double radius = age <= OPEN_TICKS ? 0.4 + 3.2 * age / OPEN_TICKS : 3.6 * (1.0 - (double) (age - OPEN_TICKS) / CLOSE_TICKS);
+        double radius = age <= OPEN_TICKS ? 0.6 + 5.4 * age / OPEN_TICKS : 6.0 * (1.0 - (double) (age - OPEN_TICKS) / CLOSE_TICKS);
         double phase = age * 0.15;
-        Fx.ring(level, ModContent.RIFT_PARTICLE.get(), rift.sky, radius, 28, phase, VIEW_RANGE);
-        Fx.ring(level, ModContent.FLUX_PARTICLE.get(), rift.sky, radius * 0.6, 14, -phase * 1.5, VIEW_RANGE);
-        if (age % 4 == 0) {
-            Fx.send(level, ParticleTypes.REVERSE_PORTAL, rift.sky.x, rift.sky.y, rift.sky.z, 12, radius * 0.4, 0.3, radius * 0.4, 0.05, VIEW_RANGE);
+        // Two counter-rotating rings (rift magenta outside, flux cyan inside) and a swirl of portal motes in the middle.
+        Fx.ring(level, ModContent.RIFT_PARTICLE.get(), rift.sky, radius, 80, phase, VIEW_RANGE);
+        Fx.ring(level, ModContent.RIFT_PARTICLE.get(), rift.sky, radius * 0.82, 56, -phase * 0.7, VIEW_RANGE);
+        Fx.ring(level, ModContent.FLUX_PARTICLE.get(), rift.sky, radius * 0.55, 32, -phase * 1.5, VIEW_RANGE);
+        if (age % 2 == 0) {
+            Fx.send(level, ParticleTypes.REVERSE_PORTAL, rift.sky.x, rift.sky.y, rift.sky.z, 16, radius * 0.4, 0.3, radius * 0.4, 0.05, VIEW_RANGE);
+        }
+        // While it opens, rift motes rain from the tear towards where the pod will land.
+        if (age <= OPEN_TICKS) {
+            for (int i = 0; i < 4; i++) {
+                double a = level.getRandom().nextDouble() * Math.PI * 2;
+                double r = level.getRandom().nextDouble() * radius * 0.5;
+                // count 0: the three spreads are the motion, scaled by the speed.
+                Fx.send(level, ModContent.RIFT_PARTICLE.get(), rift.sky.x + Math.cos(a) * r, rift.sky.y - 1, rift.sky.z + Math.sin(a) * r, 0,
+                        0, -1, 0, 0.7, VIEW_RANGE);
+            }
         }
         if (age == 1) {
             level.playSound(null, rift.sky.x, rift.sky.y, rift.sky.z, ModContent.sound("rift_open"), SoundSource.AMBIENT, 10.0F, 1.0F);

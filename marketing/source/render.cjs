@@ -188,7 +188,7 @@ const assets = {
     points: ['20 recipes in one list, with have / need counts', 'One click takes the parts from your inventory',
       'A <b class="hi">hologram</b> of the item spins above it while it prints', 'Hoppers take the output'],
     art: `<div style="position:relative">${framed(region('fabricator.jpg', 160, 60, 1600, 900, 940))}
-      <div class="frame" style="position:absolute;right:-26px;bottom:-70px;width:440px">${region('fabricator_gui.jpg', 500, 200, 920, 700, 440)}</div></div>
+      <div class="frame" style="position:absolute;right:-26px;bottom:-70px;width:440px">${region('fabricator_gui.jpg', 448, 94, 1024, 896, 440)}</div></div>
       <div style="margin-top:84px;width:470px">${stats([['Recipes', '20'], ['Cables', '0']])}</div>` }),
 
   'card-flux': () => card({
