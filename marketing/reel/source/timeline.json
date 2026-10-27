@@ -1,0 +1,95 @@
+{
+ "duration": 31.4062,
+ "lines": [
+  {
+   "i": 0,
+   "start": 0.12,
+   "end": 3.24,
+   "cap": "The year 3001 just crashed into Minecraft."
+  },
+  {
+   "i": 1,
+   "start": 3.32125,
+   "end": 5.324,
+   "cap": "Every night, rifts tear open the sky,"
+  },
+  {
+   "i": 2,
+   "start": 5.4,
+   "end": 7.064,
+   "cap": "and drop pods of future tech."
+  },
+  {
+   "i": 3,
+   "start": 7.52,
+   "end": 8.887,
+   "cap": "Guarded by SENTINELS."
+  },
+  {
+   "i": 4,
+   "start": 8.9862,
+   "end": 10.003,
+   "cap": "Crack them open."
+  },
+  {
+   "i": 5,
+   "start": 10.3925,
+   "end": 11.5,
+   "cap": "Print your own gear."
+  },
+  {
+   "i": 6,
+   "start": 12.2375,
+   "end": 13.037,
+   "cap": "JETPACKS."
+  },
+  {
+   "i": 7,
+   "start": 13.6438,
+   "end": 14.479,
+   "cap": "HOVER SKIFFS."
+  },
+  {
+   "i": 8,
+   "start": 15.05,
+   "end": 16.123,
+   "cap": "COMBAT DRONES."
+  },
+  {
+   "i": 9,
+   "start": 16.703,
+   "end": 18.288,
+   "cap": "A MECH that shakes the ground."
+  },
+  {
+   "i": 10,
+   "start": 18.957,
+   "end": 20.765,
+   "cap": "Plasma cutters. Pulse rifles."
+  },
+  {
+   "i": 11,
+   "start": 21.143800000000002,
+   "end": 22.549,
+   "cap": "Rift gates, to anywhere."
+  },
+  {
+   "i": 12,
+   "start": 23.018800000000002,
+   "end": 24.229,
+   "cap": "And ZERO cables."
+  },
+  {
+   "i": 13,
+   "start": 24.872,
+   "end": 26.209,
+   "cap": "It's called Chronofall."
+  },
+  {
+   "i": 14,
+   "start": 27.856199999999998,
+   "end": 30.231,
+   "cap": "Would you survive the year 3001?"
+  }
+ ]
+}
