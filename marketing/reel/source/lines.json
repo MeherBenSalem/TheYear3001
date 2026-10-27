@@ -1,15 +1,14 @@
 [
  {
-  "say": "The year three thousand and one just crashed into Minecraft.",
+  "say": "The year three thousand and one just crashed into Minecraft!",
   "cap": "The year 3001 just crashed into Minecraft."
  },
  {
   "say": "Every night, rifts tear open the sky,",
-  "cap": "Every night, rifts tear open the sky,",
-  "ph": "ˈɛvɹi nˈaɪt, ɹˈɪfts tˈɛɹ ˈoʊpən ðə skˈaɪ,"
+  "cap": "Every night, rifts tear open the sky,"
  },
  {
-  "say": "and drop pods of future tech.",
+  "say": "and drop pods of future tech!",
   "cap": "and drop pods of future tech."
  },
  {
@@ -17,7 +16,7 @@
   "cap": "Guarded by SENTINELS."
  },
  {
-  "say": "Crack them open.",
+  "say": "Crack them open!",
   "cap": "Crack them open."
  },
  {
@@ -25,31 +24,27 @@
   "cap": "Print your own gear."
  },
  {
-  "say": "Jetpacks.",
-  "cap": "JETPACKS.",
-  "ph": "dʒˈɛtpˌæks!",
-  "speed": 1.0
+  "say": "Jetpacks!",
+  "cap": "JETPACKS."
  },
  {
-  "say": "Hover skiffs.",
+  "say": "Hover skiffs!",
   "cap": "HOVER SKIFFS."
  },
  {
-  "say": "Combat drones.",
-  "cap": "COMBAT DRONES.",
-  "speed": 1.0
+  "say": "Combat drones!",
+  "cap": "COMBAT DRONES."
  },
  {
-  "say": "A mech that shakes the ground.",
-  "cap": "A MECH that shakes the ground.",
-  "ph": "ɐ mˈɛk ðæt ʃˈeɪks ðə ɡɹˈaʊnd."
+  "say": "A mech that shakes the ground!",
+  "cap": "A MECH that shakes the ground."
  },
  {
-  "say": "Plasma cutters. Pulse rifles.",
+  "say": "Plasma cutters! Pulse rifles!",
   "cap": "Plasma cutters. Pulse rifles."
  },
  {
-  "say": "Rift gates, to anywhere.",
+  "say": "Rift gates, to anywhere!",
   "cap": "Rift gates, to anywhere."
  },
  {
@@ -58,8 +53,7 @@
  },
  {
   "say": "It's called Chronofall.",
-  "cap": "It's called Chronofall.",
-  "ph": "ɪts kˈɔːld kɹˈɑːnoʊfˌɔːl."
+  "cap": "It's called Chronofall."
  },
  {
   "say": "Would you survive the year three thousand and one?",

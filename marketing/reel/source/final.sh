@@ -1,12 +1,13 @@
 #!/bin/bash
 # Mix voice, music and effects, then burn the overlay onto the base video.
+# The voice gets the channel narration chain (moneymaker CHANNEL.md, VO_CHAIN) and nothing else; it is never sped up.
 set -e
 cd /tmp/claude-0/cf/edit
 D=$($(cat ../PY) -c "import json;print(json.load(open('cues.json'))['duration'])")
 ffmpeg -loglevel error -y -i vo.wav -i music.wav -i sfx.wav -filter_complex "\
-[0:a]aresample=48000,highpass=f=80,equalizer=f=3000:t=q:w=1.2:g=3,acompressor=threshold=-18dB:ratio=3:attack=5:release=80:makeup=3,asplit=2[v][vsc];\
-[1:a]volume=0.42[m];[m][vsc]sidechaincompress=threshold=0.05:ratio=6:attack=15:release=250[md];\
-[2:a]volume=0.55[s];\
+[0:a]aresample=48000,highpass=f=75,equalizer=f=3500:t=q:w=1:g=1.5,deesser=i=0.35,acompressor=threshold=-20dB:ratio=2.5:attack=10:release=120,asplit=2[v][vsc];\
+[1:a]volume=0.34[m];[m][vsc]sidechaincompress=threshold=0.05:ratio=6:attack=15:release=250[md];\
+[2:a]volume=0.5[s];\
 [v][md][s]amix=inputs=3:normalize=0:duration=longest,alimiter=limit=0.95,loudnorm=I=-12.7:TP=-1.0:LRA=9,aresample=48000" \
   -ar 48000 -t "$D" mix.wav
 ffmpeg -loglevel error -y -i base.mp4 -framerate 30 -i ov/ov_%04d.png -i mix.wav -filter_complex \
