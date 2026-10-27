@@ -53,10 +53,17 @@ music loops with the picture.
   "Chronofall". The mix gives the voice only the channel narration chain (low cut at 75 Hz, +1.5 dB at 3.5 kHz,
   de-ess, 2.5:1 compression) and ducks the music under it. Captions are timed per word from a Whisper transcript of
   the finished voiceover (`source/align.py`, `source/captions.py`).
-- **Music and sound effects:** original, synthesized in `source/synth.py` and `source/audio.py`: a D harmonic minor
-  trailer bed with braams on the impacts, and one sound per gadget (laser bolts timed to the bolts on screen,
-  thrusters, servo stomps, the gate's sweep, the charger's hum). Only three soft whooshes. No samples or licensed
-  tracks, so there are no copyright claims. The music is sidechained under the voice (`source/final.sh`).
+- **Sound effects:** 37 professional recordings from [Mixkit](https://mixkit.co/free-sound-effects/) under the Mixkit
+  Sound Effects Free License (free for commercial use in videos, no attribution required), placed by
+  `source/sfx_pro.py`: cinematic impacts and a rock-debris explosion on the opening crash, a trailer riser and hit on
+  the drop, a rocket whoosh into a metal explosion and an underground echo when the pod lands, laser shots on the
+  Sentinels' bolts and the rifle, engine starts and a fly-by for the jetpack and skiff, servos and an apocalyptic
+  stomp for the mech, a plasma buzz, a warp for the gate, an electric power-up for the charger, and a movie-logo hit
+  on the title. Each recording's main hit is measured and lands on its exact frame; the swell before the opening
+  impact wraps to the end of the Reel and carries the loop. `source/fetch_sfx.sh` downloads them by their Mixkit ids
+  (the files are not stored here). Mixed in stereo, ducked lightly under the voice so the hits keep their punch.
+- **Music:** an original bed synthesized in `source/synth.py` and `source/audio.py` (a D harmonic minor 128 BPM
+  groove with drop-outs before the big hits), sidechained under the voice (`source/final.sh`).
 - **Edit:** `source/plan.py` is the single source of truth (beat grid, shots, time maps, cues). `source/overlay.html`
   is rendered frame by frame with Playwright (`source/render_overlay.cjs`) in the listing's look: Orbitron and Exo 2,
   flux cyan, rift magenta, thruster amber and laser red. The fonts are the ones in `marketing/source/fonts/`.
@@ -79,4 +86,5 @@ voice lines and the rendered frames live there, not in git). Copy `source/` ther
 `fonts/` and `marketing/images/icon.png`, then: `capture/shots.py <shot>...` for the footage, `prep.py <clip>` and
 `colors.py <clip>` per clip, the channel runner over `voice/script.json` (and `script2.json` for the extra takes),
 `voice/pick.py`, `lineword.py`, `plan.py`, `build_vo.py`, `align.py`, `captions.py`, `audio.py`,
+`fetch_sfx.sh` then `sfx_pro.py` (set `LIB` to the download folder),
 `compose.py`, `node render_overlay.cjs`, `final.sh`, and `verify.py reel.mp4 edl.json`.
