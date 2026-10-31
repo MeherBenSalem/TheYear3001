@@ -36,3 +36,6 @@ __pycache__/
 
 # Marketing render scratch pages
 marketing/source/.render-*.html
+
+# Reel video (rebuilt from marketing/reel/source)
+marketing/reel/*.mp4

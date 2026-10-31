@@ -1,0 +1,181 @@
+{
+ "duration": 36.0938,
+ "bpm": 128.0,
+ "drop": 4.2188,
+ "beat": 0.46875,
+ "events": {
+  "impact_hook": 0.45,
+  "drop": 4.2188,
+  "impact_pod": 8.9063,
+  "crack": 12.2488,
+  "liftoff": 15.2,
+  "slam": 21.0938,
+  "teleport": 26.7187,
+  "title": 29.5312,
+  "cta": 32.3438,
+  "pod_appears": 7.0816,
+  "sentinel_bolts": [
+   9.9666,
+   10.9902
+  ],
+  "drone_shots": [
+   17.9188,
+   18.2376,
+   19.169
+  ],
+  "rifle_shots": [
+   24.4601,
+   24.8523,
+   25.2444,
+   25.6366
+  ],
+  "mech_leap": 19.9027,
+  "cutter_on": 22.5,
+  "charger": 27.6562,
+  "fabricator": 13.125,
+  "skiff": 16.4062,
+  "rift_open": 4.2188,
+  "whooshes": [
+   [
+    1.715,
+    true
+   ],
+   [
+    14.82,
+    true
+   ],
+   [
+    32.223800000000004,
+    false
+   ]
+  ]
+ },
+ "labels": [
+  {
+   "t0": 9.8438,
+   "t1": 11.7188,
+   "name": "Sentinels",
+   "sub": "Laser-firing guards",
+   "color": "#ff5a6e"
+  },
+  {
+   "t0": 11.7188,
+   "t1": 13.125,
+   "name": "Rift Cache",
+   "sub": "Shards \u00b7 circuits \u00b7 salvage",
+   "color": "#ff3fd2"
+  },
+  {
+   "t0": 13.125,
+   "t1": 15.0,
+   "name": "Fabricator",
+   "sub": "Prints your tech",
+   "color": "#38f3ff"
+  },
+  {
+   "t0": 15.0,
+   "t1": 16.4062,
+   "name": "Jetpack",
+   "sub": "Fly on any server",
+   "color": "#ffb547"
+  },
+  {
+   "t0": 16.4062,
+   "t1": 17.8125,
+   "name": "Hover Skiff",
+   "sub": "Rideable aircraft",
+   "color": "#38f3ff"
+  },
+  {
+   "t0": 17.8125,
+   "t1": 19.6875,
+   "name": "Drone",
+   "sub": "Collect \u00b7 guard \u00b7 light",
+   "color": "#38f3ff"
+  },
+  {
+   "t0": 19.6875,
+   "t1": 22.5,
+   "name": "Mech",
+   "sub": "Leap and ground slam",
+   "color": "#ffb547"
+  },
+  {
+   "t0": 22.5,
+   "t1": 24.375,
+   "name": "Plasma Cutter",
+   "sub": "Mines from 12 blocks",
+   "color": "#38f3ff"
+  },
+  {
+   "t0": 24.375,
+   "t1": 25.7812,
+   "name": "Pulse Rifle",
+   "sub": "Laser bolts",
+   "color": "#ff5a6e"
+  },
+  {
+   "t0": 25.7812,
+   "t1": 27.6562,
+   "name": "Rift Gates",
+   "sub": "Any distance \u00b7 any dimension",
+   "color": "#ff3fd2"
+  },
+  {
+   "t0": 27.6562,
+   "t1": 29.5312,
+   "name": "Flux Charger",
+   "sub": "Wireless power",
+   "color": "#38f3ff"
+  }
+ ],
+ "flashes": [
+  [
+   0.45,
+   0.6
+  ],
+  [
+   4.2188,
+   0.3
+  ],
+  [
+   8.9063,
+   0.55
+  ],
+  [
+   12.2488,
+   0.25
+  ],
+  [
+   21.0938,
+   0.45
+  ],
+  [
+   26.7187,
+   0.35
+  ],
+  [
+   29.5312,
+   0.6
+  ]
+ ],
+ "year": {
+  "t0": 0.52,
+  "t1": 2.675
+ },
+ "brand": [],
+ "capTop": [],
+ "capBig": [
+  0.0,
+  4.21875
+ ],
+ "title": [
+  29.5312,
+  32.3438
+ ],
+ "titleWord": 29.9999,
+ "comment": [
+  34.694,
+  35.974
+ ]
+}
