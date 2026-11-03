@@ -14,6 +14,7 @@
     "chronofall:fabricator",
     "chronofall:flux_charger",
     "chronofall:rift_gate",
-    "chronofall:rift_beacon"
+    "chronofall:rift_beacon",
+    "chronofall:rift_stabilizer"
   ]
 }

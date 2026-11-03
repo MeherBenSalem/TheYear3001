@@ -60,7 +60,7 @@ class CoreTest {
             }
         }
         for (String device : List.of("jetpack", "plasma_cutter", "pulse_rifle", "drone", "mech", "skiff", "rift_gate", "rift_tuner",
-                "rift_beacon", "flux_cell", "central_processing_unit")) {
+                "rift_beacon", "rift_stabilizer", "flux_cell", "central_processing_unit")) {
             assertTrue(FabricatorRecipes.indexOf("chronofall:" + device) >= 0, device + " can be fabricated");
         }
     }
@@ -141,6 +141,18 @@ class CoreTest {
         assertEquals("north", RiftRules.direction(0, -10));
         assertEquals("east", RiftRules.direction(10, 0));
         assertEquals("south_west", RiftRules.direction(-10, 10));
+    }
+
+    @Test
+    void stabilizerRadiusIsHorizontalAndInclusive() {
+        assertTrue(RiftRules.stabilized(100, 100, 100, 100, 32), "on top of the stabilizer");
+        assertTrue(RiftRules.stabilized(132, 100, 100, 100, 32), "exactly at the radius");
+        assertFalse(RiftRules.stabilized(133, 100, 100, 100, 32), "one block past it");
+        assertTrue(RiftRules.stabilized(-22, -22, 0, 0, 32), "diagonal inside (31.1 blocks)");
+        assertFalse(RiftRules.stabilized(-23, -23, 0, 0, 32), "diagonal outside (32.5 blocks)");
+        assertFalse(RiftRules.stabilized(5, 5, 5, 5, 0), "radius 0 turns stabilizers off");
+        assertFalse(RiftRules.stabilized(30_000_000, 0, -30_000_000, 0, 128), "no overflow at the world border");
+        assertTrue(RiftRules.STABILIZER_ATTEMPTS >= 1);
     }
 
     @Test

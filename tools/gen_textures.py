@@ -484,6 +484,40 @@ def beacon_faces():
     return {'rift_beacon_side': side, 'rift_beacon_top': top}
 
 
+def stabilizer_faces():
+    """The Rift Stabilizer: the beacon's casing, but a steady flux-cyan core held by steel coil bands."""
+    side = panel(GUN, GUN_D, GUN_L, 'stabilizer_side', seams=False)
+    side.rect(4, 2, 11, 13, DARK)
+    side.rect(6, 2, 9, 13, CYAN_D)
+    side.rect(7, 2, 8, 13, CYAN)
+    for y in (4, 8, 12):
+        side.rect(4, y, 11, y, STEEL)
+        side.rect(5, y - 1, 10, y - 1, STEEL_D)
+        side.set(4, y, STEEL_L)
+    for y in (2, 6, 10):
+        side.set(7, y, CYAN_L)
+    side.rect(0, 0, 15, 1, STEEL)
+    side.rect(0, 14, 15, 15, STEEL_D)
+    for x in (1, 14):
+        side.set(x, 0, STEEL_L)
+        side.set(x, 15, GUN_D)
+    top = panel(STEEL_D, GUN_D, STEEL, 'stabilizer_top', seams=False)
+    for x in range(16):
+        for y in range(16):
+            d = math.hypot(x - 7.5, y - 7.5)
+            if d < 2:
+                top.set(x, y, CYAN_L)
+            elif d < 3.2:
+                top.set(x, y, CYAN)
+            elif d < 4.2:
+                top.set(x, y, DARK)
+            elif d < 5.2:
+                top.set(x, y, STEEL_L if x + y < 15 else STEEL)
+    for x, y in ((7, 1), (8, 1), (7, 14), (8, 14), (1, 7), (1, 8), (14, 7), (14, 8)):
+        top.set(x, y, CYAN_D)
+    return {'rift_stabilizer_side': side, 'rift_stabilizer_top': top}
+
+
 # GUI ----------------------------------------------------------------------------------------------------------------
 
 NAVY = (13, 18, 32)
@@ -592,6 +626,7 @@ def main():
     faces.update(charger_faces(True))
     faces.update(cache_faces())
     faces.update(beacon_faces())
+    faces.update(stabilizer_faces())
     for name, canvas in faces.items():
         canvas.save(f'block/{name}.png')
     (OUT / 'gui').mkdir(parents=True, exist_ok=True)

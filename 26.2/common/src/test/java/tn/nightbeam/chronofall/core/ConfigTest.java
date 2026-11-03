@@ -23,13 +23,16 @@ class ConfigTest {
         assertTrue(text.contains("// Rift Gates"));
         assertEquals(0.04, ChronoConfig.get().rifts().chancePerMinute());
         assertEquals(40, ChronoConfig.get().gates().chargeTicks());
+        assertTrue(text.contains("\"stabilizer_radius\": 32"));
+        assertEquals(32, ChronoConfig.get().rifts().stabilizerRadius());
     }
 
     @Test
     void keepsUserValuesAndClampsBadOnes() throws Exception {
         Files.writeString(dir.resolve(ChronoConfig.FILE), """
                 // a comment the user wrote
-                {"rifts": {"enabled": false, "chance_per_minute": 7, "min_distance": 60, "max_distance": 30, "max_sentinels": -2},
+                {"rifts": {"enabled": false, "chance_per_minute": 7, "min_distance": 60, "max_distance": 30, "max_sentinels": -2,
+                            "stabilizer_radius": 9999},
                  "plasma_cutter_range": "far", "extra": 1}
                 """);
         ChronoConfig.load(dir);
@@ -39,6 +42,8 @@ class ConfigTest {
         assertEquals(60, v.rifts().minDistance());
         assertEquals(60, v.rifts().maxDistance(), "max never below min");
         assertEquals(0, v.rifts().maxSentinels());
+        assertEquals(128, v.rifts().stabilizerRadius(), "clamped to 128");
+        assertEquals(32, ChronoConfig.read(Json.obj()).rifts().stabilizerRadius(), "missing key: default");
         assertEquals(12, v.cutterRange(), "a non-number falls back to the default");
         String text = Files.readString(dir.resolve(ChronoConfig.FILE), StandardCharsets.UTF_8);
         assertTrue(text.contains("\"extra\": 1"), "unknown keys are kept");

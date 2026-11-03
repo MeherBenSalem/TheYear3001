@@ -16,12 +16,12 @@ public final class Catalog {
     public static final List<String> BLOCKS = List.of(
             "scrap_block", "scrap_slab", "scrap_stairs_block", "scrap_debris", "titanium_ore", "cobalt_ore", "orichalcum_ore",
             "titanium_block", "cobalt_block", "orichalcum_block", "rift_glass",
-            "fabricator", "flux_charger", "rift_gate", "rift_cache", "rift_beacon");
+            "fabricator", "flux_charger", "rift_gate", "rift_cache", "rift_beacon", "rift_stabilizer");
 
     public static final List<String> ENTITIES = List.of("sentinel", "drone", "mech", "skiff", "chrono_pod", "laser_bolt");
 
     /** Block entities. */
-    public static final List<String> BLOCK_ENTITIES = List.of("fabricator", "flux_charger", "rift_gate", "rift_beacon");
+    public static final List<String> BLOCK_ENTITIES = List.of("fabricator", "flux_charger", "rift_gate", "rift_beacon", "rift_stabilizer");
 
     private static final List<String> PLAIN_ITEMS = List.of(
             "scrap", "rift_shard", "raw_titanium", "titanium_ingot", "raw_cobalt", "cobalt_ingot", "raw_orichalcum", "orichalcum_ingot",

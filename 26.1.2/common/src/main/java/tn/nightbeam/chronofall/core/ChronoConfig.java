@@ -14,7 +14,7 @@ public final class ChronoConfig {
     }
 
     public record Rifts(boolean enabled, double chancePerMinute, int minMinutesBetween, int minDistance, int maxDistance, int maxSentinels,
-                        boolean crater, boolean announce, int beaconShards) {
+                        boolean crater, boolean announce, int beaconShards, int stabilizerRadius) {
     }
 
     public record Gates(boolean crossDimension, int chargeTicks, int cooldownTicks) {
@@ -32,7 +32,8 @@ public final class ChronoConfig {
     public static CommentedJson spec() {
         JsonObject root = Json.obj(
                 "rifts", Json.obj("enabled", true, "chance_per_minute", 0.04, "min_minutes_between", 15, "min_distance", 24,
-                        "max_distance", 48, "max_sentinels", 3, "crater", true, "announce", true, "beacon_shards", 4),
+                        "max_distance", 48, "max_sentinels", 3, "crater", true, "announce", true, "beacon_shards", 4,
+                        "stabilizer_radius", 32),
                 "rift_gates", Json.obj("cross_dimension", true, "charge_ticks", 40, "cooldown_ticks", 60),
                 "robots", Json.obj("mech_slam_damage", 8.0, "mech_slam_radius", 4.0, "drone_range", 10, "drone_lamp_light", true),
                 "plasma_cutter_range", 12);
@@ -45,7 +46,9 @@ public final class ChronoConfig {
                         min_minutes_between minutes after their last one. A Chrono Pod crashes there with a Rift Cache
                         and up to max_sentinels Sentinels (none on Peaceful). crater: scorch and dig a small crater
                         (no other blocks are destroyed). announce: tell nearby players. beacon_shards: Rift Shards a
-                        Rift Beacon takes to call a rift.""")
+                        Rift Beacon takes to call a rift. stabilizer_radius: natural rifts never land within this many
+                        blocks (horizontally) of a Rift Stabilizer in a loaded chunk; 0 turns stabilizers off. Rift
+                        Beacons and /chronofall rift_at ignore stabilizers.""")
                 .comment("rift_gates", """
                         Rift Gates: cross_dimension lets linked gates be in different dimensions. A player standing on a
                         linked gate for charge_ticks (20 = one second) is sent to the other gate, then waits
@@ -67,10 +70,11 @@ public final class ChronoConfig {
                 Math.max(0, Math.min(8, Json.integer(root, "rifts.max_sentinels", 3))),
                 Json.bool(root, "rifts.crater", true),
                 Json.bool(root, "rifts.announce", true),
-                Math.max(1, Math.min(64, Json.integer(root, "rifts.beacon_shards", 4))));
+                Math.max(1, Math.min(64, Json.integer(root, "rifts.beacon_shards", 4))),
+                Math.max(0, Math.min(128, Json.integer(root, "rifts.stabilizer_radius", 32))));
         if (rifts.maxDistance() < rifts.minDistance()) {
             rifts = new Rifts(rifts.enabled(), rifts.chancePerMinute(), rifts.minMinutesBetween(), rifts.minDistance(), rifts.minDistance(),
-                    rifts.maxSentinels(), rifts.crater(), rifts.announce(), rifts.beaconShards());
+                    rifts.maxSentinels(), rifts.crater(), rifts.announce(), rifts.beaconShards(), rifts.stabilizerRadius());
         }
         Gates gates = new Gates(
                 Json.bool(root, "rift_gates.cross_dimension", true),

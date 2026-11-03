@@ -46,6 +46,8 @@ public final class FabricatorRecipes {
             r(C + "rift_gate", 1, 200, C + "rift_glass", 4, C + "orichalcum_ingot", 2, M + "ender_pearl", 2, C + "rift_shard", 2),
             r(C + "rift_tuner", 1, 80, C + "titanium_ingot", 2, C + "rift_shard", 1, M + "compass", 1),
             r(C + "rift_beacon", 1, 300, C + "rift_glass", 4, C + "orichalcum_ingot", 4, C + "central_processing_unit", 1, C + "rift_shard", 4),
+            r(C + "rift_stabilizer", 1, 240, C + "rift_glass", 4, C + "titanium_ingot", 4, C + "central_processing_unit", 1,
+                    C + "rift_shard", 2),
             r(C + "bulk_upgrade_card", 1, 80, C + "blank_card", 1, M + "golden_apple", 1),
             r(C + "damage_upgrade_card", 1, 80, C + "blank_card", 1, M + "blaze_powder", 4),
             r(C + "defense_upgrade_card", 1, 80, C + "blank_card", 1, C + "titanium_ingot", 4),

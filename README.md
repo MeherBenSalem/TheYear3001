@@ -37,6 +37,9 @@ direction.
 - **Rift Cache**: right-click to crack it open for 2 to 4 Rift Shards, scrap, metal, circuit parts and sometimes a
   processor.
 - **Rift Beacon**: right-click it with 4 Rift Shards and it calls a pod down next to itself.
+- **Rift Stabilizer**: natural rifts never land within 32 blocks (horizontally) of one, so your base stays
+  crater-free. Fabricate it from 4 Rift Glass, 4 Titanium Ingots, a Processor and 2 Rift Shards. It only counts while
+  its chunk is loaded; Rift Beacons and `/chronofall rift_at` ignore it.
 - `/chronofall rift [player]` and `/chronofall rift_at <pos>` start a rift (operators).
 
 ### Sentinels
@@ -46,7 +49,7 @@ glows red in the dark. 30 health, 4 armour. They drop scrap and, when a player k
 
 ### The Fabricator
 
-The tech workbench (it replaces the Crafting Workstation). Pick one of 20 recipes from the list, see what you have and
+The tech workbench (it replaces the Crafting Workstation). Pick one of 21 recipes from the list, see what you have and
 what you need, press **Fabricate**: the ingredients are taken from your inventory and the item prints into the
 output slot over a few seconds while a **hologram** of it spins above the block. Hoppers can take the output.
 
@@ -120,6 +123,7 @@ netherite).
 | `rifts.crater` | `true` | Dig and scorch a crater |
 | `rifts.announce` | `true` | Tell nearby players where the rift opened |
 | `rifts.beacon_shards` | `4` | Rift Shards a Rift Beacon takes |
+| `rifts.stabilizer_radius` | `32` | Natural rifts never land this close (horizontally) to a Rift Stabilizer; `0` turns stabilizers off (0 to 128) |
 | `rift_gates.cross_dimension` | `true` | Linked gates may be in different dimensions |
 | `rift_gates.charge_ticks`, `.cooldown_ticks` | `40`, `60` | Time on a gate before the jump, and between jumps |
 | `robots.mech_slam_damage`, `.mech_slam_radius` | `8.0`, `4.0` | The mech's ground slam |

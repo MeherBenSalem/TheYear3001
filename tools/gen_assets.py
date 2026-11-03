@@ -45,6 +45,7 @@ NAMES = {
     'titanium_ore': 'Titanium Ore', 'cobalt_ore': 'Cobalt Ore', 'orichalcum_ore': 'Orichalcum Ore', 'titanium_block': 'Block of Titanium',
     'cobalt_block': 'Block of Cobalt', 'orichalcum_block': 'Block of Orichalcum', 'rift_glass': 'Rift Glass', 'fabricator': 'Fabricator',
     'flux_charger': 'Flux Charger', 'rift_gate': 'Rift Gate', 'rift_cache': 'Rift Cache', 'rift_beacon': 'Rift Beacon',
+    'rift_stabilizer': 'Rift Stabilizer',
     'scrap': 'Scrap', 'rift_shard': 'Rift Shard', 'raw_titanium': 'Raw Titanium', 'titanium_ingot': 'Titanium Ingot', 'raw_cobalt': 'Raw Cobalt',
     'cobalt_ingot': 'Cobalt Ingot', 'raw_orichalcum': 'Raw Orichalcum', 'orichalcum_ingot': 'Orichalcum Ingot',
     'electrical_conductors': 'Copper Wiring', 'blank_printed_circuit_board': 'Blank Circuit Board', 'printed_circuit_board': 'Circuit Board',
@@ -60,7 +61,8 @@ for _m in METALS:
     for _p in ARMOR:
         NAMES[f'{_m}_armor_{_p}'] = f'{_m.capitalize()} {_p.capitalize()}'
 BLOCKS = ['scrap_block', 'scrap_slab', 'scrap_stairs_block', 'scrap_debris', 'titanium_ore', 'cobalt_ore', 'orichalcum_ore', 'titanium_block',
-          'cobalt_block', 'orichalcum_block', 'rift_glass', 'fabricator', 'flux_charger', 'rift_gate', 'rift_cache', 'rift_beacon']
+          'cobalt_block', 'orichalcum_block', 'rift_glass', 'fabricator', 'flux_charger', 'rift_gate', 'rift_cache', 'rift_beacon',
+          'rift_stabilizer']
 
 DESCRIPTIONS = {
     'rift_shard': 'Crystallised time from a Chrono Rift. Burns in a Flux Charger for 40,000 Flux.',
@@ -114,6 +116,7 @@ LANG = {
     'message.chronofall.beacon.started': 'The beacon is calling a rift...',
     'message.chronofall.rift.opening': 'A Chrono Rift is tearing open to the %s!',
     'commands.chronofall.rift': 'Chrono Rift opening above %s %s %s',
+    'commands.chronofall.rift_stabilized': 'No Chrono Rift: every landing spot tried near %s is inside a Rift Stabilizer\'s range.',
     'commands.chronofall.no_landing': 'No Chrono Pod has landed since the server started.',
     'commands.chronofall.last_landing': 'Last Chrono Pod landed at %s %s %s',
     'gui.chronofall.fabricator.fabricate': 'Fabricate', 'gui.chronofall.fabricator.printing': 'Printing...',
@@ -454,6 +457,9 @@ def generate(v):
     write(bm / 'rift_beacon.json', {'parent': 'minecraft:block/cube_column', 'textures': {
         'side': f'{NS}:block/rift_beacon_side', 'end': f'{NS}:block/rift_beacon_top'}})
     write(bs / 'rift_beacon.json', {'variants': {'': {'model': f'{NS}:block/rift_beacon'}}})
+    write(bm / 'rift_stabilizer.json', {'parent': 'minecraft:block/cube_column', 'textures': {
+        'side': f'{NS}:block/rift_stabilizer_side', 'end': f'{NS}:block/rift_stabilizer_top'}})
+    write(bs / 'rift_stabilizer.json', {'variants': {'': {'model': f'{NS}:block/rift_stabilizer'}}})
 
     im = assets / 'models' / 'item'
     for path in NAMES:
@@ -469,7 +475,7 @@ def generate(v):
     # Data
     d = data / NS
     for block in ('scrap_block', 'titanium_block', 'cobalt_block', 'orichalcum_block', 'rift_glass', 'fabricator', 'flux_charger', 'rift_gate',
-                  'rift_beacon', 'scrap_stairs_block'):
+                  'rift_beacon', 'rift_stabilizer', 'scrap_stairs_block'):
         write(d / folder(v, 'loot_table') / 'blocks' / f'{block}.json', drop_self(v, block))
     write(d / folder(v, 'loot_table') / 'blocks' / 'scrap_slab.json', drop_slab(v, 'scrap_slab'))
     for metal in ('titanium', 'cobalt', 'orichalcum'):
@@ -503,11 +509,12 @@ def generate(v):
 
     # Tags
     pick = ['scrap_block', 'scrap_slab', 'scrap_stairs_block', 'scrap_debris', 'titanium_ore', 'cobalt_ore', 'orichalcum_ore', 'titanium_block',
-            'cobalt_block', 'orichalcum_block', 'rift_glass', 'fabricator', 'flux_charger', 'rift_gate', 'rift_beacon']
+            'cobalt_block', 'orichalcum_block', 'rift_glass', 'fabricator', 'flux_charger', 'rift_gate', 'rift_beacon', 'rift_stabilizer']
     btags = {
         'minecraft:mineable/pickaxe': [f'{NS}:{b}' for b in pick],
         'minecraft:needs_stone_tool': [f'{NS}:scrap_debris', f'{NS}:scrap_block', f'{NS}:scrap_slab', f'{NS}:scrap_stairs_block'],
-        'minecraft:needs_iron_tool': [f'{NS}:{b}' for b in ('titanium_ore', 'cobalt_ore', 'titanium_block', 'cobalt_block', 'rift_gate', 'rift_beacon')],
+        'minecraft:needs_iron_tool': [f'{NS}:{b}' for b in ('titanium_ore', 'cobalt_ore', 'titanium_block', 'cobalt_block', 'rift_gate', 'rift_beacon',
+                                                                   'rift_stabilizer')],
         'minecraft:needs_diamond_tool': [f'{NS}:orichalcum_ore', f'{NS}:orichalcum_block'],
         'minecraft:beacon_base_blocks': [f'{NS}:titanium_block', f'{NS}:cobalt_block', f'{NS}:orichalcum_block'],
         'minecraft:slabs': [f'{NS}:scrap_slab'], 'minecraft:stairs': [f'{NS}:scrap_stairs_block'],

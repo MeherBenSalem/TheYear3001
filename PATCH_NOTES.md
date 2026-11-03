@@ -1,5 +1,13 @@
 # Patch notes
 
+## 2.1.0 — Stabilizer
+
+New **Rift Stabilizer**: natural Chrono Rifts never land within 32 blocks (config `rifts.stabilizer_radius`) of one,
+so pods stop cratering your base. Fabricate it from 4 Rift Glass, 4 Titanium Ingots, a Processor and 2 Rift Shards.
+Rift Beacons and `/chronofall rift_at` still work next to it.
+
+Full notes: [patchnotes/2.1.0.md](patchnotes/2.1.0.md).
+
 ## 2.0.0 — Impact
 
 The mod is now **Chronofall** (mod id `chronofall`). Chrono Rifts open in the night sky and Chrono Pods crash down with

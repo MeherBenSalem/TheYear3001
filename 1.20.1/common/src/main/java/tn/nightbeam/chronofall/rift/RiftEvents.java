@@ -21,10 +21,14 @@ import net.minecraft.world.Difficulty;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.chunk.LevelChunk;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.phys.Vec3;
 import tn.nightbeam.chronofall.Constants;
+import tn.nightbeam.chronofall.block.RiftStabilizerBlockEntity;
 import tn.nightbeam.chronofall.content.ModContent;
 import tn.nightbeam.chronofall.core.ChronoConfig;
 import tn.nightbeam.chronofall.core.RiftRules;
@@ -128,17 +132,57 @@ public final class RiftEvents {
         }
     }
 
-    /** Opens a rift above a random spot 24 to 48 blocks (config) from {@code player}. */
+    /**
+     * Opens a rift above a random spot 24 to 48 blocks (config) from {@code player}, rerolling a spot within
+     * {@code rifts.stabilizer_radius} of a Rift Stabilizer. Returns the landing spot, or null when every try was
+     * stabilized (the player's rift timer still restarts, so the check does not repeat every minute).
+     */
+    @Nullable
     public static BlockPos openNear(ServerLevel level, ServerPlayer player) {
         ChronoConfig.Rifts cfg = ChronoConfig.get().rifts();
-        RiftRules.Offset offset = RiftRules.landing(new Random(level.random.nextLong()), cfg.minDistance(), cfg.maxDistance());
-        int x = player.getBlockX() + offset.dx();
-        int z = player.getBlockZ() + offset.dz();
-        BlockPos ground = new BlockPos(x, level.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, x, z), z);
+        Random random = new Random(level.random.nextLong());
         LAST_RIFT.put(player.getUUID(), level.getGameTime());
-        Constants.LOG.info("Chrono Rift for player {}", player.getName().getString());
-        open(level, ground);
-        return ground;
+        for (int attempt = 0; attempt < RiftRules.STABILIZER_ATTEMPTS; attempt++) {
+            RiftRules.Offset offset = RiftRules.landing(random, cfg.minDistance(), cfg.maxDistance());
+            int x = player.getBlockX() + offset.dx();
+            int z = player.getBlockZ() + offset.dz();
+            if (stabilized(level, x, z, cfg.stabilizerRadius())) {
+                continue;
+            }
+            BlockPos ground = new BlockPos(x, level.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, x, z), z);
+            Constants.LOG.info("Chrono Rift for player {}", player.getName().getString());
+            open(level, ground);
+            return ground;
+        }
+        Constants.LOG.info("No Chrono Rift for player {}: Rift Stabilizers cover all {} landing spots tried", player.getName().getString(),
+                RiftRules.STABILIZER_ATTEMPTS);
+        return null;
+    }
+
+    /**
+     * Whether a Rift Stabilizer stands within {@code radius} blocks (horizontally) of {@code x}, {@code z}. Only
+     * chunks that are already loaded are looked at (never loads one), through their block entities.
+     */
+    public static boolean stabilized(ServerLevel level, int x, int z, int radius) {
+        if (radius <= 0) {
+            return false;
+        }
+        BlockEntityType<RiftStabilizerBlockEntity> type = ModContent.RIFT_STABILIZER_ENTITY.get();
+        for (int cx = (x - radius) >> 4; cx <= (x + radius) >> 4; cx++) {
+            for (int cz = (z - radius) >> 4; cz <= (z + radius) >> 4; cz++) {
+                LevelChunk chunk = level.getChunkSource().getChunkNow(cx, cz);
+                if (chunk == null) {
+                    continue;
+                }
+                for (BlockEntity entity : chunk.getBlockEntities().values()) {
+                    BlockPos at = entity.getBlockPos();
+                    if (entity.getType() == type && !entity.isRemoved() && RiftRules.stabilized(x, z, at.getX(), at.getZ(), radius)) {
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
     }
 
     /** Opens a rift above {@code ground} and warns players nearby. */

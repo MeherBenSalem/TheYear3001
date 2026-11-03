@@ -47,12 +47,13 @@ into fights in a mech, and back home through a rift gate.
   Cache** with 2 or 3 Sentinels around it (none on Peaceful).
 - Right-click the cache for **2 to 4 Rift Shards**, scrap, metal, circuit parts and sometimes a processor.
 - A **Rift Beacon** takes 4 Rift Shards and calls a pod down next to itself. Operators can use `/chronofall rift`.
+- A **Rift Stabilizer** keeps natural rifts at least 32 blocks away from your base.
 
 ![The Fabricator](https://raw.githubusercontent.com/MeherBenSalem/TheYear3001/main/marketing/images/header-fabricator.png)
 
 ![The Fabricator](https://raw.githubusercontent.com/MeherBenSalem/TheYear3001/main/marketing/images/card-fabricator.png)
 
-- **20 recipes** in one list: flux cells, circuit boards, processors, every device, robot, chip and card.
+- **21 recipes** in one list: flux cells, circuit boards, processors, every device, robot, chip and card.
 - Pick a recipe to see what you have and what you need; **Fabricate** takes the parts from your inventory.
 - The item prints into the output slot while its **hologram** spins above the block. Hoppers can take the output.
 

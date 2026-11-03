@@ -68,6 +68,10 @@ public final class ServerEvents {
 
     private static int rift(CommandSourceStack source, ServerPlayer player) {
         BlockPos pos = RiftEvents.openNear(player.serverLevel(), player);
+        if (pos == null) {
+            source.sendFailure(Component.translatable("commands.chronofall.rift_stabilized", player.getDisplayName()));
+            return 0;
+        }
         source.sendSuccess(() -> Component.translatable("commands.chronofall.rift", pos.getX(), pos.getY(), pos.getZ()), true);
         return 1;
     }

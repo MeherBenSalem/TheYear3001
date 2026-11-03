@@ -11,6 +11,8 @@ public final class RiftRules {
     public static final int NIGHT_END = 23_000;
     /** The chance roll happens once a minute per player. */
     public static final int CHECK_INTERVAL = 1_200;
+    /** How many landing spots a natural rift tries before giving up because Rift Stabilizers cover them all. */
+    public static final int STABILIZER_ATTEMPTS = 8;
 
     public record Offset(int dx, int dz) {
     }
@@ -46,6 +48,19 @@ public final class RiftRules {
         double angle = random.nextDouble() * Math.PI * 2;
         double distance = minDistance + random.nextDouble() * Math.max(0, maxDistance - minDistance);
         return new Offset((int) Math.round(Math.cos(angle) * distance), (int) Math.round(Math.sin(angle) * distance));
+    }
+
+    /**
+     * Whether a Rift Stabilizer at ({@code sx}, {@code sz}) keeps rifts away from ({@code x}, {@code z}): the horizontal
+     * distance is at most {@code radius}. A radius of 0 or less protects nothing.
+     */
+    public static boolean stabilized(int x, int z, int sx, int sz, int radius) {
+        if (radius <= 0) {
+            return false;
+        }
+        long dx = x - sx;
+        long dz = z - sz;
+        return dx * dx + dz * dz <= (long) radius * radius;
     }
 
     /** Eight-way compass direction from an offset (+x east, +z south), as a language key suffix. */

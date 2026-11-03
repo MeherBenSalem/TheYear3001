@@ -45,6 +45,8 @@ import tn.nightbeam.chronofall.block.RiftBeaconBlockEntity;
 import tn.nightbeam.chronofall.block.RiftCacheBlock;
 import tn.nightbeam.chronofall.block.RiftGateBlock;
 import tn.nightbeam.chronofall.block.RiftGateBlockEntity;
+import tn.nightbeam.chronofall.block.RiftStabilizerBlock;
+import tn.nightbeam.chronofall.block.RiftStabilizerBlockEntity;
 import tn.nightbeam.chronofall.core.Catalog;
 import tn.nightbeam.chronofall.core.Flux;
 import tn.nightbeam.chronofall.entity.ChronoPodEntity;
@@ -76,6 +78,7 @@ public final class ModContent {
     public static Supplier<Block> RIFT_GATE;
     public static Supplier<Block> RIFT_CACHE;
     public static Supplier<Block> RIFT_BEACON;
+    public static Supplier<Block> RIFT_STABILIZER;
     public static Supplier<Block> RIFT_GLASS;
     public static Supplier<Block> SCRAP_DEBRIS;
 
@@ -83,6 +86,7 @@ public final class ModContent {
     public static Supplier<BlockEntityType<FluxChargerBlockEntity>> FLUX_CHARGER_ENTITY;
     public static Supplier<BlockEntityType<RiftGateBlockEntity>> RIFT_GATE_ENTITY;
     public static Supplier<BlockEntityType<RiftBeaconBlockEntity>> RIFT_BEACON_ENTITY;
+    public static Supplier<BlockEntityType<RiftStabilizerBlockEntity>> RIFT_STABILIZER_ENTITY;
 
     public static Supplier<EntityType<SentinelEntity>> SENTINEL;
     public static Supplier<EntityType<DroneEntity>> DRONE;
@@ -130,6 +134,8 @@ public final class ModContent {
                 id -> BlockEntityType.Builder.of(RiftGateBlockEntity::new, RIFT_GATE.get()).build(null));
         RIFT_BEACON_ENTITY = r.register(Registries.BLOCK_ENTITY_TYPE, "rift_beacon",
                 id -> BlockEntityType.Builder.of(RiftBeaconBlockEntity::new, RIFT_BEACON.get()).build(null));
+        RIFT_STABILIZER_ENTITY = r.register(Registries.BLOCK_ENTITY_TYPE, "rift_stabilizer",
+                id -> BlockEntityType.Builder.of(RiftStabilizerBlockEntity::new, RIFT_STABILIZER.get()).build(null));
 
         FABRICATOR_MENU = r.register(Registries.MENU, "fabricator", id -> platform.menuType(FabricatorMenu::new));
         FLUX_CHARGER_MENU = r.register(Registries.MENU, "flux_charger", id -> platform.menuType(FluxChargerMenu::new));
@@ -170,6 +176,8 @@ public final class ModContent {
                 .noOcclusion()));
         RIFT_BEACON = block(r, "rift_beacon", id -> new RiftBeaconBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE)
                 .strength(5.0F, 1200.0F).sound(SoundType.METAL).requiresCorrectToolForDrops().lightLevel(state -> 12).noOcclusion()));
+        RIFT_STABILIZER = block(r, "rift_stabilizer", id -> new RiftStabilizerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE)
+                .strength(5.0F, 1200.0F).sound(SoundType.METAL).requiresCorrectToolForDrops().lightLevel(state -> 7)));
         for (String path : Catalog.BLOCKS) {
             Supplier<Block> block = BLOCKS.get(path);
             Rarity rarity = path.startsWith("rift_") && !path.equals("rift_glass") ? Rarity.RARE : Rarity.COMMON;
@@ -253,7 +261,7 @@ public final class ModContent {
     /** The items in creative-tab order: devices first, then robots, rift blocks, machines, parts, materials, gear. */
     public static List<ItemStack> tabItems() {
         List<String> order = new ArrayList<>(List.of("jetpack", "plasma_cutter", "pulse_rifle", "drone", "mech", "skiff", "rift_tuner",
-                "fabricator", "flux_charger", "rift_gate", "rift_beacon", "rift_cache", "rift_glass",
+                "fabricator", "flux_charger", "rift_gate", "rift_beacon", "rift_stabilizer", "rift_cache", "rift_glass",
                 "collector_chip", "guard_chip", "lamp_chip", "repair_card", "bulk_upgrade_card", "damage_upgrade_card", "defense_upgrade_card",
                 "speed_upgrade_card", "blank_card", "flux_cell", "central_processing_unit", "printed_circuit_board", "blank_printed_circuit_board",
                 "electrical_conductors", "rift_shard", "scrap", "raw_titanium", "titanium_ingot", "raw_cobalt", "cobalt_ingot", "raw_orichalcum",
