@@ -1,5 +1,9 @@
 ![Chronofall](https://raw.githubusercontent.com/MeherBenSalem/TheYear3001/main/marketing/images/banner.png)
 
+**[Discord](https://discord.gg/TJc3CxR4jK) · [The modpack](https://www.curseforge.com/minecraft/modpacks/remnants-ashen-legacy) · [Support NightBeam](https://nightbeam.dev/support) · [NightBeam Pro](https://nightbeam.dev/memberships) · [All projects](https://nightbeam.dev/projects)**
+
+> **Featured in [Remnants: Ashen Legacy](https://www.curseforge.com/minecraft/modpacks/remnants-ashen-legacy)**, NightBeam's story-driven soulslike RPG modpack.
+
 **The year 3001 crashed into your world.** At night a **Chrono Rift** tears open in the sky and a pod of future tech
 crashes down, guarded by Sentinels that fire lasers. Salvage the wreck, print your tech in a holographic
 **Fabricator**, charge it with cable-free **Flux**, and take to the air with a **jetpack** or a **hover skiff**,
@@ -110,7 +114,7 @@ any distance and across dimensions.
 
 - **Old worlds load**: every block, item and robot from Robotica and The Year 3001 that 2.0 keeps comes back under its
   new name (the Crafting Workstation becomes a Fabricator, the Boggie a Drone, the Space Ship a Hover Skiff).
-- **`config/chronofall.json`**, written with comments on first start: rift chance, spacing, distance, guards and
+- **`config/chronofall.json`**, written with comments at startup: rift chance, spacing, distance, guards and
   crater; gate range and timing; the mech's slam; the drone's range; the cutter's reach.
 - The same features and ids on every version and loader.
 
@@ -135,7 +139,7 @@ inventories, and robots come back as their Chronofall versions. Oil disappears.
 
 **Do I need a power network?** No. Flux needs no cables: put a Flux Charger near your gear and robots.
 
-**Will rifts wreck my base?** No. The crater only digs and scorches natural ground (dirt, stone, sand and the like)
+**Will rifts wreck my base?** No. The crater digs and scorches natural ground alone (dirt, stone, sand and the like)
 around the crash; turn `rifts.crater` off to keep the ground as it is, or `rifts.enabled` off for no natural rifts.
 
 **Can I fly on a server without allow-flight?** Yes, the jetpack and the skiff do not trigger the flight kick.
@@ -164,4 +168,14 @@ around the crash; turn `rifts.crater` off to keep the ground as it is, or `rifts
 
 ![](https://raw.githubusercontent.com/MeherBenSalem/TheYear3001/main/marketing/images/divider.png)
 
-[Discord](https://discord.gg/SAmd9fhNhr) · [Source and issues](https://github.com/MeherBenSalem/TheYear3001) · [Support us](https://nightbeam.dev/support) · Made by NightBeam Studio
+---
+
+### More from NightBeam Studio
+
+- **[Remnants: Ashen Legacy](https://www.curseforge.com/minecraft/modpacks/remnants-ashen-legacy)**: the story-driven soulslike RPG modpack built on NightBeam's mods
+- **[Premium server plugins](https://nightbeam.dev/store)**: anti-cheat, ranked PvP, SMP setups and more on BuiltByBit
+- **[NightBeam Pro](https://nightbeam.dev/memberships)**: the model library and NightBeam Forge credits, from $5 a month
+- **[Discord](https://discord.gg/TJc3CxR4jK)**: support, bug reports, suggestions and early looks
+- **[Support NightBeam](https://nightbeam.dev/support)**: help keep every mod free
+
+**Follow:** [YouTube](https://www.youtube.com/@nightbeamstudio) · [Instagram](https://www.instagram.com/nightbeamstudio/) · [X](https://x.com/NightBeamLLC) · [Facebook](https://www.facebook.com/profile.php?id=61574823331471) · [Source and issues](https://github.com/MeherBenSalem/TheYear3001)
