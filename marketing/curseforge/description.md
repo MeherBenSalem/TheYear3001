@@ -1,8 +1,6 @@
 ![Chronofall](https://raw.githubusercontent.com/MeherBenSalem/TheYear3001/main/marketing/images/banner.png)
 
-**[Discord](https://discord.gg/TJc3CxR4jK) · [The modpack](https://www.curseforge.com/minecraft/modpacks/remnants-ashen-legacy) · [Support NightBeam](https://nightbeam.dev/support) · [NightBeam Pro](https://nightbeam.dev/memberships) · [All projects](https://nightbeam.dev/projects)**
-
-> **Featured in [Remnants: Ashen Legacy](https://www.curseforge.com/minecraft/modpacks/remnants-ashen-legacy)**, NightBeam's story-driven soulslike RPG modpack.
+**[Discord](https://discord.gg/TJc3CxR4jK) · [Source and issues](https://github.com/MeherBenSalem/TheYear3001)**
 
 **The year 3001 crashed into your world.** At night a **Chrono Rift** tears open in the sky and a pod of future tech
 crashes down, guarded by Sentinels that fire lasers. Salvage the wreck, print your tech in a holographic
@@ -170,6 +168,10 @@ around the crash; turn `rifts.crater` off to keep the ground as it is, or `rifts
 
 ---
 
+> **Featured in [Remnants: Ashen Legacy](https://www.curseforge.com/minecraft/modpacks/remnants-ashen-legacy)**, NightBeam's story-driven soulslike RPG modpack.
+
+---
+
 ### More from NightBeam Studio
 
 - **[Remnants: Ashen Legacy](https://www.curseforge.com/minecraft/modpacks/remnants-ashen-legacy)**: the story-driven soulslike RPG modpack built on NightBeam's mods
@@ -178,4 +180,4 @@ around the crash; turn `rifts.crater` off to keep the ground as it is, or `rifts
 - **[Discord](https://discord.gg/TJc3CxR4jK)**: support, bug reports, suggestions and early looks
 - **[Support NightBeam](https://nightbeam.dev/support)**: help keep every mod free
 
-**Follow:** [YouTube](https://www.youtube.com/@nightbeamstudio) · [Instagram](https://www.instagram.com/nightbeamstudio/) · [X](https://x.com/NightBeamLLC) · [Facebook](https://www.facebook.com/profile.php?id=61574823331471) · [Source and issues](https://github.com/MeherBenSalem/TheYear3001)
+**Follow:** [YouTube](https://www.youtube.com/@nightbeamstudio) · [Instagram](https://www.instagram.com/nightbeamstudio/) · [X](https://x.com/NightBeamLLC) · [Facebook](https://www.facebook.com/profile.php?id=61574823331471)
