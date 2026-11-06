@@ -1,0 +1,875 @@
+{
+ "s01": [
+  {
+   "take": 1,
+   "ok": true,
+   "heard": "the year three thousand and one just crashed into minecraft",
+   "dur": 3.609,
+   "rate": 4.79,
+   "pitch": 5.28,
+   "punch": 12.4,
+   "f0": 186,
+   "score": 1.3805833228943483
+  },
+  {
+   "take": 2,
+   "ok": true,
+   "heard": "the year three thousand and one just crashed into minecraft",
+   "dur": 3.583,
+   "rate": 4.79,
+   "pitch": 5.84,
+   "punch": 12.5,
+   "f0": 178,
+   "score": 2.286910319558597
+  },
+  {
+   "take": 3,
+   "ok": true,
+   "heard": "the year three thousand and one just crashed into minecraft",
+   "dur": 3.461,
+   "rate": 5.1,
+   "pitch": 5.45,
+   "punch": 10.7,
+   "f0": 166,
+   "score": 1.470373146817911
+  },
+  {
+   "take": 4,
+   "ok": true,
+   "heard": "the year three thousand and one just crashed into minecraft",
+   "dur": 4.133,
+   "rate": 4.3,
+   "pitch": 3.98,
+   "punch": 10.4,
+   "f0": 194,
+   "score": -5.137866789270855
+  }
+ ],
+ "s02": [
+  {
+   "take": 1,
+   "ok": false,
+   "heard": "every night rifts tear open the sky  (pitch 216 Hz, off the voice)",
+   "dur": 2.44,
+   "rate": 4.46,
+   "pitch": 4.71,
+   "punch": 13.5,
+   "f0": 216
+  },
+  {
+   "take": 2,
+   "ok": true,
+   "heard": "every night rifts tear open the sky",
+   "dur": 2.689,
+   "rate": 3.91,
+   "pitch": 5.69,
+   "punch": 15.1,
+   "f0": 195,
+   "score": 0.5000975084890645
+  },
+  {
+   "take": 3,
+   "ok": true,
+   "heard": "every night rifts tear open the sky",
+   "dur": 2.668,
+   "rate": 3.94,
+   "pitch": 4.59,
+   "punch": 12.1,
+   "f0": 186,
+   "score": -0.5000975084890216
+  },
+  {
+   "take": 4,
+   "ok": false,
+   "heard": "every night riffs tear open the sky",
+   "dur": 2.449,
+   "rate": 4.39,
+   "pitch": 5.02,
+   "punch": 10.6,
+   "f0": 200
+  }
+ ],
+ "s03": [
+  {
+   "take": 1,
+   "ok": true,
+   "heard": "and drop pods of future tech",
+   "dur": 1.754,
+   "rate": 4.82,
+   "pitch": 1.58,
+   "punch": 12.6,
+   "f0": 170,
+   "score": -1.0585768725387519
+  },
+  {
+   "take": 2,
+   "ok": true,
+   "heard": "and drop pods of future tech",
+   "dur": 2.254,
+   "rate": 3.6,
+   "pitch": 4.81,
+   "punch": 14.9,
+   "f0": 168,
+   "score": 0.8588976520237636
+  },
+  {
+   "take": 3,
+   "ok": true,
+   "heard": "and drop pods of future tech",
+   "dur": 2.65,
+   "rate": 3.15,
+   "pitch": 3.87,
+   "punch": 13.4,
+   "f0": 182,
+   "score": -2.4769562103822444
+  },
+  {
+   "take": 4,
+   "ok": true,
+   "heard": "and drop pods of future tech",
+   "dur": 1.932,
+   "rate": 4.4,
+   "pitch": 5.64,
+   "punch": 14.4,
+   "f0": 167,
+   "score": 2.676635430897237
+  }
+ ],
+ "s04": [
+  {
+   "take": 1,
+   "ok": true,
+   "heard": "guarded by sentinels",
+   "dur": 1.559,
+   "rate": 4.29,
+   "pitch": 3.81,
+   "punch": 17.0,
+   "f0": 140,
+   "score": -2.5784539834464706
+  },
+  {
+   "take": 2,
+   "ok": true,
+   "heard": "guarded by sentinels",
+   "dur": 1.49,
+   "rate": 4.69,
+   "pitch": 4.53,
+   "punch": 16.3,
+   "f0": 159,
+   "score": -2.0371606775817632
+  },
+  {
+   "take": 3,
+   "ok": true,
+   "heard": "guarded by sentinels",
+   "dur": 1.237,
+   "rate": 5.77,
+   "pitch": 6.3,
+   "punch": 17.3,
+   "f0": 155,
+   "score": 4.2512403733671125
+  },
+  {
+   "take": 4,
+   "ok": true,
+   "heard": "guarded by sentinels",
+   "dur": 1.7,
+   "rate": 4.23,
+   "pitch": 5.21,
+   "punch": 17.9,
+   "f0": 171,
+   "score": 0.3643742876611198
+  }
+ ],
+ "s05": [
+  {
+   "take": 1,
+   "ok": false,
+   "heard": "and let them open",
+   "dur": 1.001,
+   "rate": 5.13,
+   "pitch": 7.17,
+   "punch": 10.6,
+   "f0": 162
+  },
+  {
+   "take": 2,
+   "ok": false,
+   "heard": "ooh crack them open",
+   "dur": 2.012,
+   "rate": 3.03,
+   "pitch": 5.01,
+   "punch": 9.9,
+   "f0": 194
+  },
+  {
+   "take": 3,
+   "ok": true,
+   "heard": "crack them open",
+   "dur": 1.028,
+   "rate": 4.55,
+   "pitch": 5.1,
+   "punch": 10.6,
+   "f0": 188,
+   "score": 3.4999899561158005
+  },
+  {
+   "take": 4,
+   "ok": false,
+   "heard": "them open  (pitch 238 Hz, off the voice)",
+   "dur": 0.602,
+   "rate": 10.0,
+   "pitch": 3.86,
+   "punch": 10.1,
+   "f0": 238
+  },
+  {
+   "take": 5,
+   "ok": false,
+   "heard": "black them open",
+   "dur": 1.184,
+   "rate": 4.0,
+   "pitch": 5.7,
+   "punch": 10.4,
+   "f0": 150
+  },
+  {
+   "take": 6,
+   "ok": false,
+   "heard": "crack them open  (pitch 211 Hz, off the voice)",
+   "dur": 0.872,
+   "rate": 5.88,
+   "pitch": 4.59,
+   "punch": 9.3,
+   "f0": 211
+  },
+  {
+   "take": 7,
+   "ok": true,
+   "heard": "crack them open",
+   "dur": 1.154,
+   "rate": 4.17,
+   "pitch": 3.68,
+   "punch": 7.9,
+   "f0": 167,
+   "score": -3.4999899561157926
+  },
+  {
+   "take": 8,
+   "ok": false,
+   "heard": "look him open",
+   "dur": 0.793,
+   "rate": 7.14,
+   "pitch": 5.95,
+   "punch": 8.8,
+   "f0": 204
+  }
+ ],
+ "s06": [
+  {
+   "take": 1,
+   "ok": true,
+   "heard": "print your own gear",
+   "dur": 0.971,
+   "rate": 4.65,
+   "pitch": 4.86,
+   "punch": 11.3,
+   "f0": 182,
+   "score": -0.7694698394336705
+  },
+  {
+   "take": 2,
+   "ok": true,
+   "heard": "print your own gear",
+   "dur": 0.997,
+   "rate": 4.44,
+   "pitch": 5.85,
+   "punch": 12.4,
+   "f0": 189,
+   "score": -0.26248537856092913
+  },
+  {
+   "take": 3,
+   "ok": true,
+   "heard": "print your own gear",
+   "dur": 0.935,
+   "rate": 4.76,
+   "pitch": 5.89,
+   "punch": 9.1,
+   "f0": 145,
+   "score": 1.0319552179946105
+  },
+  {
+   "take": 4,
+   "ok": false,
+   "heard": "in the round gear",
+   "dur": 0.917,
+   "rate": 5.56,
+   "pitch": 6.75,
+   "punch": 8.0,
+   "f0": 145
+  }
+ ],
+ "s07": [
+  {
+   "take": 1,
+   "ok": false,
+   "heard": "jetpacks  (pitch 227 Hz, off the voice)",
+   "dur": 0.755,
+   "rate": 4.35,
+   "pitch": 5.1,
+   "punch": 16.9,
+   "f0": 227
+  },
+  {
+   "take": 2,
+   "ok": false,
+   "heard": "jetpacks  (pitch 294 Hz, off the voice)",
+   "dur": 1.385,
+   "rate": 1.89,
+   "pitch": 7.46,
+   "punch": 14.5,
+   "f0": 294
+  },
+  {
+   "take": 3,
+   "ok": false,
+   "heard": "and jetpacks",
+   "dur": 1.032,
+   "rate": 2.94,
+   "pitch": 4.5,
+   "punch": 13.6,
+   "f0": 197
+  },
+  {
+   "take": 4,
+   "ok": false,
+   "heard": "the jetpax",
+   "dur": 1.513,
+   "rate": 1.54,
+   "pitch": 7.27,
+   "punch": 17.6,
+   "f0": 197
+  },
+  {
+   "take": 5,
+   "ok": false,
+   "heard": "jetpaks  (pitch 242 Hz, off the voice)",
+   "dur": 0.88,
+   "rate": 3.12,
+   "pitch": 6.24,
+   "punch": 16.9,
+   "f0": 242
+  },
+  {
+   "take": 6,
+   "ok": false,
+   "heard": "uh jetpacks",
+   "dur": 1.533,
+   "rate": 1.64,
+   "pitch": 6.48,
+   "punch": 15.3,
+   "f0": 151
+  },
+  {
+   "take": 7,
+   "ok": true,
+   "heard": "jetpacks",
+   "dur": 0.735,
+   "rate": 4.55,
+   "pitch": 4.08,
+   "punch": 14.1,
+   "f0": 176,
+   "score": 0.0
+  },
+  {
+   "take": 8,
+   "ok": false,
+   "heard": "hm jetpacks",
+   "dur": 1.254,
+   "rate": 2.08,
+   "pitch": 5.51,
+   "punch": 16.6,
+   "f0": 158
+  }
+ ],
+ "s08": [
+  {
+   "take": 1,
+   "ok": false,
+   "heard": "of our skiffs",
+   "dur": 0.93,
+   "rate": 3.75,
+   "pitch": 4.69,
+   "punch": 13.6,
+   "f0": 186
+  },
+  {
+   "take": 2,
+   "ok": false,
+   "heard": "earth s gifts  (pitch 274 Hz, off the voice)",
+   "dur": 0.837,
+   "rate": 5.36,
+   "pitch": 7.13,
+   "punch": 14.1,
+   "f0": 274
+  },
+  {
+   "take": 3,
+   "ok": false,
+   "heard": "  (pitch 320 Hz, off the voice)",
+   "dur": 0.229,
+   "rate": 13.08,
+   "pitch": 0.38,
+   "punch": 2.2,
+   "f0": 320
+  },
+  {
+   "take": 4,
+   "ok": false,
+   "heard": "mmm  (pitch 221 Hz, off the voice)",
+   "dur": 0.35,
+   "rate": 13.64,
+   "pitch": 8.01,
+   "punch": 4.9,
+   "f0": 221
+  },
+  {
+   "take": 5,
+   "ok": true,
+   "heard": "hover skiffs",
+   "dur": 0.852,
+   "rate": 4.29,
+   "pitch": 6.12,
+   "punch": 17.7,
+   "f0": 160,
+   "score": 0.0
+  },
+  {
+   "take": 6,
+   "ok": false,
+   "heard": "or hover skiffs",
+   "dur": 0.867,
+   "rate": 4.17,
+   "pitch": 4.17,
+   "punch": 16.6,
+   "f0": 157
+  },
+  {
+   "take": 7,
+   "ok": false,
+   "heard": "",
+   "dur": 0.126,
+   "rate": 15.0,
+   "pitch": 0.0,
+   "punch": 0.0,
+   "f0": 0
+  },
+  {
+   "take": 8,
+   "ok": false,
+   "heard": "hover skiffs  (pitch 208 Hz, off the voice)",
+   "dur": 1.007,
+   "rate": 3.49,
+   "pitch": 5.98,
+   "punch": 16.9,
+   "f0": 208
+  }
+ ],
+ "s09": [
+  {
+   "take": 1,
+   "ok": false,
+   "heard": "i m bat drones",
+   "dur": 1.216,
+   "rate": 4.35,
+   "pitch": 5.45,
+   "punch": 11.6,
+   "f0": 189
+  },
+  {
+   "take": 2,
+   "ok": true,
+   "heard": "combat drones",
+   "dur": 1.05,
+   "rate": 5.26,
+   "pitch": 6.64,
+   "punch": 13.4,
+   "f0": 193,
+   "score": 2.4999884153611154
+  },
+  {
+   "take": 3,
+   "ok": true,
+   "heard": "combat drones",
+   "dur": 1.084,
+   "rate": 4.65,
+   "pitch": 6.64,
+   "punch": 13.1,
+   "f0": 149,
+   "score": -2.4999884153611154
+  },
+  {
+   "take": 4,
+   "ok": false,
+   "heard": "white drones  (pitch 134 Hz, off the voice)",
+   "dur": 0.908,
+   "rate": 7.14,
+   "pitch": 4.8,
+   "punch": 14.6,
+   "f0": 134
+  }
+ ],
+ "s10": [
+  {
+   "take": 1,
+   "ok": true,
+   "heard": "a mech that shakes the ground",
+   "dur": 1.73,
+   "rate": 4.38,
+   "pitch": 4.56,
+   "punch": 11.6,
+   "f0": 155,
+   "score": 0.2748556892157982
+  },
+  {
+   "take": 2,
+   "ok": false,
+   "heard": "a mac that shakes the ground",
+   "dur": 1.642,
+   "rate": 4.61,
+   "pitch": 3.56,
+   "punch": 12.4,
+   "f0": 176
+  },
+  {
+   "take": 3,
+   "ok": true,
+   "heard": "a mech that shakes the ground",
+   "dur": 1.639,
+   "rate": 4.55,
+   "pitch": 5.89,
+   "punch": 10.6,
+   "f0": 156,
+   "score": 1.5364035685829203
+  },
+  {
+   "take": 4,
+   "ok": true,
+   "heard": "a mech that shakes the ground",
+   "dur": 1.916,
+   "rate": 3.89,
+   "pitch": 4.47,
+   "punch": 12.0,
+   "f0": 146,
+   "score": -1.811259257798723
+  }
+ ],
+ "s11": [
+  {
+   "take": 1,
+   "ok": false,
+   "heard": "plasma cutters pulse rifles  (pitch 214 Hz, off the voice)",
+   "dur": 2.484,
+   "rate": 3.64,
+   "pitch": 6.01,
+   "punch": 16.1,
+   "f0": 214
+  },
+  {
+   "take": 2,
+   "ok": true,
+   "heard": "plasma cutters pulse rifles",
+   "dur": 2.287,
+   "rate": 4.17,
+   "pitch": 7.01,
+   "punch": 19.6,
+   "f0": 192,
+   "score": 3.4999382291742203
+  },
+  {
+   "take": 3,
+   "ok": true,
+   "heard": "plasma cutters pulse rifles",
+   "dur": 2.376,
+   "rate": 3.88,
+   "pitch": 6.97,
+   "punch": 18.2,
+   "f0": 163,
+   "score": -3.4999382291742682
+  },
+  {
+   "take": 4,
+   "ok": false,
+   "heard": "plasma cutters pulse rifle  (pitch 207 Hz, off the voice)",
+   "dur": 1.906,
+   "rate": 4.65,
+   "pitch": 6.67,
+   "punch": 17.1,
+   "f0": 207
+  }
+ ],
+ "s12": [
+  {
+   "take": 1,
+   "ok": true,
+   "heard": "rift gates to anywhere",
+   "dur": 2.334,
+   "rate": 3.88,
+   "pitch": 6.19,
+   "punch": 11.9,
+   "f0": 198,
+   "score": -1.5193926547047554
+  },
+  {
+   "take": 2,
+   "ok": true,
+   "heard": "rift gates to anywhere",
+   "dur": 1.71,
+   "rate": 5.48,
+   "pitch": 5.85,
+   "punch": 12.9,
+   "f0": 170,
+   "score": -0.487978215551633
+  },
+  {
+   "take": 3,
+   "ok": true,
+   "heard": "rift gates to anywhere",
+   "dur": 2.055,
+   "rate": 4.76,
+   "pitch": 6.13,
+   "punch": 11.0,
+   "f0": 195,
+   "score": -1.153097856344096
+  },
+  {
+   "take": 4,
+   "ok": true,
+   "heard": "rift gates to anywhere",
+   "dur": 1.492,
+   "rate": 6.15,
+   "pitch": 6.02,
+   "punch": 14.3,
+   "f0": 197,
+   "score": 3.1604687266005054
+  }
+ ],
+ "s13": [
+  {
+   "take": 1,
+   "ok": true,
+   "heard": "and zero cables",
+   "dur": 1.64,
+   "rate": 3.79,
+   "pitch": 5.58,
+   "punch": 10.2,
+   "f0": 195,
+   "score": -0.41239709481412684
+  },
+  {
+   "take": 2,
+   "ok": false,
+   "heard": "and zero cables  (pitch 131 Hz, off the voice)",
+   "dur": 1.153,
+   "rate": 5.81,
+   "pitch": 2.76,
+   "punch": 10.6,
+   "f0": 131
+  },
+  {
+   "take": 3,
+   "ok": true,
+   "heard": "and zero cables",
+   "dur": 1.742,
+   "rate": 3.47,
+   "pitch": 5.06,
+   "punch": 12.3,
+   "f0": 180,
+   "score": -0.7444817267855949
+  },
+  {
+   "take": 4,
+   "ok": true,
+   "heard": "and zero cables",
+   "dur": 1.794,
+   "rate": 3.38,
+   "pitch": 5.87,
+   "punch": 8.6,
+   "f0": 137,
+   "score": -1.4096198834194476
+  },
+  {
+   "take": 5,
+   "ok": true,
+   "heard": "and zero cables",
+   "dur": 1.17,
+   "rate": 5.95,
+   "pitch": 3.52,
+   "punch": 10.9,
+   "f0": 168,
+   "score": 1.0405643693008932
+  },
+  {
+   "take": 6,
+   "ok": true,
+   "heard": "and zero cables",
+   "dur": 1.716,
+   "rate": 3.85,
+   "pitch": 4.57,
+   "punch": 16.5,
+   "f0": 186,
+   "score": 1.014107169882549
+  },
+  {
+   "take": 7,
+   "ok": true,
+   "heard": "and zero cables",
+   "dur": 1.662,
+   "rate": 3.73,
+   "pitch": 5.72,
+   "punch": 12.3,
+   "f0": 169,
+   "score": 0.511827165835728
+  },
+  {
+   "take": 8,
+   "ok": false,
+   "heard": "and zero cables  (pitch 123 Hz, off the voice)",
+   "dur": 1.669,
+   "rate": 3.47,
+   "pitch": 6.28,
+   "punch": 14.8,
+   "f0": 123
+  }
+ ],
+ "s14": [
+  {
+   "take": 1,
+   "ok": false,
+   "heard": "it s called chronophoth  (pitch 207 Hz, off the voice)",
+   "dur": 1.532,
+   "rate": 4.79,
+   "pitch": 5.35,
+   "punch": 14.4,
+   "f0": 207
+  },
+  {
+   "take": 2,
+   "ok": false,
+   "heard": "it s called chronophoth",
+   "dur": 1.226,
+   "rate": 6.03,
+   "pitch": 5.36,
+   "punch": 14.5,
+   "f0": 200
+  },
+  {
+   "take": 3,
+   "ok": false,
+   "heard": "it s called chronofol",
+   "dur": 1.429,
+   "rate": 5.22,
+   "pitch": 5.24,
+   "punch": 15.7,
+   "f0": 202
+  },
+  {
+   "take": 4,
+   "ok": false,
+   "heard": "it s called chronophoth",
+   "dur": 1.355,
+   "rate": 5.3,
+   "pitch": 5.3,
+   "punch": 16.9,
+   "f0": 193
+  },
+  {
+   "take": 5,
+   "ok": false,
+   "heard": "it s called chronofaw",
+   "dur": 1.494,
+   "rate": 5.07,
+   "pitch": 4.08,
+   "punch": 16.2,
+   "f0": 195
+  },
+  {
+   "take": 6,
+   "ok": true,
+   "heard": "it s called chronofall",
+   "dur": 1.638,
+   "rate": 4.67,
+   "pitch": 2.67,
+   "punch": 13.2,
+   "f0": 183,
+   "score": 0.0
+  },
+  {
+   "take": 7,
+   "ok": false,
+   "heard": "it s called chronofalls",
+   "dur": 1.589,
+   "rate": 4.79,
+   "pitch": 3.26,
+   "punch": 10.2,
+   "f0": 168
+  },
+  {
+   "take": 8,
+   "ok": false,
+   "heard": "it s called chronofalls",
+   "dur": 1.761,
+   "rate": 4.32,
+   "pitch": 6.73,
+   "punch": 12.2,
+   "f0": 174
+  }
+ ],
+ "s15": [
+  {
+   "take": 1,
+   "ok": true,
+   "heard": "would you survive the year three thousand and one",
+   "dur": 2.853,
+   "rate": 4.81,
+   "pitch": 5.17,
+   "punch": 11.1,
+   "f0": 163,
+   "score": -0.3213256812166667
+  },
+  {
+   "take": 2,
+   "ok": true,
+   "heard": "would you survive the year three thousand and one",
+   "dur": 2.812,
+   "rate": 4.96,
+   "pitch": 3.79,
+   "punch": 9.6,
+   "f0": 155,
+   "score": -3.0506370266758065
+  },
+  {
+   "take": 3,
+   "ok": true,
+   "heard": "would you survive the year three thousand and one",
+   "dur": 2.808,
+   "rate": 5.0,
+   "pitch": 4.62,
+   "punch": 11.7,
+   "f0": 172,
+   "score": 1.5012620520072497
+  },
+  {
+   "take": 4,
+   "ok": true,
+   "heard": "would you survive the year three thousand and one",
+   "dur": 2.663,
+   "rate": 5.2,
+   "pitch": 3.9,
+   "punch": 11.3,
+   "f0": 164,
+   "score": 1.8707006558852284
+  }
+ ]
+}
