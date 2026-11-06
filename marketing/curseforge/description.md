@@ -1,6 +1,6 @@
 ![Chronofall](https://raw.githubusercontent.com/MeherBenSalem/TheYear3001/main/marketing/images/banner.png)
 
-**[Discord](https://discord.gg/TJc3CxR4jK) · [Source and issues](https://github.com/MeherBenSalem/TheYear3001)**
+**[Docs](https://nightbeam.dev/docs/chronofall) · [Discord](https://discord.gg/TJc3CxR4jK) · [Source and issues](https://github.com/MeherBenSalem/TheYear3001)**
 
 **The year 3001 crashed into your world.** At night a **Chrono Rift** tears open in the sky and a pod of future tech
 crashes down, guarded by Sentinels that fire lasers. Salvage the wreck, print your tech in a holographic
