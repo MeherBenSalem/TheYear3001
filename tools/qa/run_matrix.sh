@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Runs chronofall_checks.py (server and client checks) on a fresh world for each build:
-#   tools/qa/run_matrix.sh [ws:loader ...]     (default: all ten)
+#   tools/qa/run_matrix.sh [ws:loader ...]     (default: all eight)
 # Builds with a world saved by Robotica 1.0.1 (tools/qa/fixtures/legacy-<ws>.zip, see the case below) load it and run the
 # fixture checks.
 # Results go to $QA_LOGS/results/<ws>-<loader>.txt; a summary line per build is printed.
@@ -8,7 +8,7 @@ set -u
 ROOT=$(cd "$(dirname "$0")/../.." && pwd)
 LOGS=${QA_LOGS:-/tmp/cf-qa}
 mkdir -p "$LOGS/results"
-BUILDS=${*:-"1.20.1:fabric 1.20.1:forge 1.21.1:fabric 1.21.1:neoforge 26.1.2:fabric 26.1.2:neoforge 26.2:fabric 26.2:neoforge 26.3:fabric 26.3:neoforge"}
+BUILDS=${*:-"1.20.1:fabric 1.20.1:forge 1.21.1:fabric 1.21.1:neoforge 26.2:fabric 26.2:neoforge 26.3:fabric 26.3:neoforge"}
 QA="$ROOT/tools/qa"
 
 wait_for() {  # file, pattern, seconds
@@ -25,9 +25,8 @@ for build in $BUILDS; do
   out="$LOGS/results/$ws-$loader.txt"
   "$QA/devrun.sh" stop-client; "$QA/devrun.sh" stop-server; sleep 10
   fixture="$QA/fixtures/legacy-$ws.zip"
-  # 26.1.2 has no Robotica release: it upgrades the 1.21.1 world, the way a player moving to 26.1.2 would. Robotica
-  # 1.0.1 for 26.2 crashed on startup on both loaders, so no 26.2 world with it exists; 26.2 and 26.3 upgrade the 1.21.1
-  # world too.
+  # Robotica 1.0.1 for 26.2 crashed on startup on both loaders, so no 26.2 world with it exists; 26.2 and 26.3 upgrade
+  # the 1.21.1 world, the way a player moving up from 1.21.1 would.
   case $ws in 26.*) fixture="$QA/fixtures/legacy-1.21.1.zip";; esac
   extra=""
   if [ -f "$fixture" ]; then

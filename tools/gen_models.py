@@ -21,7 +21,7 @@ from pathlib import Path
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
-WORKSPACES = ['1.20.1', '1.21.1', '26.1.2', '26.2', '26.3']
+WORKSPACES = ['1.20.1', '1.21.1', '26.2', '26.3']
 
 # Palettes: (base, dark seam, light edge). Glow materials have (core, centre).
 PALETTE = {

@@ -1,38 +1,77 @@
-# Gradle / build
+# Gradle
 .gradle/
-**/.gradle/
-**/build/
 build/
-all-jars/
+!gradle/wrapper/gradle-wrapper.jar
 
-# IDE
-.idea/
-.vscode/
+# Eclipse
+.metadata/
 .settings/
-.eclipse/
+.classpath
+.project
 bin/
+.eclipse/
+
+# IntelliJ IDEA
+.idea/
+*.iws
 *.iml
+*.ipr
+out/
 
-# Run directories
-run/
-runs/
-**/run/
+# VS Code / Cursor
+.vscode/
+*.code-workspace
+.cursor/
 
-# OS
+# MacOS
 .DS_Store
+
+# Windows
 Thumbs.db
+ehthumbs.db
+Desktop.ini
 
 # Logs
-*.log
-*.log.gz
 logs/
+*.log
+build_log.txt
+build_output.txt
+dep_warning.txt
+debug.log
+*.log.gz
 
-# Local env
+# Run folders
+run/
+runs/
+/test/
+
+# Archives / built artifacts (do not commit jars, except the release jars the publish workflow uploads)
+*.jar
+!releases/*.jar
+*.war
+*.zip
+*.tar
+*.tar.gz
+dist/
+all-jars/
+# The Robotica worlds tools/qa/run_matrix.sh loads
+!tools/qa/fixtures/*.zip
+
+# Keep the Gradle wrapper jar
+!**/gradle/wrapper/gradle-wrapper.jar
+
+# Env / secrets
 .env
 .env.*
+!.env.example
+
+# Temp
+input.txt
+output.txt
 
 # Python
 __pycache__/
+*.pyc
 
 # Marketing render scratch pages
 marketing/source/.render-*.html

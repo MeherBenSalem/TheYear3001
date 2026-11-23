@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "chronofall:item/damage_upgrade_card"
-  }
-}

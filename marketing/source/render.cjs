@@ -11,7 +11,6 @@ const RELEASE = { version: '2.0', name: 'Impact' };
 const VERSIONS = [
   { minecraft: '1.20.1', loaders: ['Fabric', 'Forge'] },
   { minecraft: '1.21.1', loaders: ['Fabric', 'NeoForge'] },
-  { minecraft: '26.1.2', loaders: ['Fabric', 'NeoForge'] },
   { minecraft: '26.2', loaders: ['Fabric', 'NeoForge'] },
   { minecraft: '26.3', loaders: ['Fabric', 'NeoForge'] },
 ];
@@ -238,7 +237,7 @@ const assets = {
       'No extra library to install'],
     art: `<div style="display:flex;flex-direction:column;gap:18px">
       ${framed(configPanel(), C.flux, 'background:#060a18')}
-      ${stats([['Loaders', 'Fabric · NeoForge · Forge', 2], ['Versions', '5']])}</div>` }),
+      ${stats([['Loaders', 'Fabric · NeoForge · Forge', 2], ['Versions', String(VERSIONS.length)]])}</div>` }),
 };
 
 const HEADERS = {

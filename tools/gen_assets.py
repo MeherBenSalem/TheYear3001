@@ -23,11 +23,10 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[1]
 TOOLS = Path(__file__).resolve().parent
 NS = 'chronofall'
-VERSIONS = ['1.20.1', '1.21.1', '26.1.2', '26.2', '26.3']
+VERSIONS = ['1.20.1', '1.21.1', '26.2', '26.3']
 PACK = {
     '1.20.1': {'pack_format': 15},
     '1.21.1': {'pack_format': 34},
-    '26.1.2': {'min_format': 84, 'max_format': 101},
     '26.2': {'min_format': 88, 'max_format': 121},
     '26.3': {'min_format': 88, 'max_format': 121},
 }

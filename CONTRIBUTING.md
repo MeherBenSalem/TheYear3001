@@ -4,12 +4,13 @@ Thanks for helping improve Chronofall.
 
 ## How to contribute
 
-1. Fork the repository and create a feature branch from `main`.
-2. Make focused changes in the relevant Minecraft version workspace (`1.20.1/`, `1.21.1/`, `26.1.2/`, `26.2/` or
-   `26.3/`). A gameplay change belongs in all five: the `common/` code is the same design everywhere and only
-   version-specific APIs differ (see "Porting between versions" below).
-3. Build the workspace you changed (`./gradlew build` from that folder, with Java 17 for 1.20.1, 21 for 1.21.1 and 25
-   for 26.x). This also runs the unit tests.
+1. Fork the repository and create a branch from `main`.
+2. Make focused changes in the relevant Minecraft version workspace (`1.20.1/`, `1.21.1/`, `26.2/` or `26.3/`). A
+   gameplay change belongs in all four: the `common/` code is the same design everywhere and only version-specific
+   APIs differ (see "Porting between versions" below).
+3. Build the workspace you changed (`./gradlew build` from that folder: Gradle on Java 21 for 1.20.1 and 1.21.1,
+   Java 25 for 26.x), or all four with `./gradlew buildAll` from the root (the 8 loader jars land in `releases/`).
+   This also runs the unit tests.
 4. Open a pull request describing the change and how you tested it.
 
 ## Layout
@@ -80,7 +81,7 @@ cracks a Rift Cache and calls a rift with a Rift Beacon; the client log is check
 particle. It ends by scanning the server log for errors. With `--fixture` it also checks a world saved by Robotica
 1.0.1 (blocks, chest contents and robots under the old ids).
 
-`tools/qa/run_matrix.sh` does all of that on a fresh world for every build (ten: five versions, two loaders each),
+`tools/qa/run_matrix.sh` does all of that on a fresh world for every build (eight: four versions, two loaders each),
 loading the Robotica fixture from `tools/qa/fixtures/` where there is one:
 
 ```bash
@@ -96,10 +97,12 @@ If you change gameplay or data, run the checks on every workspace you touched, f
 
 ## Releasing
 
-`tools/build_release.sh` builds every workspace with its own JDK and copies the jars into `releases/`
-(`chronofall-{loader}-{minecraft}-{version}.jar`). Release notes go in `patchnotes/<version>.md` and a summary in
-`PATCH_NOTES.md`. The publish workflow (`.github/workflows/publish.yml`) uploads `releases/` to Modrinth and
-CurseForge when a `v*.*.*` tag is pushed; the maintainers run it.
+`./gradlew buildAll` (or `tools/build_release.sh`, which builds each workspace with its own JDK) copies the 8 jars
+into `releases/` (`chronofall-{loader}-{minecraft}-{version}.jar`). Bump every workspace together with
+`./gradlew syncVersion -PmodVersion=x.y.z`. Release notes go in `patchnotes/<version>.md` and a summary in
+`PATCH_NOTES.md`. The publish workflow (`.github/workflows/publish.yml`) uploads the 8 jars to Modrinth and
+CurseForge on a `v*.*.*` tag or a manual run (prove it first with `dry_run`); it refuses a second release on the same
+day. The maintainers run it.
 
 ## Coding expectations
 

@@ -9,7 +9,7 @@ fight beside a **drone**, stomp around in a **mech** and link your bases with **
 
 Formerly **Robotica** and **The Year 3001**: old worlds load with their blocks, items and robots.
 
-Fabric and NeoForge (Forge on 1.20.1) · Minecraft 1.20.1, 1.21.1, 26.1.2, 26.2 and 26.3 · install on the server and
+Fabric and NeoForge (Forge on 1.20.1) · Minecraft 1.20.1, 1.21.1, 26.2 and 26.3 · install on the server and
 clients · no extra library needed
 
 ![What's new in 2.0](https://raw.githubusercontent.com/MeherBenSalem/TheYear3001/main/marketing/images/header-whats-new.png)
@@ -27,7 +27,7 @@ Version 2.0 rebuilds the mod from scratch. Here's what changed from Robotica 1.0
 - **The Mech** leaps and slams the ground; upgrade cards give fixed, capped bonuses instead of random ones
 - New models, animations, glowing layers, particles and 21 sound effects
 - Ores generate again and every recipe and drop works on every version (on 1.21.1 nothing could be crafted before)
-- Now for **Minecraft 26.1.2, 26.2 and 26.3**; the 26.2 version no longer crashes on start
+- Now for **Minecraft 26.2 and 26.3**; the 26.2 version no longer crashes on start
 - Oil is gone
 
 ![The future is falling](https://raw.githubusercontent.com/MeherBenSalem/TheYear3001/main/marketing/images/header-loop.png)
@@ -124,7 +124,6 @@ Pick the file that matches **both** your Minecraft version and your loader:
 |-----------|---------------------------|------------------|
 | 1.20.1 | `chronofall-fabric-1.20.1-2.0.0.jar` | `chronofall-forge-1.20.1-2.0.0.jar` (Forge 47.4.0+) |
 | 1.21.1 | `chronofall-fabric-1.21.1-2.0.0.jar` | `chronofall-neoforge-1.21.1-2.0.0.jar` (NeoForge 21.1.219+) |
-| 26.1.2 | `chronofall-fabric-26.1.2-2.0.0.jar` | `chronofall-neoforge-26.1.2-2.0.0.jar` |
 | 26.2 | `chronofall-fabric-26.2-2.0.0.jar` | `chronofall-neoforge-26.2-2.0.0.jar` (NeoForge 26.2.0.93+) |
 | 26.3 | `chronofall-fabric-26.3-2.0.0.jar` | `chronofall-neoforge-26.3-2.0.0.jar` (NeoForge 26.3.0.97+) |
 
