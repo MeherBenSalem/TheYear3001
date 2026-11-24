@@ -100,8 +100,8 @@ If you change gameplay or data, run the checks on every workspace you touched, f
 `./gradlew buildAll` (or `tools/build_release.sh`, which builds each workspace with its own JDK) copies the 8 jars
 into `releases/` (`chronofall-{loader}-{minecraft}-{version}.jar`). Bump every workspace together with
 `./gradlew syncVersion -PmodVersion=x.y.z`. Release notes go in `patchnotes/<version>.md` and a summary in
-`PATCH_NOTES.md`. The publish workflow (`.github/workflows/publish.yml`) uploads the 8 jars to Modrinth and
-CurseForge on a `v*.*.*` tag or a manual run (prove it first with `dry_run`); it refuses a second release on the same
+`PATCH_NOTES.md`. The publish workflow (`.github/workflows/publish.yml`) uploads the 8 jars to CurseForge
+only on a `v*.*.*` tag or a manual run (prove it first with `dry_run`); it refuses a second release on the same
 day. The maintainers run it.
 
 ## Coding expectations
